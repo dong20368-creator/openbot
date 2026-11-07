@@ -1,0 +1,16 @@
+**/runtime/
+**/audit/
+**/data/
+**/.venv/
+**/__pycache__/
+**/node_modules/
+**/target/
+*.sqlite*
+*.db*
+*.log
+.env
+**/.env
+**/auth.json
+**/config.local.json
+*.pem
+*.key

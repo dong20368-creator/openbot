@@ -1,0 +1,5181 @@
+{
+  "format": "Git blob SHA-1 over normalized staged bytes",
+  "selected_isolated_tests_passed": 176,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "git_blob_sha": "736b84b8422f82d0c3b5b97615c4f75a94144f22",
+      "mode": "100644"
+    },
+    {
+      "path": ".gitignore",
+      "git_blob_sha": "938f404f329d81961b8875529669df242776cd9b",
+      "mode": "100644"
+    },
+    {
+      "path": "NOTICE.md",
+      "git_blob_sha": "75959883a92c73536698335bdf4f54354739bc0e",
+      "mode": "100644"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "f1d4d071586aa319ff478fc7b2c09f82e175f402",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/answer_limits.py",
+      "git_blob_sha": "2110c132750fd3736dab8509c50399863f6a7c59",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/answer_policy.py",
+      "git_blob_sha": "93b4f9b303b643b470f86bb27f60d6f4e3a34131",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/answer_revision.py",
+      "git_blob_sha": "63f1c717f986315a4795e79342b360744aedcde8",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/backend_preflight.py",
+      "git_blob_sha": "8ba5b2e4e66bc89148fd0f640d781a75a1bebacd",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/codex_client.py",
+      "git_blob_sha": "ae0dde5e0d18439cc1f92ac88ce1f77c0c44e9e2",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/collector.py",
+      "git_blob_sha": "54f3ea6aadb22f15114e6d58d2d796db6fda225f",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/context_budget.py",
+      "git_blob_sha": "6fd502a1b7e2ecfa74a7bf731998079e2df295af",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/control-panel.cmd",
+      "git_blob_sha": "2f1ad6ba58eba4a683b59c027939f1293b4a247f",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/control_panel.py",
+      "git_blob_sha": "bdc95f3884778b805f97f990cca3b9b474fa928d",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/core.py",
+      "git_blob_sha": "edb3f7ff24dfc55bb1f0efd9c78b730fa6cde47b",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/db_reader.py",
+      "git_blob_sha": "973efe223e0a4f67de5fe8d2a0e2c5c0dbc37e35",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/desktop_io.py",
+      "git_blob_sha": "f15d5b38bc2811ab5e921fc7beeae2d8740e3992",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/desktop_sender.py",
+      "git_blob_sha": "22875773e22d29437e0a474d5873a9cf5f0fdfee",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/dialogue_history.py",
+      "git_blob_sha": "93576bdf6fd98b35fb5d1bdc0ec3e1516b5d2a8d",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/enqueue_summary.py",
+      "git_blob_sha": "b761fdfc0669299a82e64c89c8e89dcf68e05f28",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/evidence.py",
+      "git_blob_sha": "2f8910bda95079c2db5ffa70578db0b1f7229e22",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/futu_evidence.py",
+      "git_blob_sha": "7452d79c8b001c2f27ed912ccad1b81db95609c9",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/generation_pool.py",
+      "git_blob_sha": "e78121bd8e05b443b8a0a7be195349edba461075",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/group_summary.py",
+      "git_blob_sha": "107eaab5d3293ce7de5390beeaf3dda6a2b168ca",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/group_window.py",
+      "git_blob_sha": "33ad70fe464edbdf64a66cf7b5e34f16fa46d182",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/image_ocr.py",
+      "git_blob_sha": "54b2792cda59a9ea64bae66c263c64358b6e12c0",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/inbox.py",
+      "git_blob_sha": "160475e5e531614e893993cdc4a021c9c284a93a",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/investment_math.py",
+      "git_blob_sha": "6044ab21521dcbed5c4c74b3b460e359311ac1fe",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/login-codex.cmd",
+      "git_blob_sha": "5e287ecb491acbb1698a2b6025df50a7136dc542",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/login_codex.py",
+      "git_blob_sha": "ccff2f58dc5d663e67ac397af9246165446dde2f",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/media_context.py",
+      "git_blob_sha": "7183370ecbf605d37c837008a59500388a38b641",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/media_decode.py",
+      "git_blob_sha": "8820faa107b98c66cd1fa3cbad8decc5e044e8a0",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/media_reader.py",
+      "git_blob_sha": "01b81b78d9a5c1bd535cfd036f4af54c4147467f",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/member_views.py",
+      "git_blob_sha": "beb87eabb7166ce9abd297ff798446fed05730b4",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/member_window.py",
+      "git_blob_sha": "33429a625f9a40375c78f6c08f4e20db60c6bbad",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/native_connection_health.py",
+      "git_blob_sha": "52729c1b4ff82227cabb183aab851d1822705c58",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/native_gateway.py",
+      "git_blob_sha": "5c4b9da3307a69089be6a07a57a2bccc0650c677",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/native_images.py",
+      "git_blob_sha": "cd6925537aa140c345d73a059bec33a604c76987",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/native_sender.py",
+      "git_blob_sha": "e3a0bf40895813e7e5d6cdcbc51851bb2f8b8b6f",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/outbound_images.py",
+      "git_blob_sha": "5d6d7b2f132cc74cced53db8d4c1b8ea31b36ba7",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/prepare_reply.py",
+      "git_blob_sha": "79b20ba63359fc6ae25828a50535b08269e71c9c",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/protocol_transport.py",
+      "git_blob_sha": "3f58b41e9fe2236be2352a4b7dd2ca3d47aa5ac9",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/public_feed.py",
+      "git_blob_sha": "7a66c8e493b65953af6a729fdb595fc60e52670f",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/public_pages.py",
+      "git_blob_sha": "ccf9cd3be89091f0577d27e2cf51ddd9b5ca2aee",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/public_research.py",
+      "git_blob_sha": "cc1c9471c3865272c6faf8ed9f9768706678efba",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/reply_contract.py",
+      "git_blob_sha": "8652e212b428798e009d4dd685e157c62385034f",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/requirements-lock.txt",
+      "git_blob_sha": "8b3a04c4457875dd215178d85a5f1aa016fa9b82",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/run_bot.py",
+      "git_blob_sha": "8471e4563dc886898bc81726c6ab483ce8d65a50",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/runtime_health.py",
+      "git_blob_sha": "19e95023c62c53e3f65fb8174d35fdb6688ee354",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/semantic_memory.py",
+      "git_blob_sha": "4441db6c63a2bdf5898a1ef506548b25f27f1d31",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/start-backend.ps1",
+      "git_blob_sha": "a5bfe9cfc3b8c41e0bce8a36c2c5880ca2a8fc35",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/start-bot.ps1",
+      "git_blob_sha": "969a9b101486d366e0ae6537d1f136a3a00f2e7e",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/start-login.ps1",
+      "git_blob_sha": "af2354ae39dd821641af7d6f6fef3083adbc896e",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/startup.py",
+      "git_blob_sha": "7f5f4257b5cad1b4b1531a2e70937eec610d735d",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/status_view.py",
+      "git_blob_sha": "96d44affd569678e982f0f67ccbbc41482915fee",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/supervise.py",
+      "git_blob_sha": "7495376d181fe4f01e7195e3c1c30a9dbb8fe84a",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "git_blob_sha": "b4689aa16e79a8d32478fad3e17aaed73017182a",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/CONFIGURATION.md",
+      "git_blob_sha": "9a329e3de534b5b114e30b993c4872801d15e979",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "git_blob_sha": "dc239306f5cddbe4e7858a172d35a769bd9da3fd",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/OPERATIONS.md",
+      "git_blob_sha": "30579fd0f7fb5031eb90545e68157595a4e7601a",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/POLICY.md",
+      "git_blob_sha": "81f073c31bdf0e1a41151c6592df0b097c5f9445",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/QUICKSTART.md",
+      "git_blob_sha": "ef326b07cc216f58da67a97ef32433fd85ddf978",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/SECURITY.md",
+      "git_blob_sha": "6cea9b56a91dba3a1c01d8580460c2ebc0162c65",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "git_blob_sha": "55108aebf6118ce7c42e5f8b64238e329eb82444",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/README.md",
+      "git_blob_sha": "86ea0d278da5e292382ea0b9a6c1f4d20ad7412a",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/eval_acceptance_polish.py",
+      "git_blob_sha": "7dce45ac2447147adc29f0e450ec8ea9388ca3e6",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/eval_assertions.py",
+      "git_blob_sha": "17d6961b5c99e423f609f3f273e3d0c6b6f5fec2",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/eval_context_upgrade.py",
+      "git_blob_sha": "bf433ccc2daaecd7117e30d87ea3d2710edfaff3",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/eval_member_views.py",
+      "git_blob_sha": "3cfcb44fb1c96f7eab0c9b8c5c739ad38f5490ea",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/eval_outbound_images.py",
+      "git_blob_sha": "057b9eca4c86c66fdeace8fa546647d692fe38df",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/eval_policy_acceptance.py",
+      "git_blob_sha": "8c7e8cd18414c60255213f72254a99e4aac53984",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/eval_valuation_latency.py",
+      "git_blob_sha": "fc1d18a34c3a0dd4b1bb9b38a25e015c44de0296",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/evaluate_person_context.py",
+      "git_blob_sha": "ac168b6f1652f085e10c8f8da608ab25863febe9",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/evaluate_questions.py",
+      "git_blob_sha": "abf88ca20457d1955e02e2c6776639c3f8b5a499",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/evaluation_run.py",
+      "git_blob_sha": "09e1f9ca9cbc20e153ff864ee1e55446137c3a68",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/futu_eval.py",
+      "git_blob_sha": "b4938a06110ae4c6b8b67126e3d11ae439b395f9",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/group20_eval.py",
+      "git_blob_sha": "10ff7f7eaa53cdf9b157ecbfe4f51d2ef76899f9",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/investment_eval.py",
+      "git_blob_sha": "8557d0837995c02a988be8391280ee758e48526b",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/lifestyle_eval.py",
+      "git_blob_sha": "ad87681e62fbbd58e22bc23df213b0c208e825e5",
+      "mode": "100644"
+    },
+    {
+      "path": "evaluations/staged_eval.py",
+      "git_blob_sha": "3353023e62dc9b8bc061b207cb4346d51a8b1b30",
+      "mode": "100644"
+    },
+    {
+      "path": "examples/account.example.json",
+      "git_blob_sha": "bf022f7fb6ba0fd7a04a0e55d355cfc3bcaef181",
+      "mode": "100644"
+    },
+    {
+      "path": "examples/activation.example.json",
+      "git_blob_sha": "8f349cfa208079a9d8135083f62a8e988d8ef2c3",
+      "mode": "100644"
+    },
+    {
+      "path": "examples/media-consent.example.json",
+      "git_blob_sha": "71ce77736f0201482a94a4fdc291ff05ee89a2cb",
+      "mode": "100644"
+    },
+    {
+      "path": "examples/transport.example.json",
+      "git_blob_sha": "80744ce47efdfe6bbb13c7280f97ff9ee2162a43",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.changeset/README.md",
+      "git_blob_sha": "e5b6d8d6a67ad0dca8f20117fbfc72e076882d00",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.changeset/config.json",
+      "git_blob_sha": "4b41c767495dcf818d0154c194f0a50611e23d01",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.changeset/incoming-video-download-limits.md",
+      "git_blob_sha": "682806c078c00299c21690c8ab2d8db419efc05f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.changeset/pre.json",
+      "git_blob_sha": "6391d5dbf8140c94bd06b6284b3b1d10b86be3c5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.changeset/raise-video-send-limit.md",
+      "git_blob_sha": "10cdd9b8aaeae17660c271962436784a749c597b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.changeset/send-handshake-diagnostics.md",
+      "git_blob_sha": "0a286b80fc35018c597a1c959fe945bba39c4c20",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.changeset/stale-wal-index-startup.md",
+      "git_blob_sha": "81142aae421cd3f31caec2ba00aed8198b919df9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.dockerignore",
+      "git_blob_sha": "6230c3e5f1a60ced8373622755ada0a4ce736690",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.gitattributes",
+      "git_blob_sha": "b3a13cff5da4e51ced19e2fee8cc3f9f27963fce",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.gitignore",
+      "git_blob_sha": "a6a9ff5c00922ba4f28fcd947d6ec6c8d5d63463",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.node-version",
+      "git_blob_sha": "ce62013c39aed63f656bb7ae41bdd45d81163ffe",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.npmrc",
+      "git_blob_sha": "3e775efb0f4097b7f4189c34d2eda4affe63b04a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/LICENSE",
+      "git_blob_sha": "afbfc0eb5cbc1245d47eaadd300ea9149b3b6126",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/PLATFORM-ACCEPTANCE.md",
+      "git_blob_sha": "05edecd627d048305adcfbd85de41bf9cf3929fc",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/README.md",
+      "git_blob_sha": "1cdffde9f74d95ee5d103329fc0f370bf65cecd6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/RELEASING.md",
+      "git_blob_sha": "6a833692eecb52a99bbdcdd5ae437a988610b2e9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/deploy/native/Dockerfile",
+      "git_blob_sha": "fb681ea1793a6c74cf13badad26a37a6964d588b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/deploy/native/Dockerfile.dockerignore",
+      "git_blob_sha": "accb3dfc28fed50bb6ebc454ded2aab6ee938af8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/deploy/native/README.md",
+      "git_blob_sha": "65cbb2aa2753f8692047d04cd0b917d518ffcb02",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/deploy/native/agent-wechat-native.service",
+      "git_blob_sha": "b78024f35b8dbedf0cc90ff076c2dd7a9625d674",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/deploy/native/compose.yaml",
+      "git_blob_sha": "e454a6dfbccf57736e92d27b10036168dc6c35a8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/deploy/native/server.toml",
+      "git_blob_sha": "befe33705d27448fe67f567d98ef7da8df9847f5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/deploy/native/server.user.toml",
+      "git_blob_sha": "e6765a1e94e83fad788e869ad5156517d03c02f1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/devbox.json",
+      "git_blob_sha": "a993b66a842612e043034817068c8ed66f301ddb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/devbox.lock",
+      "git_blob_sha": "d26853ba029a7d3f235572dcbadcc171aef05ab9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/astro.config.mjs",
+      "git_blob_sha": "d3aa508f4f6de052d03c1a4b99715a5931e707e5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/og-image-integration.mjs",
+      "git_blob_sha": "31a1cb865f1000a0f8bfe55adce74678075c15ea",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/package.json",
+      "git_blob_sha": "40380b12dcf0eb3f61811e7983769e370936bf1e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/public/demo/gallery/cards.json",
+      "git_blob_sha": "b2230c80ded5b8fc74467385fb3f15f132f7c74c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/public/favicon.svg",
+      "git_blob_sha": "83e9673aef1bd186f6c7bc3a2dafe1b1c8454afb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/public/og-image.svg",
+      "git_blob_sha": "fa2f059f55b7d245af1b1df90250d936b5588dc6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/remark-base-path.mjs",
+      "git_blob_sha": "631b77ee7c42fe7ad5edba7fc4a252895d639364",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/remark-mermaid.mjs",
+      "git_blob_sha": "2aaf8812aea3a9966d156ab2297970203badab16",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/assets/qr-login.svg",
+      "git_blob_sha": "8ff6ae547f2b3d127c8a5eb88aecdde89741ef30",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/assets/wechat-chat.svg",
+      "git_blob_sha": "12a80015db641cd4f25b5829cedc720e41bd8073",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/components/Head.astro",
+      "git_blob_sha": "f8d37fa62f739e4e436103c19c1e5554b0c73db6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content.config.ts",
+      "git_blob_sha": "31b747625272667fc2f24906faf1831459b3689c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/how-it-works/architecture.mdx",
+      "git_blob_sha": "688e070d377c409932f77d97b11cc94db162ba2b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/how-it-works/message-types.mdx",
+      "git_blob_sha": "9b416750e42eb198bb494419d9c2c08f5cb8f331",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/how-it-works/rust-crates.mdx",
+      "git_blob_sha": "b311c479b8bd3982943d505535a5fbbf36499e67",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/how-it-works/sends.mdx",
+      "git_blob_sha": "29a7b4d45e6aa981d68aebadd2c36646f9c50079",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/how-it-works/storage.mdx",
+      "git_blob_sha": "4d2d75c2945941f34bce55a1369f1ec4d359bdac",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/how-it-works/wechat.mdx",
+      "git_blob_sha": "a4232c660f91d6feb41fc527ac2479a6a09b5349",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/index.mdx",
+      "git_blob_sha": "d3c53d2c28885635a9dfb6546a8b9e49fb36689c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/openclaw/access.mdx",
+      "git_blob_sha": "0e21c5de9fc3e869786dd50949b0734029c73fe1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/openclaw/call-memory.mdx",
+      "git_blob_sha": "974b7c13ba12a400f5d6cdf7e5debed4f8526c93",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/openclaw/calling.mdx",
+      "git_blob_sha": "fe5feeed112bab536477012575ece8ea26dc7fbd",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/openclaw/modes.mdx",
+      "git_blob_sha": "e1820d96c584fb600e7c1a24643d12ace1dff789",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/openclaw/read-receipts.mdx",
+      "git_blob_sha": "45b952f227287e0e3010445994432544ddd90784",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/openclaw/setup.mdx",
+      "git_blob_sha": "f60d37122145e3cc9e5482c4040ea57bb392ad74",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/openclaw/tools.mdx",
+      "git_blob_sha": "d0ffad4084a091037cb2d5f438dcf37ebbdc91ef",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/reference/build.mdx",
+      "git_blob_sha": "477d40ddaa6f2ccbeb461a4a7eed96e590f678bd",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/reference/calls-api.mdx",
+      "git_blob_sha": "1750a247fb05e6de53dbfa63076a54ab8b4c49ad",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/reference/calls-media.mdx",
+      "git_blob_sha": "8300cc8ec4c28b2806c4ad45ad9be547c3cfda02",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/reference/calls.mdx",
+      "git_blob_sha": "1c9e8a31d5fd5941e6a4e027c17d0b4012b41d38",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/reference/cli.mdx",
+      "git_blob_sha": "bac7e88e8ac927f7c46022426f4999c4381265b4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/reference/configuration.mdx",
+      "git_blob_sha": "45c057bf9fef832db83e1fca2e7ada3b602c714f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/reference/rust-libraries.mdx",
+      "git_blob_sha": "83d1055d5d05877e8263c9603c9afe4be9d7aeda",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/reference/tokens.mdx",
+      "git_blob_sha": "861aef20df9be118ccc6c22f947925e74ff04191",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/reference/troubleshooting.mdx",
+      "git_blob_sha": "0872baddd2628c1e448a0c06a849431f484e7c07",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/setup/connect.mdx",
+      "git_blob_sha": "73407ffafe1901660f6638aade522947c658f128",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/setup/desktop.mdx",
+      "git_blob_sha": "70aa9f0dfc8f1075f7f41b284ef6040617aad61f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/setup/install.mdx",
+      "git_blob_sha": "d3870567b94365df110e9501afcf0b485e84ec00",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/setup/migrate.mdx",
+      "git_blob_sha": "03b99320a23e31b7e184a3011d19b90340eab3e8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/setup/requirements.mdx",
+      "git_blob_sha": "09ebf5d767c62e3aa563488e0d5c21c92e58ad62",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/setup/run.mdx",
+      "git_blob_sha": "19b65f1196ab0f9ff96ef37a8ba2008779e4b5d7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/use/api.mdx",
+      "git_blob_sha": "470e3850364ab70d07b2f0b14c1440345a89d4a2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/use/cli.mdx",
+      "git_blob_sha": "1e562730ff1439f28a45bda43b2cfa448d37ccec",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/use/groups.mdx",
+      "git_blob_sha": "e6b812f4f065bc48444c9ea6c71dd8ca3cbc05d4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/use/media.mdx",
+      "git_blob_sha": "314356c9e78bea3da6595014ea8215526686abd3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/use/quality.mdx",
+      "git_blob_sha": "fd5774816560c2caf706e2f5ce102a2e4495d229",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/content/docs/use/settings.mdx",
+      "git_blob_sha": "697d4c5de76f0db36eebee32a67791e3bfa1fae4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/src/styles/custom.css",
+      "git_blob_sha": "2943f9ba12b0818e1408a1131dd3ca5a21a21ce3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/docs/tsconfig.json",
+      "git_blob_sha": "bcbf8b50906a72a17cb6578418123daad8ad375d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/package.json",
+      "git_blob_sha": "ceddafee080fb1f92ac5469cb21dae365216a7a5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/cli/CHANGELOG.md",
+      "git_blob_sha": "6da3e5136b9cac343310ecf2c684da78b6d703aa",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/cli/LICENSE",
+      "git_blob_sha": "afbfc0eb5cbc1245d47eaadd300ea9149b3b6126",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/cli/README.md",
+      "git_blob_sha": "ecdf183b44f157ba97cdda97256f320a268cb788",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/cli/THIRD_PARTY_NOTICES.txt",
+      "git_blob_sha": "70be771b28bd0f6f7acd673110087bfc5fe03f85",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/cli/build.js",
+      "git_blob_sha": "267028444d64be88b7f776e73f3f01d20bb5f11b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/cli/package.json",
+      "git_blob_sha": "86cdf2e61ac98c6ff58eba101dccf1ec884b5be3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/cli/scripts/native-check-package.mjs",
+      "git_blob_sha": "1ebb559652800f022c80cdf42a7d2033927f5309",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/cli/scripts/native-install.mjs",
+      "git_blob_sha": "640249bca3b86850e6c24cc1f5a768998c0d5a72",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/cli/scripts/native-launcher.mjs",
+      "git_blob_sha": "984c070031dd4c29b0299f4a96e2032c7743f914",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/cli/scripts/native-runtime.mjs",
+      "git_blob_sha": "19d780161bbde6944901657b80b1ccfccc3f703d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/cli/test/native-runtime.test.mjs",
+      "git_blob_sha": "7e3cd4b6abbb2ec447b427362997963c6a131d0d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/CHANGELOG.md",
+      "git_blob_sha": "286c82c6b712573436364b4ecd9945d33e096cc0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/README.md",
+      "git_blob_sha": "0c6ef5703877fefdceb5ba1d8de359de0bbc5be3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/index.html",
+      "git_blob_sha": "41718313c354ccd25af2f614d01eb0295a523123",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/package.json",
+      "git_blob_sha": "aa6a5f8bd4f5d81cdb3a0abc2a13b6d9c8d81db8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/scripts/connect.mjs",
+      "git_blob_sha": "111b47e06c186cc298885ed0962ea2d011c0e851",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/scripts/dev.mjs",
+      "git_blob_sha": "3aaac751155c545382919bc410bd47aa7cb85c3a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/account-notifications.tsx",
+      "git_blob_sha": "b23a4daff79e586440cdecd3d40e9aa49a32579e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/account-settings.tsx",
+      "git_blob_sha": "f7f56526cf24f3d1219fba961cc5436d2942f67b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/attachment-drafts.ts",
+      "git_blob_sha": "2692c59d7e0e0f7803d4df26a30245446c6e5c08",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/attachment-picker.tsx",
+      "git_blob_sha": "1e8425b1e587c30c80095e0c68e7bfb5e3b0f415",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/avatar-cache.ts",
+      "git_blob_sha": "a225e98a544dece73c1ce3c3d496712344ada870",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/avatars.tsx",
+      "git_blob_sha": "7618458cf865b5fea15cfe453848cb72c3bb820d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/browser-cache.ts",
+      "git_blob_sha": "9b4d2337e1c79c3493d4a1bdc938a717ac1acb8b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/client.css",
+      "git_blob_sha": "77dd8b383a48af3eb32883d99c0191ec3d4b3f1e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/composer-attachments.ts",
+      "git_blob_sha": "77930f638a0b78bb538d7ef4b15412d45ac119d1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/composer-help.tsx",
+      "git_blob_sha": "9b190ff64329cc0bbbc078847e19a90dc9862899",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/connection.ts",
+      "git_blob_sha": "f0dafb3f823115307008567e952027b7fef80294",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/conversation-navigation.tsx",
+      "git_blob_sha": "4f79f2d11a5ce99d06a57e987e3ba7b743e83b2a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/conversation-row.tsx",
+      "git_blob_sha": "977d41f71332df7689fec2e150b19f6f14a60666",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/conversation-scroll.tsx",
+      "git_blob_sha": "54e5b55bd16e4e020e8545b831b4712096222010",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/desktop-multipart.ts",
+      "git_blob_sha": "a8b426c3882d5d432003fbc40b4e5a3b33648a57",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/desktop-ui.tsx",
+      "git_blob_sha": "20d5fe536d2c70c1231e7bd716cbd98e8b750300",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/desktop-updates.tsx",
+      "git_blob_sha": "63af21590147b1c075b301aaaeb5db8d1f67fba5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/desktop.ts",
+      "git_blob_sha": "3d687aa09971bb97691b68e12be5b1a8d94d4f3d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/emoji-aliases.json",
+      "git_blob_sha": "af54ed7b84a149be292f12b327fc48a6756c8850",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/emoji-text.ts",
+      "git_blob_sha": "325d82905cb0fb3fab813d1e399fd69af1dac541",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/group-creation.ts",
+      "git_blob_sha": "5f1081659477e49f3a4044b01f2aee24fa299789",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/group-settings.tsx",
+      "git_blob_sha": "872edc532eb994121126c932112f2b949018eedd",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/history-cache.ts",
+      "git_blob_sha": "9772eeaf2ce9f6b06ed5b73852969e9762373513",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/history-paging.ts",
+      "git_blob_sha": "ca94a0292c3ddc41d6be1cf287d13d59be0f6841",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/history-search.ts",
+      "git_blob_sha": "322882d5056ba0cb4bb6e39c500cbeb6da1455ed",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/local-cache-settings.tsx",
+      "git_blob_sha": "9754a97fe692dcaacd7d1a8c202342efee7779be",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/location-message.css",
+      "git_blob_sha": "f88e00dada777528e5ae93ec827c44b593dbcabe",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/location-message.tsx",
+      "git_blob_sha": "2429fdd166445bc2a0cc08aabc4eb6409ecba0cb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/location-target.ts",
+      "git_blob_sha": "2f1df0496b72145726740092a1284ac3f2d93364",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/login-attempt.ts",
+      "git_blob_sha": "623bdd7d2a39a5e3051fa55bc0c9a99ba3c056ea",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/main.tsx",
+      "git_blob_sha": "0553ca5747c4edfebaf6898e881d3a4f18c131e3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/media-download-settings.tsx",
+      "git_blob_sha": "38ea590042d9ca2d163fc978d3d1cae6c89b8353",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/media-inbox.ts",
+      "git_blob_sha": "91298f3c400482cc0aad51ab09fcdc09a492b546",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/media-metadata.ts",
+      "git_blob_sha": "c05aa0326c66cb2235090febc539d898c0c8cbd8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/media-outbox.ts",
+      "git_blob_sha": "8698d1c3af56bf2183bbb5dcaabf9a24a2a31b92",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/media-preview-cache.ts",
+      "git_blob_sha": "dacccd338f7a4434457b992c0f082e4da07b2765",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/media-swipe.ts",
+      "git_blob_sha": "2113f3a6ff81c5780a34968a259a641a91022b9b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/media-variants.ts",
+      "git_blob_sha": "948e5a88f62d909e23b99894d33c0c7e5364e4e2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/media-viewer-context.ts",
+      "git_blob_sha": "1da9f177a700f734517af99e20353dde641e2b1c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/media.tsx",
+      "git_blob_sha": "fbe696a08406ca0333d28b017cf370354e962df4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/mention-editor-dom.ts",
+      "git_blob_sha": "449412b7be179fa96a02ab77ef23675f73822127",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/mention-editor.tsx",
+      "git_blob_sha": "f3806237e4a296c9d069db80e9a349e1ea213772",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/mentions.ts",
+      "git_blob_sha": "1ee3bc39d862d908848a78b2f30f0bf0b8b738d9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/message-actions.tsx",
+      "git_blob_sha": "8d786bfc61ae6771d2f66072495df23373ee7f91",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/message-presentation.ts",
+      "git_blob_sha": "10f38baefb0c8a20d1cae27ddfe4bfd97b27e2f6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/message-recall.ts",
+      "git_blob_sha": "dce78b65183918593a18627a164d128607386cba",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/new-chat.tsx",
+      "git_blob_sha": "db4fa20f3a02e0f9b6a92684d4117f1e28ff2cd8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/onboarding.css",
+      "git_blob_sha": "586ba5c4d592eac32160d847b791df60bacb5dd4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/photo-viewer.tsx",
+      "git_blob_sha": "67d5b3b99241e37773f24e8cee489028e0ac8487",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/preview-transport.ts",
+      "git_blob_sha": "458739183acc6e78cfbd62d8cb34c2f8a1dc34b0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/profile-removal.ts",
+      "git_blob_sha": "a0bb1a25673907c1613682a9151507c0949798fd",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/quote-preview.ts",
+      "git_blob_sha": "fc0c7ac1be78369b451175b3d6a3f3c023b946a6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/quoted-reply.tsx",
+      "git_blob_sha": "75acf1f88dfd1d24b29eaddc36c167a59842191e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/reply-context.ts",
+      "git_blob_sha": "d851b10f4ad52fc221b574fe71ab48348cc9c8b3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/reply.ts",
+      "git_blob_sha": "330a48ed9ccabdf34a13f7f06feb0e2418a99ee5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/session.ts",
+      "git_blob_sha": "77b1a8104cf9417e4b9f0e1f900ab760ea117780",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/shared-link-target.ts",
+      "git_blob_sha": "9eb549da2f9d1408c22b556f246b6e637fd8c27b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/shared-link.css",
+      "git_blob_sha": "4282d9aba2bea43840945daf8a8a2d88047db50b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/shared-link.tsx",
+      "git_blob_sha": "6a9640bfe7a892abdfa2e83c1342acc1ac48c891",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/style.css",
+      "git_blob_sha": "7d935902e73ba9c5e81073db43d6b42087b38b25",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/system-notice.css",
+      "git_blob_sha": "4e9865f49790723d0a4ccef8de71b96c9739f3c1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/system-notice.tsx",
+      "git_blob_sha": "c450276e8a37b9637a2db4ebf6b083824f2d0b97",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/thread-notifications.tsx",
+      "git_blob_sha": "46eb77b24cbaff2ae1fa128043ab3299894c8dc3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/thread-pinning.ts",
+      "git_blob_sha": "e99bc74b98bc3834de97e630f842a42f5e5e5660",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/thread-pinning.tsx",
+      "git_blob_sha": "75d69975c27eb954bd03d8062d747b10fbf4b3c7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/thread-preview.ts",
+      "git_blob_sha": "ed41a5bd7281b9846d41ee02a4841bb4eea69a44",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/ui.tsx",
+      "git_blob_sha": "db6248c45871ae19241dcd77995ff9dc83aaa30e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/src/visible.tsx",
+      "git_blob_sha": "07a63cfa6b750578cec0b092170908136e3a19d2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/attachment-drafts.test.mjs",
+      "git_blob_sha": "c708b79282ebd45cf25022fb501894cf4098591e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/avatar-cache.test.mjs",
+      "git_blob_sha": "bb06e058f66d742a2dfd27a8531fafce26c572e9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/browser-cache.test.mjs",
+      "git_blob_sha": "6908213bd8942cf7f4dc5e19a24fca0925c61b82",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/composer-attachments.test.mjs",
+      "git_blob_sha": "c60105acf8683c4c07b80ca662b89cc0ed977b94",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/connection-receipts.test.mjs",
+      "git_blob_sha": "d2ce9c05d98526ebc1af9df7c514f58e7f14e61e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/desktop-multipart.test.mjs",
+      "git_blob_sha": "efce1d6342792b30c334c10c712c61828fbb9e15",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/desktop-transport.test.mjs",
+      "git_blob_sha": "98616cbbc39ba558da7d2293c8606ab42f2f21c7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/emoji-text.test.mjs",
+      "git_blob_sha": "08627d7562d4b55e612418ad49b6c6552dff88fc",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/fixtures/emoji-text.json",
+      "git_blob_sha": "e27c93b3a1b0deff51807939a86dc56c87765446",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/group-creation.test.mjs",
+      "git_blob_sha": "f40900f0155a31fbdddac70233caa2a447c968b2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/history-cache.test.mjs",
+      "git_blob_sha": "0a3f7dded0ae35e2b1bf2ca87dc66dffd2583b33",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/history-paging.test.mjs",
+      "git_blob_sha": "ed84d7ed353606da922ded310cbc59341a0fa398",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/history-search.test.mjs",
+      "git_blob_sha": "ff5ad6695fcac910ead16d4f6fbae2737ee6ee7a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/location-target.test.mjs",
+      "git_blob_sha": "646638f22da0cb65f3249e3a3b786c73fc084c54",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/login-attempt.test.mjs",
+      "git_blob_sha": "04fc3ce7abfda48cd6a91af27ca26a27aacace60",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/media-inbox.test.mjs",
+      "git_blob_sha": "aee2037f8145c854d8320aea441891ed27d3a5b0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/media-metadata.test.mjs",
+      "git_blob_sha": "718415e88746efbe082ff9e3946779caac1383a8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/media-outbox.test.mjs",
+      "git_blob_sha": "92978bdfa885162903407a64c8a6ecfa398215be",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/media-preview-cache.test.mjs",
+      "git_blob_sha": "d0447f2e7fd9650a2d04e139c3924b4a5fa79e78",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/media-swipe.test.mjs",
+      "git_blob_sha": "cfa2da7f6cd774e59d204b61889aed8cf88e0083",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/media-variants.test.mjs",
+      "git_blob_sha": "32871f32e0c240a5bb77e6e4bcd9274ff5ae081f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/mentions.test.mjs",
+      "git_blob_sha": "644ddbb58e3f4e910eb51b31d8cc0e5aef02435f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/message-presentation.test.mjs",
+      "git_blob_sha": "1d43f68ce01f3c2ef32dfeb9a9b75a769009b9a8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/message-recall.test.mjs",
+      "git_blob_sha": "c4b5c31aa952417c2f4406af859d4d3304cecd7a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/preview-connect.test.mjs",
+      "git_blob_sha": "3b03a9d216fecf42442a639e399d2192dc7d00ae",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/preview-transport.test.mjs",
+      "git_blob_sha": "ee4c1c10e7bd8b876355fd16ddd3348d09f3504b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/profile-removal.test.mjs",
+      "git_blob_sha": "0992d7bebbc1df40bc8d179d424cdb94bf3b666e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/quote-preview.test.mjs",
+      "git_blob_sha": "34292e676d1c800cb5e64e2eb05323feabd0d40a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/reply.test.mjs",
+      "git_blob_sha": "22a278c2109370115e0322076395feb36b727556",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/session-cache.test.mjs",
+      "git_blob_sha": "c35262b7e82b103f12643122f77755c86868ef43",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/session-pinning.test.mjs",
+      "git_blob_sha": "250b6a4af4ed712a280ee4862078a7cbda3ecc81",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/session.test.mjs",
+      "git_blob_sha": "21b68b26434e3cf8b7add6bdfdee16a57b9d2172",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/shared-link.test.mjs",
+      "git_blob_sha": "34ade86557b7f04a4fc51c661b0e0caf48507179",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/thread-muting.test.mjs",
+      "git_blob_sha": "ab0fa534ca1bd6f4e9b91fef264e7fb50ba4bf8a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/thread-pinning.test.mjs",
+      "git_blob_sha": "49ebc25b0fce52e9fd6abeda366e65bc90c95ab0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/test/thread-preview.test.mjs",
+      "git_blob_sha": "04939c2b8ea97b8e7216a6ceee30e9e5a76cb41e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/client-ui/tsconfig.json",
+      "git_blob_sha": "2082bf2318835d7f5561f2032939f50857c98a9a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/CHANGELOG.md",
+      "git_blob_sha": "57c3f398d8d048be0ef3041b0bade40b67f32fda",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/README.md",
+      "git_blob_sha": "2d44b5484e4c5f7c26dc28a81b187eeac361cf26",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/media-assets.json",
+      "git_blob_sha": "7d3f9838c0f98c7de678df3e6815419104bd7bac",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/package.json",
+      "git_blob_sha": "55f82cd0a102286d837cae56275ed8e05cbfbf30",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/scripts/bundle-type.mjs",
+      "git_blob_sha": "0cb95522305f57194f3790ea1252c2db06f4acb2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/scripts/check.mjs",
+      "git_blob_sha": "1bc9e057a721c208c282d125ac65e330c7bc65f4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/scripts/macos-cleanup.sh",
+      "git_blob_sha": "a7bca6e0fba90222838afe5a43ad812193211abe",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/scripts/macos-keychain.sh",
+      "git_blob_sha": "d4aa478c71487e0419ee5f994257c4b045e6838a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/scripts/macos-notarize.sh",
+      "git_blob_sha": "e14e02f2bd371f07e096960bff3f5154ec3a7dd8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/scripts/manifest.mjs",
+      "git_blob_sha": "943c9a3dca6991d3e737944e580809a16f2cc097",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/scripts/merge-manifests.mjs",
+      "git_blob_sha": "08e22aceaecf0799b9caa3f735340443afe72d3c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/scripts/prepare-sidecars.mjs",
+      "git_blob_sha": "d9a7597ceb53beb316ca1247c5a09324cd7d12c3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/scripts/sign-updates.mjs",
+      "git_blob_sha": "bed671353b514d62010b5bbc919d4b70e63d0ad8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/scripts/updater.mjs",
+      "git_blob_sha": "db430149c9f6714aee5a0867fa3df567c185cc6f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/Cargo.lock",
+      "git_blob_sha": "4921c722a6e7da33823b09397d0028f30e9490f6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/Cargo.toml",
+      "git_blob_sha": "3fef373f3ccf8120062b21b85261e9b658341fc7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/Entitlements.plist",
+      "git_blob_sha": "f72242f684ab917695e8b5445a96954fb34584b9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/Info.plist",
+      "git_blob_sha": "af986488c9e909a32ee6a40a974e49794156aad7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/build.rs",
+      "git_blob_sha": "26c98c37541fad56948c4ff65373eebbe4fc24f9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/capabilities/main.json",
+      "git_blob_sha": "0c2687fcf19c7f206a63029960b3eb4a9fabc5b8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/icons/icon.icns",
+      "git_blob_sha": "080ce8bf359fade9558bb6f670ddd1b31101881a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/icons/icon.ico",
+      "git_blob_sha": "7c11bcdd2bffd192b076cd013afb5211cfd0ba20",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/icons/icon.png",
+      "git_blob_sha": "60618607d1a8c621f2443abbaff1c56679444ce3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/icons/source.svg",
+      "git_blob_sha": "69ac96e1bd7b63576f59f58d432fdf5c07991bd4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/sounds/AgentWechatSoftPair.wav",
+      "git_blob_sha": "9ae6a48887ffb5016a3bb69f097e758e38c84ddb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/sounds/README.md",
+      "git_blob_sha": "44c45856280676b96ad2bc84e8cf5f912a8b2a58",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/src/config.rs",
+      "git_blob_sha": "351b3ce6e8c9a0f3e8fdfec8a0d33a135706d1d0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/src/credentials.rs",
+      "git_blob_sha": "6cf552f9505dae145f865cc3e1807b6aa901cc5c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/src/emoji.rs",
+      "git_blob_sha": "b0754cf3e680d4ce5cdf8869a2456ec1c3658746",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/src/files.rs",
+      "git_blob_sha": "b77c10df1fd85aa314a509af6869ed65dd4e3ca1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/src/hub.rs",
+      "git_blob_sha": "3d513f3fe0671ea4765b2091bb1803a406eb326a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/src/main.rs",
+      "git_blob_sha": "b2e9746d6259bd8154040d2b38e4eee1ed0abc5d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/src/notification_sound.rs",
+      "git_blob_sha": "51c261122b79070986c4661722e7a733d5e53f75",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/src/notifications.rs",
+      "git_blob_sha": "0583d52247aa627f1dbd9131db75a584f5a59e4b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/src/transport.rs",
+      "git_blob_sha": "5f46960c0f19052223e887c3609bf91772e03773",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/src/updates.rs",
+      "git_blob_sha": "f83c89ec507126b4397007624313d3321c02d0dc",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/tauri.conf.json",
+      "git_blob_sha": "fca366b73bd0364264e417d3253a53178f05c504",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/src-tauri/tauri.linux.conf.json",
+      "git_blob_sha": "d0436bcd45920c66939c2f4bae26482a128c7c70",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/attachments.mjs",
+      "git_blob_sha": "ad622c1f41d9efb5d05bf6d77ca2d63db304ac87",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/browser-navigation.mjs",
+      "git_blob_sha": "be544afec6623fdfc6f7dea88608f65a6edf33df",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/composer-attachments.test.mjs",
+      "git_blob_sha": "a0d88eaebcf2849e5ec7bdb5db2fddbc1e2d380e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/composer.mjs",
+      "git_blob_sha": "41cd1bca02e510f293413ddb6a3892509363a6f1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/interface.mjs",
+      "git_blob_sha": "5af689a1332e0373acc662b83ba5af4ac315f29c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/mentions.mjs",
+      "git_blob_sha": "6a3a894308f6fd14dc993165f4f8650bdf8cdb11",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/notarization.test.mjs",
+      "git_blob_sha": "c7670bfb4c0360f4895d2ee1a75ddb4eb59b0833",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/notification-service.py",
+      "git_blob_sha": "c6a362ca12979ad7dc2680554e4a40e50c10fdcf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/notification-sound.test.mjs",
+      "git_blob_sha": "d17dfc1e0045df2c09c29937674b96fac57da4cc",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/notifications.mjs",
+      "git_blob_sha": "dc81c0a8b1e5aaf2ad6caf18dd269017eb85851d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/pinning.mjs",
+      "git_blob_sha": "def943268c3369ff9fda1aa1c922f33d52bed4b1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/release.test.mjs",
+      "git_blob_sha": "26b673439215d3200dc54a2ef9fda6187810e5a8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/validate-deb.mjs",
+      "git_blob_sha": "cbc8f4fc22b69df1691e8f2fe1b3a76d3aa9c700",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/webdriver-navigation.mjs",
+      "git_blob_sha": "cbb3d33e573bc0d8e60606d7e0a2db97b0bc4b70",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/webdriver-navigation.test.mjs",
+      "git_blob_sha": "688c631e2d7f547b91e1a83a96f9fcee49c32a3d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/webdriver.mjs",
+      "git_blob_sha": "eacc2476a9ebbf211cd5f9a8fff651cc88187158",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/test/window-control.py",
+      "git_blob_sha": "a55f409c54eff1122210a7d52eae706b9e9db8db",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/desktop/turbo.json",
+      "git_blob_sha": "8064c3c0c0850358a08baf5f903250543cef2866",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/.gitignore",
+      "git_blob_sha": "b83d22266ac8aa2f8df2edef68082c789727841d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/CLI.md",
+      "git_blob_sha": "51fee2b54c816ab410e3c8f873a4b06d85af9c29",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/Cargo.lock",
+      "git_blob_sha": "7f092226bf569ecffff76b073b49d18edc4e3760",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/Cargo.toml",
+      "git_blob_sha": "8122ceac2523d25ed74a2762e58eb901bf16b672",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/FEATURES.md",
+      "git_blob_sha": "aa0ee9f01496ed5cf55cf7bc6d78fdd7976b1e47",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/README.md",
+      "git_blob_sha": "a97fff71eae3ba59f87c6912d5e6ac7b94320e98",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-api/Cargo.toml",
+      "git_blob_sha": "52b5746d2780bc8c812d3c79ea8de8f26e2337a8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-api/build.rs",
+      "git_blob_sha": "bacf1ece9c7a5e6ae809d5191935698eb7ad0501",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-api/examples/generate_contracts.rs",
+      "git_blob_sha": "d0e41ff01b9be61f688e2d83593bd559daabc6a3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-api/src/actions.rs",
+      "git_blob_sha": "98e3d97595a3c035c3ab60a3d21ebbe2c19f30ad",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-api/src/calls.rs",
+      "git_blob_sha": "d43ce6da5fd3d2ee4b2d21b4bfc6475534729f51",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-api/src/calls/socket_tests.rs",
+      "git_blob_sha": "446514c044b6848b95ccfde3b7f96e0fb1660649",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-api/src/contracts.rs",
+      "git_blob_sha": "bc757cb38b0c135f4807048346000eab4c2f9a3e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-api/src/groups.rs",
+      "git_blob_sha": "4b7050af741c020ceb6692c91e1d7ad3cae3bddf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-api/src/lib.rs",
+      "git_blob_sha": "7de329ad165129515beb91d8465d0b65665f73e7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-api/src/media.rs",
+      "git_blob_sha": "67d7045cb03843aabbc6a880e67887b8ae45f667",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/Cargo.toml",
+      "git_blob_sha": "cb3d6a7fa19b358d34808cff46c80f54196af370",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/LICENSE.sys-voice",
+      "git_blob_sha": "6cb3e322e46adb6c12c215c206ac9028cb17e7c0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/README.md",
+      "git_blob_sha": "db7d753477c9bcd7c0ffdc2cfa9c598b3252d844",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/THIRD-PARTY.md",
+      "git_blob_sha": "2b364a26e481593695ee7034424ca346572a2eb3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/examples/isolated_loopback.rs",
+      "git_blob_sha": "d7b6285c118b0ba08a52cd0e37e44e5d8584077a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/src/backends/linux.rs",
+      "git_blob_sha": "f8342198d4d16754bfc48f5e13c9a49c5fc0d027",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/src/backends/macos.rs",
+      "git_blob_sha": "cd514982a80218694b376e362cf3a926b6a9758b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/src/backends/mod.rs",
+      "git_blob_sha": "9ca07c62a74bcc73473754b29e24f0b3b00d720c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/src/backends/windows.rs",
+      "git_blob_sha": "e8f8498fb9d8b6e9178e81de09f3a0a4d8d26a0a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/src/lib.rs",
+      "git_blob_sha": "3c59042d2ea9bb7bba1b5760e5cd3f423eb9eaf8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/src/playback.rs",
+      "git_blob_sha": "9558b32d8aca44c0f96889c901fba15fa5ff3107",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/src/resampler.rs",
+      "git_blob_sha": "c82f08cdce22bdc040f6d8527c9f8fa79645aac8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/tests/pulse-loopback.sh",
+      "git_blob_sha": "f0efcf676d4e8fea604eedfdeb9b5b422944a3ce",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/tests/pulse/Dockerfile",
+      "git_blob_sha": "a568c974401c2340d71801fee5fc2d712090573f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-audio/tests/pulse/run.sh",
+      "git_blob_sha": "f28d58629614f2c5cf519ae4cb7487c339ee6d1b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-calls/Cargo.toml",
+      "git_blob_sha": "d14e8e96cc0bede06c36dc2ea111c1b254aa3537",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-calls/LICENSE-OPUS",
+      "git_blob_sha": "75711467a3eb220f35f72afdb55a4734ee5cdb47",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-calls/LICENSE-OPUSIC",
+      "git_blob_sha": "f4574340a33afc541a8793e1994289f204da7237",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-calls/NOTICE.md",
+      "git_blob_sha": "10b0ae03c1ad82513d8e7346bb726ea2a5b1a202",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-calls/README.md",
+      "git_blob_sha": "9eb8591b285dcd82fa1eefda738d6396715e6c63",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-calls/examples/tone_roundtrip.rs",
+      "git_blob_sha": "a23dd5644cedeec86e24e4b8a2957a075ad1d303",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-calls/src/audio.rs",
+      "git_blob_sha": "2d0ebf920952f8be15b8c1605d2cac58870560eb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-calls/src/frame.rs",
+      "git_blob_sha": "ee762a771fd697752b6ecf9d24446cafcab708df",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-calls/src/lib.rs",
+      "git_blob_sha": "d7d9fd29badacac064727caec5f6804baaabe67e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-calls/src/opus.rs",
+      "git_blob_sha": "504313d60e08139379757681ada1899bbdddd1ae",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-calls/src/playout.rs",
+      "git_blob_sha": "344677dbb971bef9da55586cae51726a5b4aa774",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-calls/src/tone.rs",
+      "git_blob_sha": "70c4804e0816d45971e199556ae57214ba022e00",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-config/Cargo.toml",
+      "git_blob_sha": "78f4094469ec94b6ad060678b675c497c460ec93",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-config/src/lib.rs",
+      "git_blob_sha": "355150c55ebcbabe9f08f3fae5fec48dc6bca76a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/Cargo.toml",
+      "git_blob_sha": "ae0ca15540a589781fb94be5bceed575177000a5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/account_network.rs",
+      "git_blob_sha": "70dbd44f5d27a0c731c5a0289366cfb05652975b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/actions.rs",
+      "git_blob_sha": "9e6262125f23ba9e3c961467fc2feb80429e8f31",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/bootstrap.rs",
+      "git_blob_sha": "7ff35ef96be13ec2326ca3b34603347269ad98ce",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/business_contacts.rs",
+      "git_blob_sha": "e39637af341f9e5497bb28c919f3a85d6d918f8c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/business_sync_tests.rs",
+      "git_blob_sha": "3919d00e8888e9dda4749156556ed34e08880570",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/call_types.rs",
+      "git_blob_sha": "f24b8ca54cc2f20f223e3e9480d269fe517e7064",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/authority.rs",
+      "git_blob_sha": "74c7693f1130dbbecdfc11b82ca796cc3e6eb0a1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/incoming.rs",
+      "git_blob_sha": "154f7f69dcbcaee66f648d9df87d7bb71b979a80",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/mod.rs",
+      "git_blob_sha": "bdc23e86578ea509de5d4ddecef03795859f86fb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/native.rs",
+      "git_blob_sha": "91af22d819fd7e2f0799e79a65f79f4f11560a54",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/native/incoming.rs",
+      "git_blob_sha": "c3b99ddef07c82dceff4a8e6e7c12782ea0898d8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/native/incoming/tests.rs",
+      "git_blob_sha": "a138137bcc82121f0f3dde6cabb432e906cd2392",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/native/incoming/tests/media_loopback.rs",
+      "git_blob_sha": "ca5d233c6b912d451e7addcd534ba80e8f188421",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/native/rtp_order.rs",
+      "git_blob_sha": "eda16794b9cccb4836530e2b3dbaf00f317d7de0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/native/transport_state.rs",
+      "git_blob_sha": "c05a76560189d10e7a87cf05d122441f432dad42",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/native/transport_tests.rs",
+      "git_blob_sha": "fcbdb71fc893afc40da145333d71fd647bf9b0f6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/notifications.rs",
+      "git_blob_sha": "7504c836ca35406055693991a93022ab1fd8fef0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/notifications/tests.rs",
+      "git_blob_sha": "c38cb86a52f98ed02e428a218e46eb765fe27102",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/ownership.rs",
+      "git_blob_sha": "2f2ab8619c52088fa5539ad1681a8e444ccbd56e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/ownership/tests.rs",
+      "git_blob_sha": "7870b4ac9bbca7a79201d536e6d849797f287553",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/service.rs",
+      "git_blob_sha": "4263bceec28b81a7933e0660c9abd2b4e31baf80",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/service/ingress.rs",
+      "git_blob_sha": "7effac05ee989d60fdaa22d6433b2f1e2f40cdfa",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/calls/service/tests.rs",
+      "git_blob_sha": "e7260b611f4dd892ac00d89557355c2605e531b5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/checkpoint.rs",
+      "git_blob_sha": "450c5309596044ad1618baa677f478ed50a8f37a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/contact_sync.rs",
+      "git_blob_sha": "73a916620042faeeff6e8236f3e0001e0821da72",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/format.rs",
+      "git_blob_sha": "561bb19c04e984904d342d1f6e4acf60a553526e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/forwarded.rs",
+      "git_blob_sha": "b6741f7440446ab99814e31465288ca88662200a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/forwarded_tests.rs",
+      "git_blob_sha": "d1cb286db57264ecd5d034fcad19080143a04b90",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/groups.rs",
+      "git_blob_sha": "793550a04a9864e3f6ce59553bac3727efa30d06",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/identity.rs",
+      "git_blob_sha": "6d0f1bdc3a7429f77b692255bb78e3c244cb4caf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/incoming_groups.rs",
+      "git_blob_sha": "645d420a68645ee5be3da9ccf8aec80781809f12",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/incoming_recall_tests.rs",
+      "git_blob_sha": "0bc19ac58cc07610b2da282c4cfa1ee119b77b68",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/lib.rs",
+      "git_blob_sha": "21c7cdaee50c5ecc7abba69c25e0797183916b14",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/links.rs",
+      "git_blob_sha": "585415ad03b9992b680cee777943136e3f55ac14",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/locations.rs",
+      "git_blob_sha": "29824015e50584da1a3e4cb7968b6f228c786521",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/logout.rs",
+      "git_blob_sha": "2a8421b68ece75bca53fe898282092d13acbef08",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/media.rs",
+      "git_blob_sha": "14f64883f48d9b5cfe7e8fe0e048dbd94744503e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/media_auto.rs",
+      "git_blob_sha": "307a14f53631d2fe7a32b10b4c6f6c191c6ef56c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/media_concurrency_tests.rs",
+      "git_blob_sha": "0b1e7c04b829e21fa300b21a64e4edc35bd43688",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/media_identity.rs",
+      "git_blob_sha": "8f6f4554df12ed477f1377b3a3038f4f4e9d3e7f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/media_types.rs",
+      "git_blob_sha": "2d5c567af5448c9e71e8c571c354268e460b9617",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/media_video.rs",
+      "git_blob_sha": "ff32e82c9bcc5e63fe7478ea00b34867901ff441",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/mention_send.rs",
+      "git_blob_sha": "c6cd46cf11e6a58a94943ac8fb9613547af1a36f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/metadata.rs",
+      "git_blob_sha": "4ed0db604dd3a001fdf9607b60ca09fe39209383",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/native_compat_tests.rs",
+      "git_blob_sha": "361db38d3a7e55a6855c8e80885a11d4e86b9bcd",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/official_profile.rs",
+      "git_blob_sha": "3e2ca449fd11c6df2507db292a9ab545306ad37e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/outgoing_recall.rs",
+      "git_blob_sha": "6d2dfdb5ab9c50db86413396212423df9bfbda9b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/pagination.rs",
+      "git_blob_sha": "c28c507734247e87d5de5e0960d3a6cc3aba4572",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/peer_classification.rs",
+      "git_blob_sha": "137a867d7cebfef511111648a3ea2a5347e73716",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/peer_classification_tests.rs",
+      "git_blob_sha": "3723f3fb04fe8ddd45b2627064ddae93a63eddf2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/profile.rs",
+      "git_blob_sha": "73d22df4d6aa6721fe051d4a0436191bb3b81674",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/profile_network.rs",
+      "git_blob_sha": "f0d6b4e56ccc2aba43197885316aa730ff5de4ab",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/push.rs",
+      "git_blob_sha": "16610f4058399a34f887a56975b00852fc319b32",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/quote_send.rs",
+      "git_blob_sha": "99ca37281bd40f7f0d602091e583be346c3cac28",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/quotes.rs",
+      "git_blob_sha": "e6391828bc4677692d09b455b56f3d3a6954f0a6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/read_control.rs",
+      "git_blob_sha": "99ceb9adb50b3d24a92a18994d6ff788a856217b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/read_sync.rs",
+      "git_blob_sha": "83cf372bec9954242524dfb758cbbb4a12fb8f91",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/read_view.rs",
+      "git_blob_sha": "ba78585a10cc271c98a279a96542642c0ef26f73",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/recall_evidence.rs",
+      "git_blob_sha": "138e386b884b26a86c8716713a7351db2cefa0df",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/recall_send_author.rs",
+      "git_blob_sha": "1d504356fceaa62bbcb900ec921f89ba8c58fc83",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/recall_send_author_media.rs",
+      "git_blob_sha": "be7c8e2fa565c9edc62b6efe0ffc57c8c725d990",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/recalls.rs",
+      "git_blob_sha": "c180055a5777cd850c8cf69f052ced78155709a0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/runtime.rs",
+      "git_blob_sha": "0547f8d60651418fd5dd7e743ff1d2f114f058b2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/saved_login.rs",
+      "git_blob_sha": "9e089eda32655767aa6397970a7875cf3c2eec04",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/session_auth.rs",
+      "git_blob_sha": "1df404adae8a62555f472cee190d605b1deb891d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/status_control.rs",
+      "git_blob_sha": "43fb49e80b1db4bbcf4c151f5b02f3eaef17a613",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/stickers.rs",
+      "git_blob_sha": "4963243fefa73937ab4c472161b3b59d8d2b8dbb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/sync_projection.rs",
+      "git_blob_sha": "a502b9b3f59c8295249ca64320f3b903c23d18cd",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/system_control.rs",
+      "git_blob_sha": "75d142ea5ce152d2cfa339b114cb77dbe6d13a93",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/thread_summaries.rs",
+      "git_blob_sha": "afc8d74006364019b2898115909125aee6d7c342",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/upstream.rs",
+      "git_blob_sha": "104dda0402bea929eaaa0c08e897c8a2da7608c7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/upstream_media.rs",
+      "git_blob_sha": "f8a182fe9829451b18057d4c5c20942ca02b8256",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/tests/fixtures/merged-forward-nested.xml",
+      "git_blob_sha": "6db3260491df8742bfd0f1fae0377f7ad58a7dbf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/tests/fixtures/merged-forward.xml",
+      "git_blob_sha": "bb360a5f2b99886026194512509763b563e71ecf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/tests/fixtures/native-compat/messages.json",
+      "git_blob_sha": "9c78fdfa28ef779f79112a42913f23048bef5bc9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/tests/fixtures/send-images/50mp-baseline.jpg.zst",
+      "git_blob_sha": "9d73c7f22e23a6b9f3a85d7715e159ffde5698fc",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/tests/fixtures/send-images/50mp-gray.jpg.zst",
+      "git_blob_sha": "24527e6f1e296ddc55b0417ca8ec09fc3121efe9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/tests/fixtures/send-images/50mp-progressive.jpg.zst",
+      "git_blob_sha": "737d2963e5539e38ae54bfd1ec8ea6f662e25ed9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/tests/fixtures/send-images/README.md",
+      "git_blob_sha": "021496a4b160c5919503d3f265d68816f6588608",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/tests/fixtures/send-videos/README.md",
+      "git_blob_sha": "3dd5c1349592924bc8d02f3b189fb369f1d0d4d1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/tests/fixtures/send-videos/legacy-mjpeg.mov",
+      "git_blob_sha": "fc9052143711ee5534c7c683c96a2524b5081383",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/tests/fixtures/shared-link.xml",
+      "git_blob_sha": "332143fe2863c4bf183b54c2eaf3948079eee6b0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/tests/fixtures/shared-sticker.xml",
+      "git_blob_sha": "69d65d670f92a842ce502ebd7781e5554f60f5a5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-core/tests/fixtures/synthetic-forwarded-quote.json",
+      "git_blob_sha": "af60bf41cb28d5d7003a832dd9630926751a5918",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/Cargo.toml",
+      "git_blob_sha": "13dd9bd812869e61f5d261c4203a46d406aa7525",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/LICENSE",
+      "git_blob_sha": "afbfc0eb5cbc1245d47eaadd300ea9149b3b6126",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/LICENSE-CHATLOG",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/NOTICE.md",
+      "git_blob_sha": "50478ecae0c1533689b1fbaf8d9ff0f5b91aeb47",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/README.md",
+      "git_blob_sha": "780d6015e6f1f9dc9329b72da9fb9f8b8f86ba33",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/src/image.rs",
+      "git_blob_sha": "95b47a5b7089e6e2b3b690dc2e07d041d98aac5d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/src/lib.rs",
+      "git_blob_sha": "59ce58c0a7e857272e0161fd84d7b98b4d16d86b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/src/video.rs",
+      "git_blob_sha": "d4e9ad8cd51a1bc245ea71eda72a726aaff4b6f7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/src/wxgf.rs",
+      "git_blob_sha": "bce9ba1e8b25df4ac23710563f39a2a3a33a99f6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/tests/fixtures/README.md",
+      "git_blob_sha": "07b57483b402aa4ce0eaee89fa8dcbd33a260c14",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/tests/fixtures/progressive.jpg",
+      "git_blob_sha": "65a241ed1282b8d5e9c62b26bc6825f2aa3b2529",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/tests/fixtures/static.wxgf",
+      "git_blob_sha": "b7b277d31df302903b609ce13aa573860b7d396c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-media/tests/fixtures/two-frame.webp",
+      "git_blob_sha": "657b5340399af0aadd6180be19babff42bcf330b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-platform/Cargo.toml",
+      "git_blob_sha": "6a4511784dde2f3d84091f12d01032fea748f7ab",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-platform/LICENSE",
+      "git_blob_sha": "afbfc0eb5cbc1245d47eaadd300ea9149b3b6126",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-platform/README.md",
+      "git_blob_sha": "62d155005946f52de3f3bca455afa46a421e6e41",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-platform/src/lib.rs",
+      "git_blob_sha": "eea79f6d0b9ee5af2cad9067a68b3e22218c18bf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-platform/src/network.rs",
+      "git_blob_sha": "c057355f842553e185573953d9b5b52f2e153458",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-platform/src/windows.rs",
+      "git_blob_sha": "5617d9b903c59d6ee8aa51f78aaa670d1a6bf840",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/Cargo.toml",
+      "git_blob_sha": "f0aaa1faedf8a14e54a6d05c84fa6849577989a0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/LICENSE",
+      "git_blob_sha": "afbfc0eb5cbc1245d47eaadd300ea9149b3b6126",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/README.md",
+      "git_blob_sha": "b2fe6975cac3db6d03128103675b4d19e650465a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/examples/apply_text_fixture.rs",
+      "git_blob_sha": "d71bfb641eb5019858773d1e36add7ae69217175",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/examples/audit_counts.rs",
+      "git_blob_sha": "c317c957cf0be8630a2f3da4b304aac3bd118caf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/examples/contacts.rs",
+      "git_blob_sha": "07f5e77bfdc3696abf9ee010b26b8a37c6c69db6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/business_projection.rs",
+      "git_blob_sha": "d815dbb7740c3ad63d6178204afe4c4640b492dd",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/business_projection/tests.rs",
+      "git_blob_sha": "eb80a8f483626a8b3d752706f25d4579dad10e42",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/dat.rs",
+      "git_blob_sha": "553fa8241c35e714d588e67fbbf81e91e4003def",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/images.rs",
+      "git_blob_sha": "98bb2ff65c2b32a0af2e184e12e31977c1de759e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/initialize.rs",
+      "git_blob_sha": "56a58067b97e5e9b33b548a4c7733d2d730929a6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/keys.rs",
+      "git_blob_sha": "706b0b340196e9c08d470da4e2a642aabd58bbea",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/layout/conversation.sql",
+      "git_blob_sha": "9e67a764d7d2514a78b2cf582c890131409cd4a6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/lib.rs",
+      "git_blob_sha": "0fad845884575bf5f5a32c7ddf19292da81ca982",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/login_storage.rs",
+      "git_blob_sha": "da5c4af8bfae621699a7b17ebe302458b109a4f0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/media.rs",
+      "git_blob_sha": "197f2acbc2e4a6264e2cc89fee5dc1ea3e5d28ac",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/mmkv.rs",
+      "git_blob_sha": "775169f006d3c3929c2e2bf898801b0d0d8012a1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/model.rs",
+      "git_blob_sha": "dfe4d880392909b7ae33e7bfe8b09d34ad0ef449",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/owned_reader.rs",
+      "git_blob_sha": "6dda27b37538749f0a69c02d00000edf2df36824",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/peer_metadata.rs",
+      "git_blob_sha": "9b4048b1b98c5abab24cd4f7db7343e98ee6b58e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/peer_metadata/tests.rs",
+      "git_blob_sha": "a1d8eb5afffe87ff18d6c19d21f3ffbe402876b3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/projection.rs",
+      "git_blob_sha": "976ed466fb2f3142d5f22c7efbe23b066e37ab67",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/reader.rs",
+      "git_blob_sha": "074f1a412d219794981581dd8a42b0c6cb042d03",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/recall_search.rs",
+      "git_blob_sha": "b721c6c67e6d11fb2d369550fb4d409e7e72d88e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/recall_search/tests.rs",
+      "git_blob_sha": "7de9e9f7ed11f0d923ca8316f35e6d11b2d7c199",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/recall_search/tokenizer.rs",
+      "git_blob_sha": "065316993da5ebe1a1ca22f9885a338cbbe24330",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/recalls.rs",
+      "git_blob_sha": "3a09abf980668132be4d7d9dc79cc54bbc0f6945",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/schema.rs",
+      "git_blob_sha": "924d9b02bf7406e7850df0d6dc7c6aa4c115449c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/snapshot.rs",
+      "git_blob_sha": "a96596d1ace2568e539143531ed5fcd5720e5088",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/thread_previews.rs",
+      "git_blob_sha": "7519077da0305a6b3cc1eb6fd818fc3b31a40e39",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/thread_read.rs",
+      "git_blob_sha": "c9064aa396fe7412841cf6636cb6442a2e1d2379",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/src/writer.rs",
+      "git_blob_sha": "afc22f02c6b8010739b3c3ae69277db398af2115",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/tests/fixtures/static.wxgf",
+      "git_blob_sha": "b7b277d31df302903b609ce13aa573860b7d396c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/tests/fixtures/two-frame.webp",
+      "git_blob_sha": "657b5340399af0aadd6180be19babff42bcf330b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/tests/initialize.rs",
+      "git_blob_sha": "4a1801d6ed765d15e5ce47bb6a5bf3bfc4834250",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/tests/login_storage.rs",
+      "git_blob_sha": "aed7d9ec04d647c470263741e13e6de7fcc2a9d2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/tests/media_write.rs",
+      "git_blob_sha": "2573355eb12f8108d62185bc34001d57c8ac791e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/tests/mmkv_write.rs",
+      "git_blob_sha": "3d7e6e7cfe40074ca5f050726e52eb689c6cd586",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/tests/profile.rs",
+      "git_blob_sha": "45db43f4fdd998a0978ef01ba96e5ef4e21e28ee",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-profile/tests/projection.rs",
+      "git_blob_sha": "f0da37c80920ef5dd4ce2edf6eda8f862e3aef9b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/Cargo.toml",
+      "git_blob_sha": "4d648372e6d6e37feba45ee49ee10635409a3880",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/LICENSE",
+      "git_blob_sha": "7c0c968b0c9b36e867b820a4069743cdd9bb70a7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/NOTICE",
+      "git_blob_sha": "e169d1e40e2507efb619f2509d7fa3714edd856e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/README.md",
+      "git_blob_sha": "ace037d1e1a0f466e6129e82e63b6b50879a3d3c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/build.rs",
+      "git_blob_sha": "0927cff0ce7137adbf46441b87c98d0ddb439f9b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/examples/protobuf.rs",
+      "git_blob_sha": "c118b9376175cece264f7ce57ec1ae51903442f5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/examples/qr_login.rs",
+      "git_blob_sha": "72ebe3a4792a7cccf9250c409a3f8230ce5b49c3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/examples/send_text.rs",
+      "git_blob_sha": "0ce5771f7a73e08beb4cd7cc90ce9031d2d94968",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/examples/support/mod.rs",
+      "git_blob_sha": "eb60ff83331ffeb0b0a35bc5347a8323066f4d18",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/examples/sync_once.rs",
+      "git_blob_sha": "68c858e970a0537f4bf2895881f51af6ddc6672a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/fixtures/LICENSE-CITIZENLAB",
+      "git_blob_sha": "a6a373eb470b2438b803a117761b5a4252e43706",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/fixtures/business-public-keys.json",
+      "git_blob_sha": "a8521a5e05727e22828b6008ccb1b0b0ef353287",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/fixtures/lan-login.json",
+      "git_blob_sha": "60e641d48a6a93203dc62544aec5a06e2d5e5d71",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/fixtures/lan-login.md",
+      "git_blob_sha": "a824015905cab9c69e04a99c8963580356f681b6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/fixtures/mmtls-public-keys.json",
+      "git_blob_sha": "a33d8b8c693ed9d2363b14c1ae0520911a63ad12",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/fixtures/synthetic-media-wire.json",
+      "git_blob_sha": "83e6fcaca76ec54b6a9a3a78ef3567ade1e4832c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/fixtures/synthetic-quote-wire.json",
+      "git_blob_sha": "5da08b93aa9b8eae67109ba20456f696ae0ef3c7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/fixtures/synthetic-quoted-mentions-wire.json",
+      "git_blob_sha": "97817df9385751d0d9f4b049e3e237d9652e3941",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/avatar.rs",
+      "git_blob_sha": "90818c5258b251c65ecee4d05649ba9fcb782aa1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/business.rs",
+      "git_blob_sha": "067223f320a3012b347f4efe42e05f84bdb89582",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/app_frame.rs",
+      "git_blob_sha": "1b69bd5b5219d51748abe0f0dec9a77b3085d73e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/app_session.rs",
+      "git_blob_sha": "1927af4f41cf32411ab319418a4e0c8d3f422d3e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/audio_packet.rs",
+      "git_blob_sha": "aadb1d2fc6bb7a090cd700baa016459b6ca5b1e0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/client.rs",
+      "git_blob_sha": "4740d5a3657b5d4a199ec951d7fa00fe304f2294",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/client/incoming.rs",
+      "git_blob_sha": "b67508790c5facdb188b4211949316dece31b554",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/client/termination.rs",
+      "git_blob_sha": "cb1efb846ec27f6e9641211d87dff0e24e8f370b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/host_policy.rs",
+      "git_blob_sha": "6df7a6305d7b1723d4a70adb68a2fd78728afa3a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/host_transport.rs",
+      "git_blob_sha": "bfd134c86d4dc6435f1c7c7da8f3545efa4ef630",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/incoming.rs",
+      "git_blob_sha": "343ef95529317310bb68f1ff6774dd7ccd2e2d89",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/mod.rs",
+      "git_blob_sha": "3ea01f063ffd35d6314da3284f7daa751da48940",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/personal.rs",
+      "git_blob_sha": "d463c33654843ee1947149f40aed5ebc537670fb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/relay.rs",
+      "git_blob_sha": "dd4d3a38f662dd97cd190b93a492762c3d4b5891",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/signaling.rs",
+      "git_blob_sha": "69ac1b4a2e0ca123be6dc9a2e1e1532190ef9d3d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/calls/voice_offer.rs",
+      "git_blob_sha": "33690af83c0583b3159f46bc2b890380056dba55",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/client.rs",
+      "git_blob_sha": "d5e8e2d2fe3e50eee9ee1773acdb02f7aede4937",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/contact_sync.rs",
+      "git_blob_sha": "e5e9120c8d3d2c3bf80c35a76d22a5d958531975",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/crypto.rs",
+      "git_blob_sha": "7eb855986204432aa8b5b52ae40816461fd4f67a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/file_upload.rs",
+      "git_blob_sha": "331b2b5a2b08bd6ea6fa10b4537c46d0413a55a3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/group_detail.rs",
+      "git_blob_sha": "70712c1260aea1bf1b174f4f9a2acb56afe00ebe",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/group_inventory.rs",
+      "git_blob_sha": "1acbb5c11b00783e716fc8bf05680bae516b2b80",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/group_mutation.rs",
+      "git_blob_sha": "ed0aaf87b517ed747f50f6b389bdef25cf5f3cd2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/lan_login.rs",
+      "git_blob_sha": "4cb0d50dbb0105d37c9a63bfc307bf2b3079d742",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/lan_login_tests.rs",
+      "git_blob_sha": "c104f1762ac2f1681605cdf4f31cdf3600006fc2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/large_cdn_config.rs",
+      "git_blob_sha": "abedf47eed60b39618f72e2f7f1adec48a9ce7f7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/large_file.rs",
+      "git_blob_sha": "9e80ab89bcbdc48d284e75f8ec330302d598b095",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/lib.rs",
+      "git_blob_sha": "e03704261bf3c0a87f0c196ac58f90af7f84806a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/link_thumbnail.rs",
+      "git_blob_sha": "d03a949ec89b780167d3f6c8c083e74a347174e8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/logout.rs",
+      "git_blob_sha": "37cca6793db945fefdd3a1f4720008cfd4dd33f6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/media.rs",
+      "git_blob_sha": "1202745ac141595cb5d3ffdcf6a7d2dc2d4c438e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/media_send.rs",
+      "git_blob_sha": "967fc6357a61122da9a6f7d6c8cf9953d539e0ae",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/mmtls.rs",
+      "git_blob_sha": "da01070dc7bab4c84e5d2325530fa2480dee2631",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/notice.rs",
+      "git_blob_sha": "707df53050896065107c49c7843f8638cb715343",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/protobuf.rs",
+      "git_blob_sha": "987c423f078bf61cc20a390bebcf8ecd9b416a5c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/push.rs",
+      "git_blob_sha": "fbd2032d39bb15268b1684641ce468d2024af042",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/quote_send.rs",
+      "git_blob_sha": "6e0407c8d83b9036a8028bf18d40dba82679519d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/revoke.rs",
+      "git_blob_sha": "621f859b0671eb355dff90b62e0ca2fb5ba918b8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/rpc_error.rs",
+      "git_blob_sha": "dd8a93c2e74ce3da09887001c8afa839a1944719",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/silk.rs",
+      "git_blob_sha": "0d3ccdeb7ceabf82e5f47dc896e42a4ba24b73ef",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/silk_bridge.c",
+      "git_blob_sha": "a6df5b327f786ddd29d0b6d476bab7af8567763d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/status_notify.rs",
+      "git_blob_sha": "17902235c9441589c6a9cb38e6b31684d1848b80",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/sticker.rs",
+      "git_blob_sha": "c99b4a67e25a0839665af145d61fe1fd21d20e6a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/src/wire.rs",
+      "git_blob_sha": "fa24596c986d5f4024f7b478e283b0a9c2d80a74",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/LICENSE-MIT",
+      "git_blob_sha": "bc8c0cce4b7b265384e1fc6d6bd0350a5b7e7724",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/LICENSE-SDK",
+      "git_blob_sha": "f9a75497bb3ffceda87863fddc612bf38a973e35",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/SOURCE.json",
+      "git_blob_sha": "3087929354c924fa3eef83c440054a5db8a24ab6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/interface/SKP_Silk_SDK_API.h",
+      "git_blob_sha": "0e9041b8ea31d7c31ffcf5e0be5920741c63aa9d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/interface/SKP_Silk_control.h",
+      "git_blob_sha": "ef0eac24920018d2b150cd2cde7effd3ef14659e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/interface/SKP_Silk_errors.h",
+      "git_blob_sha": "ee2a487ff31810e2b47591180b9f4005325dd323",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/interface/SKP_Silk_typedef.h",
+      "git_blob_sha": "5e1d2e75a05bbe004f4a1fb305c0a7ad04f72877",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_A2NLSF.c",
+      "git_blob_sha": "fd6918f61dafb7ffec2ef50af5e587b7014856ab",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_AsmHelper.h",
+      "git_blob_sha": "4e8a69bf5d2bf199bfed9d68ea92f5551fbc9ca6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_AsmPreproc.h",
+      "git_blob_sha": "d2e47e894e7bf7400991ff4c300828162f666027",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_CNG.c",
+      "git_blob_sha": "8d0e6a134809bd38595924d9d75dcba3a6696cf9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_HP_variable_cutoff_FIX.c",
+      "git_blob_sha": "6a3b35a188be19891b73c89e656e5536d1a62591",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_Inlines.h",
+      "git_blob_sha": "6810e86f224de18853f906e157a2b021a67597dc",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_LBRR_reset.c",
+      "git_blob_sha": "f9ef0e642b796f5c037c483561c3df4b08badf1d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_LPC_inv_pred_gain.c",
+      "git_blob_sha": "368cafbca71317d1875e1f640fdd207581b0c85a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_LPC_synthesis_filter.c",
+      "git_blob_sha": "9121e58e20409ab39594fd12b4fe1220fbda86a0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_LPC_synthesis_order16.c",
+      "git_blob_sha": "eae24356650dd914af3720c1e56a7e4f5514d9a3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_LP_variable_cutoff.c",
+      "git_blob_sha": "ed19466559f98f49d224ca2550e9ddbd31d50113",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_LSF_cos_table.c",
+      "git_blob_sha": "4d9ffe5073cfdf71651ac26913506a9b8d855dc6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_LTP_analysis_filter_FIX.c",
+      "git_blob_sha": "612124c160851c72546d980eac7609bb232cf3f3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_LTP_scale_ctrl_FIX.c",
+      "git_blob_sha": "51283b557f471c0b84fb5116e24b2b49bfc8ad18",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_MA.c",
+      "git_blob_sha": "fcdce14b5eb951ef14f95f45173f1cbd23eb93af",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_NLSF2A.c",
+      "git_blob_sha": "732b0f977c637bdd6a3fdd47251ec8d1cd1d6feb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_NLSF2A_stable.c",
+      "git_blob_sha": "63da33920b2175701687a417a7fe91700b7963ab",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_NLSF_MSVQ_decode.c",
+      "git_blob_sha": "aa3983fac31a09a7aa22972ea7de62c0101718fa",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_NLSF_MSVQ_encode_FIX.c",
+      "git_blob_sha": "5bae4def4098651b085f452153d4cfb9015eae54",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_NLSF_VQ_rate_distortion_FIX.c",
+      "git_blob_sha": "8b5704d3dcb8f82a41b86745c537426fb8d35628",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_NLSF_VQ_sum_error_FIX.c",
+      "git_blob_sha": "05d90d01caae302edb1dbe7ab7b3ffade73227fc",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_NLSF_VQ_weights_laroia.c",
+      "git_blob_sha": "71c3f23267105c1f7adf7a6c0286f2ce1cb7d39d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_NLSF_stabilize.c",
+      "git_blob_sha": "9fc2f6117fa70a07902c1ff182eddf8a51e030e6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_NSQ.c",
+      "git_blob_sha": "3655cfe1f62b41318cb79e51a74fe238756e5665",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_NSQ_del_dec.c",
+      "git_blob_sha": "16d0b2002b3f9cf7039f6f351be1edb0c583c8fa",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_PLC.c",
+      "git_blob_sha": "80586107658fe48b07284bd7a113af9a4bec3a27",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_PLC.h",
+      "git_blob_sha": "17239439de9aec8caee41a9d8773b06bfdf18f8d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_SigProc_FIX.h",
+      "git_blob_sha": "d53cb408aec87b31cebdb84c5ffc58c9db982fc0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_VAD.c",
+      "git_blob_sha": "35a5a9df3f868606808a89ebf26fce89b619a6e3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_VQ_nearest_neighbor_FIX.c",
+      "git_blob_sha": "74a265336dfb68d629a9c94758a3f47c1251d911",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_ana_filt_bank_1.c",
+      "git_blob_sha": "206f3b511871c89b89ceea14c767aa44ca6a8262",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_apply_sine_window.c",
+      "git_blob_sha": "b7706d717dad3169512d5a73241ca60c17376fde",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_array_maxabs.c",
+      "git_blob_sha": "0d6be63e7a10fce26a43ff6ffc63d51674bb2169",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_autocorr.c",
+      "git_blob_sha": "39ca5ab4a47f17c74929d3a7dd725ae54a920121",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_biquad.c",
+      "git_blob_sha": "f98de55bc3f531a53a5223190b0fd5a529e48262",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_biquad_alt.c",
+      "git_blob_sha": "90c27ac266a06b773de5862ed0fb34a83bdfd133",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_burg_modified.c",
+      "git_blob_sha": "5362d822a69541ebc73cdbafd4ad65e505c4f483",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_bwexpander.c",
+      "git_blob_sha": "6affb6b4ea23ece454924cb72e70d11972e77ae5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_bwexpander_32.c",
+      "git_blob_sha": "0a838693c1a1a2711ec15abee7d4d3c88968649e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_code_signs.c",
+      "git_blob_sha": "3149f4a3ae509bb966b980741bc8c4639bcd11b5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_common_pitch_est_defines.h",
+      "git_blob_sha": "7ca23d3f6896d0f1d69784704e811e2b9c410c18",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_control_audio_bandwidth.c",
+      "git_blob_sha": "e7bed0c9072bc2b60b074cae0cec33e116546c63",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_control_codec_FIX.c",
+      "git_blob_sha": "a24853c3959f73e81440b35dbd8639b6c0c13b6d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_corrMatrix_FIX.c",
+      "git_blob_sha": "18b55c955e9affb7a90eff242c22585ef8b5aa79",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_create_init_destroy.c",
+      "git_blob_sha": "355ca850a742e2b689eff974021ebf33c627b0f4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_dec_API.c",
+      "git_blob_sha": "ca031e3d5711b37c9e1e126222f09fce5a7859fa",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_decode_core.c",
+      "git_blob_sha": "247f24d9c56d7c633ad2c4b5b33a6c9897ae0602",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_decode_frame.c",
+      "git_blob_sha": "c0ff322cb11c8c295406cc75b12513d1f761435d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_decode_parameters.c",
+      "git_blob_sha": "108a93942a8a9bd852c8006635944e809e8af2e4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_decode_pitch.c",
+      "git_blob_sha": "38b7aa7736e3eb3d9aed0f2480a8fe8f26f19850",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_decode_pulses.c",
+      "git_blob_sha": "119553f27beb9d11f0e579a213c210288f7e7353",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_decoder_set_fs.c",
+      "git_blob_sha": "b4cd08be2c86de0119a7622cd4579e11ec43935a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_define.h",
+      "git_blob_sha": "43e8e68106a3e2334a4e0f6ce653dbcfe07d217a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_detect_SWB_input.c",
+      "git_blob_sha": "eb3ee0597697bdece8e60786819f3d4b0cf7a3b3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_div_oabi.c",
+      "git_blob_sha": "327dcfafe52cb75d60128e0497ffff13c145c93d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_enc_API.c",
+      "git_blob_sha": "63657abba403755aaa9b632d3e66e016802881e5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_encode_frame_FIX.c",
+      "git_blob_sha": "c1082890edf9a28ad44fe39eb48f7dd5320eafd3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_encode_parameters.c",
+      "git_blob_sha": "be50e01bb0f651ae185212e5d0a09b47fddd43d4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_encode_pulses.c",
+      "git_blob_sha": "b0ea05ee94a8303e13e5ca817c3ca215ff41d005",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_find_LPC_FIX.c",
+      "git_blob_sha": "5a0c7c7bec56cfda7edbcbed5e7449e6fe615804",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_find_LTP_FIX.c",
+      "git_blob_sha": "4d047ff59067d7f442357a6e58a20b5cc346252f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_find_pitch_lags_FIX.c",
+      "git_blob_sha": "a8fe42e487e8b433a453be8cdaec371fb8671a44",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_find_pred_coefs_FIX.c",
+      "git_blob_sha": "11764a6c27106a6088628306a48a8f4e3d4a5926",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_gain_quant.c",
+      "git_blob_sha": "c33fe49ec67bc77372cfa9b4662c1bc950b3f7e1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_init_encoder_FIX.c",
+      "git_blob_sha": "7fa445c7cbc8074c2b6da161a7019a84963317d4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_inner_prod_aligned.c",
+      "git_blob_sha": "8e738f290d87d15194535f2fb8da9cf28724faff",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_interpolate.c",
+      "git_blob_sha": "73b9eb50f878f3660d7b0d94d6c6fd45aa5f827f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_k2a.c",
+      "git_blob_sha": "3d3d19a79983673ac8dd72fb18f0d928620ab73a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_k2a_Q16.c",
+      "git_blob_sha": "176f24e6126fdacca79b79ca01e6a72032d8f0e4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_lin2log.c",
+      "git_blob_sha": "b917c9709d48ec9805235bf0bac85c540bb01e15",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_log2lin.c",
+      "git_blob_sha": "0124c30d877bfd0a10cacaf0fb45c687d70328cb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_macros.h",
+      "git_blob_sha": "9ccd750f4db1962b6f57788514aaee3f74d73a45",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_macros_arm.h",
+      "git_blob_sha": "4e9d3c2c4b4cfb3ba4cd0894b7aa587994848310",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_main.h",
+      "git_blob_sha": "bba7fa7a501e81686d16baa42136fea312b4bbb3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_main_FIX.h",
+      "git_blob_sha": "4d760a44f55382047481e2abbc9bfabb3ffa2193",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_noise_shape_analysis_FIX.c",
+      "git_blob_sha": "459cc6981dba19b319573d509b74739633b020d2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_pitch_analysis_core.c",
+      "git_blob_sha": "7000ff42178d4fbedf9d38e3541a29fd007e494d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_pitch_est_defines.h",
+      "git_blob_sha": "df299b4cee571e5966cbb744cc89731d9ed30072",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_pitch_est_tables.c",
+      "git_blob_sha": "26902b3b3835af35b45097c29b93bb944c3f6bbe",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_prefilter_FIX.c",
+      "git_blob_sha": "7b626b9d454986ad153bb969c62ac6f1f6cdbc0d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_process_NLSFs_FIX.c",
+      "git_blob_sha": "28b8e777cbf7aaeb2a6c468c2292d0f0cc6b8312",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_process_gains_FIX.c",
+      "git_blob_sha": "518152a66b1015e75b503e1f6b29f0fad493be16",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_quant_LTP_gains_FIX.c",
+      "git_blob_sha": "6caf0ff6f0ae2348cd9b20d2b9d09ebeb62d64d1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_range_coder.c",
+      "git_blob_sha": "45f9ce4b0f10944a6d4faa174e370cd72caa0c96",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_regularize_correlations_FIX.c",
+      "git_blob_sha": "e2700ac6c8ed862d4fd0a161e3c613946be8d623",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler.c",
+      "git_blob_sha": "c3d25e514ad403e1ad8a4f4e2e0d4c7d1acf0d53",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_down2.c",
+      "git_blob_sha": "fedba1fb2065010d44eeb341ea1bb727da0747f1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_down2_3.c",
+      "git_blob_sha": "592f7051b6e9540663a75ab1a70fe0ba58c2780a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_down3.c",
+      "git_blob_sha": "fef9c6f21e8b5a5144b3a5ad7c4c2d3f973de3f5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_private.h",
+      "git_blob_sha": "04563fa1b94f6c3abc3af9ff1492cdb3eb44b195",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_private_AR2.c",
+      "git_blob_sha": "5d581a4b251f2f9d9ed78f82e6a58166da1f7df9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_private_ARMA4.c",
+      "git_blob_sha": "4351592357a1b7da55527e0b732bc322a48379ea",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_private_IIR_FIR.c",
+      "git_blob_sha": "0976451762aee2fe48d467a50db6f91a6eb3f2bb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_private_copy.c",
+      "git_blob_sha": "71df0331613649610885610753ca387fcffc79a4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_private_down4.c",
+      "git_blob_sha": "3d65ad7da47c2599af1a24fde0466fafeb85a847",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_private_down_FIR.c",
+      "git_blob_sha": "4a441b1b014e559d7042d7f11ac4feb34f3145fe",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_private_up2_HQ.c",
+      "git_blob_sha": "a95082e609d9b9f585c7f0c3ea4a9b5976d7a453",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_private_up4.c",
+      "git_blob_sha": "f1cff61aae6f8bc42a97f765c931ab8619c3a5e6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_rom.c",
+      "git_blob_sha": "b8e8ef8e43b33d0d20fb82ba0529b0baf42899ea",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_rom.h",
+      "git_blob_sha": "8c12f67f8451bc68030e066221cc313fb03ded4b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_structs.h",
+      "git_blob_sha": "743c9928cbf3ae0cc2e3771d366c5f51c884effe",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_resampler_up2.c",
+      "git_blob_sha": "9ede6a94a143ad95a4d2743f0b4a3c9729ab87ba",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_residual_energy16_FIX.c",
+      "git_blob_sha": "60ee2a5e4e6668e0af8c899406f2aa1a4f646906",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_residual_energy_FIX.c",
+      "git_blob_sha": "f422e55da898965b9591196b8808bbacc5c0ff4e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_scale_copy_vector16.c",
+      "git_blob_sha": "9d6f8c38a1353597009bc53f75f4350deb07ae28",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_scale_vector.c",
+      "git_blob_sha": "320e94aebe423feb0ea31b70439b2450c8fefddf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_schur.c",
+      "git_blob_sha": "b631851ace5044d6b7262cdfbc68ad384ff0e710",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_schur64.c",
+      "git_blob_sha": "c4e824c135290d4325319cab8f91b315a901a062",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_setup_complexity.h",
+      "git_blob_sha": "f00ab557dca238a2ad891d94e61d0357f0b690bb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_shell_coder.c",
+      "git_blob_sha": "0163ab4879c48195b4a46455c2550b4f559b2834",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_sigm_Q15.c",
+      "git_blob_sha": "6a104ab42f7fbdc7a930b2cbf5c377b95ccde2be",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_solve_LS_FIX.c",
+      "git_blob_sha": "7f026ec1533cc73a41cf1cd5876644173e56003a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_sort.c",
+      "git_blob_sha": "3753c7b0be91748b5de4a7670381748ab4872fe3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_structs.h",
+      "git_blob_sha": "4cb1db5a300be66a212f839d1e87a0deae00a3eb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_structs_FIX.h",
+      "git_blob_sha": "967c90cb9023d33f52472c9a4ffab23f99aa7776",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_sum_sqr_shift.c",
+      "git_blob_sha": "a67ecbe9cb0c964b90f0db29b1db8841a006eda9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables.h",
+      "git_blob_sha": "37613bd65808b8efcedc24f7abc6db1dbeb34c0a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_LTP.c",
+      "git_blob_sha": "77533abe4b810bf875145dfc99b72413fa300a20",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_NLSF_CB0_10.c",
+      "git_blob_sha": "d91bda39b551ca3647407caa49f73f779efc71e5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_NLSF_CB0_10.h",
+      "git_blob_sha": "37e290683840a90d7944cab546a6acc910775ae1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_NLSF_CB0_16.c",
+      "git_blob_sha": "cfa87c620a31dad5a09ef615c4b8d861a608f210",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_NLSF_CB0_16.h",
+      "git_blob_sha": "bf110e5e1508c310859517667a26095300013422",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_NLSF_CB1_10.c",
+      "git_blob_sha": "46b354374e20752dcf35597f332a0edc1aa64dae",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_NLSF_CB1_10.h",
+      "git_blob_sha": "22fddf12261e48187f5db7542246cf688f40ae29",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_NLSF_CB1_16.c",
+      "git_blob_sha": "e68aedc44a9836f965bcd6a00a6defe883b5c030",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_NLSF_CB1_16.h",
+      "git_blob_sha": "ca63a447f3c2cd4d3db6798a0798be67bf521b13",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_gain.c",
+      "git_blob_sha": "75561231c5ec7e87842fb43a53556ef32445b584",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_other.c",
+      "git_blob_sha": "27bba2b857339967345a9dbb0acf4ee2c151b1ed",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_pitch_lag.c",
+      "git_blob_sha": "555bc676e8a9ac4463cc62aaa116dafc80d291b5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_pulses_per_block.c",
+      "git_blob_sha": "b5803d4c98e8d448cd8d290b7d38406d6e11508b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_sign.c",
+      "git_blob_sha": "96fc34d0c688ca882b3d64242137a788a2ebb5f3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tables_type_offset.c",
+      "git_blob_sha": "7effe3866f7ec58e2714d1374c8d7be2f3aed7fe",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_tuning_parameters.h",
+      "git_blob_sha": "09b96ed8f1f066f4fb7bfab377a57c891ff0365e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-protocol/vendor/silk/src/SKP_Silk_warped_autocorrelation_FIX.c",
+      "git_blob_sha": "6adb627922cfe728f78b6f0adc83e79b3820b7b6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/CALLS-FIXTURE.md",
+      "git_blob_sha": "e6e9cc3f0f4aaa90072e716feeb34d469d0db54d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/Cargo.toml",
+      "git_blob_sha": "cb7fa89b5f3d7abfdc60cb94d07eb1b7a5f81ab7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/README.md",
+      "git_blob_sha": "aa805beb03793896de44cfadc89dc8850653fd9d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/fixtures/sample.mp4",
+      "git_blob_sha": "d9dd1a94dc7733ed600da606564dede33c897c59",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/fixtures/sticker.gif",
+      "git_blob_sha": "6b1ea4426a7f51dc4592106e837cc42e11adb081",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/src/adapter.rs",
+      "git_blob_sha": "a0bba67b58814a8a1530f90f69f1aff2dc90231d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/src/calls_fixture.rs",
+      "git_blob_sha": "28b2166ea7d9eba32f17f0ffc1848dacd151d12f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/src/contract.rs",
+      "git_blob_sha": "99d0d8f282de987ec19ff0d6fd760cbcc9436be4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/src/engine.rs",
+      "git_blob_sha": "724cdd6c31cb737071ec145f5560f64d540ff57e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/src/group_engine.rs",
+      "git_blob_sha": "4b1ebccaa26d715446a34e1438ff8c90f908718f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/src/lib.rs",
+      "git_blob_sha": "802b7a4fd6cfdb71b88d88abca088ce1fc7ca98e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/src/main.rs",
+      "git_blob_sha": "658ff5344c92a6f293cc63fa36e394e0f294fbea",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/src/media_adapter.rs",
+      "git_blob_sha": "429b9f85952a225cfbc484662a091f9fd56ebbf5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/src/media_engine.rs",
+      "git_blob_sha": "4559c68ed2b041b8abfaeee406710bd354d875cf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/src/service.rs",
+      "git_blob_sha": "d8951c67b573aa66ca612aa0181e9050afc22ccc",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/src/workspace.rs",
+      "git_blob_sha": "4e764af52d7f997fef206c6f4b7a05fd9dffd89e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-simulator/tests/isolation.rs",
+      "git_blob_sha": "3fac308e5d0d932a78420e0194a6548a6e5d508f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/Cargo.toml",
+      "git_blob_sha": "f8343fd5827f11be82fdc8b59a3447a67691ae01",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/account/V002__operations.sql",
+      "git_blob_sha": "50d6d75ec459c9861ea5b89baf4d8b6d367ea1fc",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/account/V003__media_jobs.sql",
+      "git_blob_sha": "594b3e6eb5da0708808daa0857a05ef9d0b889b9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/account/V004__pagination_views.sql",
+      "git_blob_sha": "3d62857113bb282461a51a1a0f613df0f7463583",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/account/V005__message_recalls.sql",
+      "git_blob_sha": "55bc3f0a9c4e4cc00e520c9d3f71cd7b145de1a2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/account/V006__outgoing_recalls.sql",
+      "git_blob_sha": "da4f78112f9c9179e423112a6bfdc7b182c14997",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/account/V007__group_mutations.sql",
+      "git_blob_sha": "147cde281fcd7f689878b726cfcb2522bbe2e9e9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/account/V008__contact_sync.sql",
+      "git_blob_sha": "5c086394c528604be841ead2113c91079d224e95",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/account/V009__call_actions.sql",
+      "git_blob_sha": "b91ddbd02f7a180da22274ee7ec104f9e9a95104",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/account/V010__call_request_context.sql",
+      "git_blob_sha": "dccf98c9ff11388893cb0257f5f0434a90ed52d4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/account/V011__call_non_submission.sql",
+      "git_blob_sha": "002c541f4bbb5be6f3544e07a22254b6938c368f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/account/V012__call_local_closure.sql",
+      "git_blob_sha": "94ec735b357145092d97e598ad1782ff4d3a2af5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/registry/V001__registry.sql",
+      "git_blob_sha": "e16dd1f575739fca20125dd168cc9855c46191d1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/registry/V002__account_settings_tokens.sql",
+      "git_blob_sha": "9a45da1021c7fd432f941ec9bb91faa396297ad0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/registry/V003__removed_accounts.sql",
+      "git_blob_sha": "3ae6de38993b21119d2527224420d169bbc2577c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/migrations/registry/V004__media_download_settings.sql",
+      "git_blob_sha": "26aee3c7639ecbdbb4e6b8b7825550041e6e6230",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/account_removal.rs",
+      "git_blob_sha": "d9e0721a05714cacd0c6283427c591079901da1b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/admission.rs",
+      "git_blob_sha": "167a67d987d21c9206dea2359e55f77dbbc33e43",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/admission_wal.rs",
+      "git_blob_sha": "5eb6d6d0a0078ec984a3e16a017ba6ed79903c3e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/authorization.rs",
+      "git_blob_sha": "14d52ad983cd9894466fc3e2a343f68de1ae6df9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/call_actions.rs",
+      "git_blob_sha": "1a503f7dc7209d2e49abe86852dd64a2918a5eee",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/checkpoint.rs",
+      "git_blob_sha": "e4481e8be7af0fff0517ee4021cf751995996454",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/copy.rs",
+      "git_blob_sha": "bd8c173264a162107a04b8f46063252327a9abb3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/group_mutations.rs",
+      "git_blob_sha": "aebb33f1cbf3fb3ea16bcd2906bc3cc816c0ce94",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/lib.rs",
+      "git_blob_sha": "3b0b9802eece51f0a98759046eddb83903fe8cfc",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/logout.rs",
+      "git_blob_sha": "b5466e2532eed98cd41f8d0da8ac1ce52f08660a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/media.rs",
+      "git_blob_sha": "288d0e187c94344888f49f08fe0f1322db955abd",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/metadata.rs",
+      "git_blob_sha": "736d514850c5bff236fb2d10a0d02a78a9b9cb34",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/operations.rs",
+      "git_blob_sha": "66f36bb902c615785e7f9d716f4d3a718b2d6b50",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/outbox.rs",
+      "git_blob_sha": "a1cd983e132824c3008ec78f13add1991bcddcf1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/outgoing_recall.rs",
+      "git_blob_sha": "9b2e5db4908c8a5fc204b48d195471c94ee7a5f1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/pagination.rs",
+      "git_blob_sha": "205027203b045bf9f9f46a720e735bf81b91c3ed",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/read_snapshot.rs",
+      "git_blob_sha": "d79840b96e71fa8c7ac129d002dd6a322960df17",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/recalls.rs",
+      "git_blob_sha": "77c51b6e9eac1cd4bc77ceccb94124ca48513153",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/settings.rs",
+      "git_blob_sha": "a4ee85b8cab232e70a8a978d0c36140a0be360e6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/src/vault.rs",
+      "git_blob_sha": "ebf0a7113f2706e657e2233b51a12a8808d2da81",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/tests/preservation.rs",
+      "git_blob_sha": "74475c271110298a8170ab69f9ea2445630a80b9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wechat-store/tests/storage.rs",
+      "git_blob_sha": "50b9205bffebf8d6ae6c0f960b1ecd12e19c0263",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/Cargo.toml",
+      "git_blob_sha": "b7d513bbfe15e4450ee3276dfc830c273f7524f7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/calls_cli.rs",
+      "git_blob_sha": "222ba7321700d180930dd13ae138ac99df0e101c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/calls_cli_audio.rs",
+      "git_blob_sha": "fbbf553a8c165d4843f22d1ad50a8d3633fe7c2c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/calls_cli_levels.rs",
+      "git_blob_sha": "138ece672415a2a149b8e5dfe239039ad2972845",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/calls_cli_tests.rs",
+      "git_blob_sha": "b3a24c8a7eb8f70c41c972a9ae0cacd463676ea5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/cli_help.rs",
+      "git_blob_sha": "838157fbc2b43b6a53c9b0f626e5cf43b29af280",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/cli_help_tests.rs",
+      "git_blob_sha": "b7b3258325b76913961e317d21c71ccab3f9f3d4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/client_actions.rs",
+      "git_blob_sha": "0f4a9a47cb2516964ef4cf9561a7465d86eabd49",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/daemon.rs",
+      "git_blob_sha": "20e979b177d73dc355329be1fbac7cc50659dbc1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/events.rs",
+      "git_blob_sha": "657337fef580c7ebc8ae62fddf43ea0ae448796f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/login.rs",
+      "git_blob_sha": "93430442a637285f034aaa0146bad5c73667a827",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/main.rs",
+      "git_blob_sha": "02b084baa9a0e526da4103da037c06f04c88e0a3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/outcome.rs",
+      "git_blob_sha": "f51aa49a115011185c6513a110e72d72d983e17d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/output.rs",
+      "git_blob_sha": "c96e54449e7ed006b7034df1236d67c1512f77bf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/profile_cli.rs",
+      "git_blob_sha": "4927661952715e63f623debf8803cec2238889d9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/profile_export.rs",
+      "git_blob_sha": "7706ac2280cd877e02b46754de8cf61d3919cc3b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/crates/wx/src/settings.rs",
+      "git_blob_sha": "30cb4f4f8282e6ef091695869057c06be8f8ce31",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/native-client-rust/scripts/smoke.py",
+      "git_blob_sha": "085515e730a7af12275df4854488aec7aedc1a86",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/CHANGELOG.md",
+      "git_blob_sha": "4090ee8feb9b23f311e03236aa80a9cff4b76b95",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/LICENSE",
+      "git_blob_sha": "afbfc0eb5cbc1245d47eaadd300ea9149b3b6126",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/README.md",
+      "git_blob_sha": "89b42960b1dddd7896b008fa06fefd7e591879b6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/index.ts",
+      "git_blob_sha": "fefe00edc3e9b5746ac550d167a37616b21084e7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/openclaw.plugin.json",
+      "git_blob_sha": "bffa1f879c02c24eaabc9d2da872597da0c70b06",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/package.json",
+      "git_blob_sha": "2e6a2e5c7a77affba179eb320bcad8cbebefb864",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/access-control.test.ts",
+      "git_blob_sha": "a5c7c214f0e2ef6d3175caa5b446e1563e34cafa",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/access-control.ts",
+      "git_blob_sha": "fed82f5488111e99e55f35cc467da338a97a4de4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/attachment-store.test.ts",
+      "git_blob_sha": "6157a9602a19853092f7e86ac46766460faed367",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/attachment-store.ts",
+      "git_blob_sha": "58c811dc54eb315ddd954f508eae30d7b0291253",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-audio-trace.ts",
+      "git_blob_sha": "62993fd8113f95f01bc28671cc97f7bbda14e4ee",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-audio.ts",
+      "git_blob_sha": "ed946927974c34621eec5fee9d389dd96953cbde",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-config.ts",
+      "git_blob_sha": "003a6419519ebf1efbe443af5637fdbd6d7d9411",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-consult-session.ts",
+      "git_blob_sha": "3e78875ded43b09affa9592df68252022365d063",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-forced-consult.test.ts",
+      "git_blob_sha": "51ac1f34e3c1d04229d3c4a9703ed5f9f6db7d20",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-forced-consult.ts",
+      "git_blob_sha": "8322f1084fe0464054cb9ea48696defdcdb9e249",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-memory.test.ts",
+      "git_blob_sha": "192b3d79525c32f08580758d0c224b84f44160b7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-memory.ts",
+      "git_blob_sha": "8bc37fe371d9dde49e72c2bfede55bb2a1c5a649",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-secrets.ts",
+      "git_blob_sha": "323bf831bd2ea7d885547dc31c6b88871113738f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-service.test.ts",
+      "git_blob_sha": "6d1be95ab492cfa3ced178a0d27690cd37207f20",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-service.ts",
+      "git_blob_sha": "a0f5db5714716170c60b213be663ea4e64abfb10",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-session.ts",
+      "git_blob_sha": "2d8355d6bbc73d6b98b948cb61b7eb83c782fed4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-tool.ts",
+      "git_blob_sha": "5d4a48ee06d19aa60640cbcaf43ed50b113ac2e4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-voice-context.ts",
+      "git_blob_sha": "d152f080919fdf3edbfb6c52d28ad985643fc1ca",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-voice.test.ts",
+      "git_blob_sha": "9722f896742479acaaf5b04bab269b835f34eb6d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/calls-voice.ts",
+      "git_blob_sha": "8a33b398d7fde381e98d7078f35276ac1797b185",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/channel.ts",
+      "git_blob_sha": "6b7884ca2267f71a16b8291502a4c06fbf63bae1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/media-delivery.test.ts",
+      "git_blob_sha": "14a62d6cb51010f51dc8e53aa175605c282f3557",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/media-delivery.ts",
+      "git_blob_sha": "1d7b7ca1ce0dd41a9e3235e2720c0d76785ce733",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-config.ts",
+      "git_blob_sha": "60ffd8d17acb3b91e7ab60af9834357c2e2987ba",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-consumer-compat.test.ts",
+      "git_blob_sha": "f300242690543115a7f7a9887285d729afed88d1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-consumer-state.test.ts",
+      "git_blob_sha": "53ed3512ec91078a4d22948b2731c9acf6973cfd",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-consumer-state.ts",
+      "git_blob_sha": "33bc03cd9ec78db2b6f1e4fdad5a93d7c3f0d0e8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-facade.test.ts",
+      "git_blob_sha": "d43bb6ada482c50be087d6653c203a97bb5e43f4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-facade.ts",
+      "git_blob_sha": "890f9fbc28824c846534b4e0f1b4672292f53772",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-group-tool.test.ts",
+      "git_blob_sha": "a238618e5d45a455146f634227129ed526da23ea",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-group-tool.ts",
+      "git_blob_sha": "5c46d4f01e6ab15916f5c60aa90a395cc516d165",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-history-tools.test.ts",
+      "git_blob_sha": "b4d804788d6639b098bcd429664731c40621d434",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-history-tools.ts",
+      "git_blob_sha": "6916950025a4d5c2a55a285e9f12e96de299db50",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-history.ts",
+      "git_blob_sha": "1040e19279d5cdb96dd5b9533b557574dee71fc9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-host.test.ts",
+      "git_blob_sha": "ffc692d46d0dc5540996aa9c2725ebdafcd364d7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-host.ts",
+      "git_blob_sha": "d65fef73d0e13eb798307325ca6e8151263e8f76",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-login.test.ts",
+      "git_blob_sha": "ff814e0e0ac64a666107a09746c18d2258b5870e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-login.ts",
+      "git_blob_sha": "65ac132cd438d20a2f9412f173351517ba5a524d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-media.test.ts",
+      "git_blob_sha": "0ceb419d2f95a3a1e4fd2d08c5b72b2cc13c087c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-media.ts",
+      "git_blob_sha": "3f8b9c8da486bedffb0c2c466e9b32e9f0ce9174",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-monitor.test.ts",
+      "git_blob_sha": "e2f5a3e4f4caf273da17c5e675e232a383841d47",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-monitor.ts",
+      "git_blob_sha": "c1fc02f051ce969466bad10ca89a007159d90d87",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-outbound-recovery.test.ts",
+      "git_blob_sha": "938ba93fb9eb8ab63f9df7c93e23bb7f4b6a9758",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-outbound-recovery.ts",
+      "git_blob_sha": "ca170a6b0788f563e658d744f90be78c24e127e3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-prepared-boundary.test.ts",
+      "git_blob_sha": "a8008174b84297b7785469ce297a513856bb5f15",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-prepared-boundary.ts",
+      "git_blob_sha": "9d19374f815a265ac79427eb4bae9489cfb6cc61",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-prepared-media.test.ts",
+      "git_blob_sha": "f2a42409ce4565bca67d3d9faa6d3fc5515cbba1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-quote.test.ts",
+      "git_blob_sha": "621afccf35e6e2b2e456deb736c47b9a9a7e42ce",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-quote.ts",
+      "git_blob_sha": "58e2bf0abdc7c84deddc9f7fc1e1b6ffd66680d1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-recall-state.ts",
+      "git_blob_sha": "88ae97b2080a5c00309387a100ee1acaef5a3a26",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-recall-tools.test.ts",
+      "git_blob_sha": "2a18f86e5a0e72982197acc82cc02b98a8151ad3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-recall-tools.ts",
+      "git_blob_sha": "0c189f5c048d98db66682787aa94c4b94fc2f3d9",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-secrets.test.ts",
+      "git_blob_sha": "ba9d197b967432c01d76a5fc0637fa15606ce758",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-secrets.ts",
+      "git_blob_sha": "15d9377d54c74026299597103d7fda2c0580ca43",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-send-key.ts",
+      "git_blob_sha": "2f2a1616b19bc9a8296be1c43512e5ee4fda8258",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-send.test.ts",
+      "git_blob_sha": "ced4a455ecb3d2351783983d16b292ebaac21a90",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-send.ts",
+      "git_blob_sha": "7765ba82371b85e0f355f8b09d7ec5f78aec04e7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-share-tool.test.ts",
+      "git_blob_sha": "532f3303b16e251774e78dcea08af49b1a0da4e7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-share-tool.ts",
+      "git_blob_sha": "c03147d698c80ffba9fa3dc8e5713207d5fd60e2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-target.test.ts",
+      "git_blob_sha": "05fcb29698483639f6e61d78e2de6e4a63640030",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/native-target.ts",
+      "git_blob_sha": "751d0df27201868c2e3a88ba70c474706cf54342",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/outbound-media.ts",
+      "git_blob_sha": "adcb84ab60bcb35e201431bce247f0df6b014122",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/outbound-mentions.test.ts",
+      "git_blob_sha": "2d674c35f55181e51ec55746b78886e826b41139",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/outbound-mentions.ts",
+      "git_blob_sha": "51c4c4488bd2578d9be90faf789e582b0b508ebf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/outbound-options-host.test.ts",
+      "git_blob_sha": "ed1bb19231cf6189f1c18814b79769ed9e76c562",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/outbound-options.test.ts",
+      "git_blob_sha": "5d9728231fc7f6eadebcc359cf85043891a54508",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/outbound-options.ts",
+      "git_blob_sha": "09fcb4bb8adfd2edb2a7a914780b6ea8ae323d07",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/outbound-reply.test.ts",
+      "git_blob_sha": "2d3b9254d00ec0fc4eae4831cdf43fcb82a93314",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/outbound-reply.ts",
+      "git_blob_sha": "ce036019c628c6b6d574690aa80b038465cbb906",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/runtime.ts",
+      "git_blob_sha": "fc4c428a2377827465dbfa0c407c17d0b23f39bd",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/status.test.ts",
+      "git_blob_sha": "4e3649e91da1704548bca108fa54ee55e3a788f3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/status.ts",
+      "git_blob_sha": "2f21591ceac4ffa824677b1dd06f98f19b99c2ef",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/types.test.ts",
+      "git_blob_sha": "b6c81ca6ee46f2cb383d9d87d5de3cae6ad8a774",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/src/types.ts",
+      "git_blob_sha": "6d59b872ad5dba463d1f7e4077cbe223d9d21fec",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/fixtures/README.md",
+      "git_blob_sha": "ef2bf07b0ce8c2a825f86108979e5836b18deebc",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/fixtures/native-archive-model-plugin.ts",
+      "git_blob_sha": "ec8add2f48d3382bc3d811bde396c7c0b0aef7bd",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/fixtures/native-compat/consumer-state-1.0.0-beta.13.json",
+      "git_blob_sha": "190a92a23b7029aae83dfe55794dd3060a9546e8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/fixtures/native-history-model-plugin.ts",
+      "git_blob_sha": "71011bb0602fd01481b59171bc1e69628230933c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/fixtures/native-media-model-plugin.ts",
+      "git_blob_sha": "9e21d5d5293516385f0e53f5b672c29e0c230e0b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/fixtures/native-model-large.png",
+      "git_blob_sha": "f048d66273192f7427d23e27b54ff3e5064d28ae",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/fixtures/native-model-plugin.ts",
+      "git_blob_sha": "b7aa5179686832e6d9f4bc3de53dea9951205eb8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/fixtures/native-model.mp4",
+      "git_blob_sha": "3469d36886a94f050413d0c872f634f367b6d170",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/fixtures/native-model.png",
+      "git_blob_sha": "8f9cc381f751fd0d0479b0c210a7f42b454991c7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/fixtures/native-send-current.json",
+      "git_blob_sha": "32ef931f584bca09688985ba4312891d6e83e08b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/fixtures/native-send-legacy.json",
+      "git_blob_sha": "a37436cf55327480e39fb9c122e695cdf9154488",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/fixtures/native-wxgf-still.jpg",
+      "git_blob_sha": "deaf509345ba2ff77255bed0ba65cf6e5c658a67",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/test/pinned-outbound-options.mjs",
+      "git_blob_sha": "1e64c592f32d5948acdbd9746e39e5d7ed0c2507",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/openclaw-extension/tsconfig.json",
+      "git_blob_sha": "a315c0a0ef2d18def855c56cb519ca3170854378",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/shared/CHANGELOG.md",
+      "git_blob_sha": "a8b7af2f4627a1a59aacd16f1d81950baaacad83",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/shared/package.json",
+      "git_blob_sha": "1694772ddb613041e893aca689384eb8bb8bd9ec",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/shared/src/index.ts",
+      "git_blob_sha": "f7099248ee86c96cee9a72d710706126ac9c1dd4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/shared/src/native-calls.ts",
+      "git_blob_sha": "2ce5249451cd61e2d28b711280b69776a96c5629",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/shared/src/native-client.ts",
+      "git_blob_sha": "3c89e72a7bb4f44eb0882d1d14ca03d1279d5952",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/shared/src/native.generated.ts",
+      "git_blob_sha": "35febb3deb190cb7f027cbce4b80eaa7f71bb021",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/shared/test/native-calls.test.mjs",
+      "git_blob_sha": "aaeefaec9d7ce62f7db4cc4badbc2bd96d8f5862",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/shared/test/native-client.test.mjs",
+      "git_blob_sha": "a20ddb503f2368f2e8e9240a06b952f32b760fb6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/packages/shared/tsconfig.json",
+      "git_blob_sha": "34688abcba7ed612aac4230bdabc7a3d8c17ce5f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/pnpm-lock.yaml",
+      "git_blob_sha": "1299de88c5073d344594d5562ac5c605ee8a9838",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/pnpm-workspace.yaml",
+      "git_blob_sha": "661bdfeda47a2b23856a76a9ecbb5e4316de1e20",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/rust-toolchain.toml",
+      "git_blob_sha": "d46b3cca78425ccdfd718edc0c1eb9d033db9897",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/candidate-transport-smoke.mjs",
+      "git_blob_sha": "d9fb78fab09ef1be4032c16bb2f17ce1d0177b75",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/client-ui-account-smoke.mjs",
+      "git_blob_sha": "8093b8f4d09314dee9116e517fde22d5194c36cf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/client-ui-connect-smoke.mjs",
+      "git_blob_sha": "9274eb53004ac4512adc5f5104099413f326bc7a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/client-ui-group-smoke.mjs",
+      "git_blob_sha": "b2615a13985ac99725b04259304d40fb8e4aa887",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/client-ui-media-smoke.mjs",
+      "git_blob_sha": "3036d03250b0641fb8638aa1177faa8910e8dec8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/client-ui-smoke.mjs",
+      "git_blob_sha": "3b16ca44950acff5c0cceb29590ddd5ec5b1c370",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-gallery/README.md",
+      "git_blob_sha": "8fbf734db3810e4e4398161ef04db675df56ca0e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-gallery/assets.json",
+      "git_blob_sha": "f14f8c3b12d4f31f66943eaabd4901fb1027bcf4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-gallery/fixtures/conversations.json",
+      "git_blob_sha": "f972be2b1bfdaa9284b94e64d2eee92a70a2cf1f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-gallery/fixtures/media/launch-notes.txt",
+      "git_blob_sha": "58a68ae3fe0e304340e1d9ee8b269d313047de57",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-gallery/prepare_media.py",
+      "git_blob_sha": "92cbe380f5480c890ca2f6bb1d8f0a79d2316d83",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-gallery/readme_images.py",
+      "git_blob_sha": "2d56bc8531291fc344540808d49894fd9f8593c8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-gallery/render.py",
+      "git_blob_sha": "caa0fbb4806278f9ec9920a6723d7fca37f2d16f",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-gallery/requirements.txt",
+      "git_blob_sha": "7df936ba3982a40d81411fb2e472a296b6c2a38c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-video/README.md",
+      "git_blob_sha": "c94451443087f39ba60800c6b62eb948bb13dd81",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-video/approved-timeline.json",
+      "git_blob_sha": "8d50f8243c26e2cb043e5a1efb61a39860b5db72",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-video/config.py",
+      "git_blob_sha": "17bac0d28521defe43a1dbfddbef9d903e944583",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-video/finish.py",
+      "git_blob_sha": "922f9f99a5934872db5c25f9ed3626277b1e5d73",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-video/fonts/OFL.txt",
+      "git_blob_sha": "909a6bf9cfb4849d4468a723cc16ffb7a183bd09",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-video/media.py",
+      "git_blob_sha": "56dd29a09d482ef22c5e0863ae81858f5a0b1a44",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-video/music.py",
+      "git_blob_sha": "fb912f98d3dd28ce83a61cd3fc7a06065520caf7",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-video/render.py",
+      "git_blob_sha": "96b15f6d531560d59982eba75fee8dad59867945",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-video/requirements.txt",
+      "git_blob_sha": "900bdafb49364e15e31b5f3df63969023beb22d1",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/demo-video/titles.py",
+      "git_blob_sha": "0d4ca73d53e89914a376db40abf0d889557a377d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/install-ci-npm.sh",
+      "git_blob_sha": "56b7cc89e7d6f6bad2e8d6123eedf82b60198605",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/local-validation-smoke.mjs",
+      "git_blob_sha": "15e2dfb464fbbd17399949ba4071e3ee5deed46d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-archive-tools-smoke.mjs",
+      "git_blob_sha": "f06198bfd7180cbe5bbf5ca843c4511f893190ad",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-build-release.sh",
+      "git_blob_sha": "ddc64f20a31272ac7d577f2d3d2216b01c58d2bc",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-build-release.test.py",
+      "git_blob_sha": "bbcaf9be08df034526b06192bfbfb4d55aeae4e0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-calls-api-smoke.mjs",
+      "git_blob_sha": "dcfe7766599d292a5090124bbae4a2845ce46284",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-ci-artifact.mjs",
+      "git_blob_sha": "a684cdc8c3a7687827705474b15b680ce0965263",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-ci-artifact.test.mjs",
+      "git_blob_sha": "f0240a8f9fa0552857adde1be020bf1bb2347636",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-ci-build.py",
+      "git_blob_sha": "54b5f3e5dc7934e07c0eb756737cce9ac02e5679",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-ci-build.test.py",
+      "git_blob_sha": "ace3355ed079547bcfd2c90b8599b4c5b8372564",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-ci-cache-key.py",
+      "git_blob_sha": "6756b7eb32ebd5643605251747b04bf4e854d4d5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-ci-cache-key.test.py",
+      "git_blob_sha": "1252a6fa5a3196fb7cf11ad2e98f30513808d8a3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-ci-media-assertions.mjs",
+      "git_blob_sha": "8785d16cc8ad67e5aaafb0ff17b4cdb002bd2360",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-ci-media-assertions.test.mjs",
+      "git_blob_sha": "47d828d2e95586fe979bcf23d87535860721773a",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-ci-media-runtime.mjs",
+      "git_blob_sha": "311338ec9a5df95b2be02dc8db1038cced8aa54e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-ci-msvc.ps1",
+      "git_blob_sha": "fa31abe4ad738f114e3bd1777ddcdeab09992e60",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-cli-fixture-test.py",
+      "git_blob_sha": "17e1fe478e1a43cfcea0ac36669c5233624343e3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-cli-smoke.py",
+      "git_blob_sha": "1c38dedc2f55b69b12bc6995bac092038a5f9ade",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-container-smoke.py",
+      "git_blob_sha": "997381eb0eaf7f9324f844784c3201ae5e2ce8af",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-crates.mjs",
+      "git_blob_sha": "7cc3e22d9a0d401905c0e60c0765c4cba8a3766c",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-crates.test.mjs",
+      "git_blob_sha": "b72d0d0f5c6273341b113af34d2945fc36aaad14",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-export-smoke.py",
+      "git_blob_sha": "d9c12d05978a345c17591594332a92290fe4f44e",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-gateway-smoke.mjs",
+      "git_blob_sha": "72db71ab347ed0f660c66b5bc98f7f2f94568feb",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-generate-types.sh",
+      "git_blob_sha": "3a6163c34fbdd12686dc71735884d97ff47abc43",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-history-model-smoke.mjs",
+      "git_blob_sha": "eeaf1844f2a3411367c330ab33b0594e169f4ab4",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-media-model-smoke.mjs",
+      "git_blob_sha": "6b744c8dc6007a0214b919759cee507498061caa",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-merge-release.mjs",
+      "git_blob_sha": "670b189352533094683f0bcae23e9d8ac6abb2ec",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-merge-release.test.mjs",
+      "git_blob_sha": "74313cc4ea08159e843ea77ff7433a186d98cef8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-model-smoke.mjs",
+      "git_blob_sha": "9c744a4d4b1f74e207bff6bb8b4d6b3257829e88",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-openclaw-smoke.mjs",
+      "git_blob_sha": "51bf7725d965c68ff82684583ec518d2bdf3a024",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-package-smoke.mjs",
+      "git_blob_sha": "86e6fd10150ba68fb58855eefcb6205cba01d338",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-platform-smoke.mjs",
+      "git_blob_sha": "67e3ef1885208ac8f8a89f68939bf4aeb871d471",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-portable-build.mjs",
+      "git_blob_sha": "3cbaf174a24e02d360362a524dce07fb4f4d4ac0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-prepare-package.mjs",
+      "git_blob_sha": "641804b990d58ed0d2e5743b627a7be532d64b36",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-recall-model-smoke.mjs",
+      "git_blob_sha": "f0a5f0def39f98f4d76ff5e79948c906be8262d3",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-release-manifest.mjs",
+      "git_blob_sha": "fdec062af5d64a690d75be5da135324b0c5a50d8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-release-notes.mjs",
+      "git_blob_sha": "6a1d729caa563efb9cc8b3ac62177eafae244a89",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-release-notes.test.mjs",
+      "git_blob_sha": "c86e77048834702ee4c1500558ae891507194431",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-release-orchestration.mjs",
+      "git_blob_sha": "e65fc3b320920d9dd321a60870d5e8dac508da25",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-release-orchestration.test.mjs",
+      "git_blob_sha": "fb82e5df5c90f2b1f4c3295649ac02d53fa424b5",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-release-policy.mjs",
+      "git_blob_sha": "31f3cef1512ca290587b7e50e2a1a68760930eaf",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-release-policy.test.mjs",
+      "git_blob_sha": "53d03cdaf8aa5f79d473eef94a8e7407ae98d627",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-release-preflight.mjs",
+      "git_blob_sha": "39110ce46942cb67465c238ed65e683be2a5f886",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-release-preflight.test.mjs",
+      "git_blob_sha": "9ebdfc83a15cdf56218ea08909e9123fb49c63c2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-release-trigger.mjs",
+      "git_blob_sha": "9cf0c9a86c8b50772c627b92f68239254d95a64d",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-release-trigger.test.mjs",
+      "git_blob_sha": "7cc946d96613ee7a055218cbc471e8d38fb0c014",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-service-verify.py",
+      "git_blob_sha": "0f0b8abbaea7a385a2311aa80786b83645f68860",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-simulator-smoke.mjs",
+      "git_blob_sha": "8e59feca97050d60f0ba7d812a9c71f58c17fea2",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-smoke-plugin.mjs",
+      "git_blob_sha": "3ee1b7836ec7702879161c05c5fce1b44362a013",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/native-sync-version.mjs",
+      "git_blob_sha": "106a7d89b0536be423eab41fe0e1f887f7517dc8",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/verify-ci-publisher.mjs",
+      "git_blob_sha": "ac962c6ce9aa6baf40966dbfeb064ce769aeb7e0",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/scripts/verify-ci-publisher.test.mjs",
+      "git_blob_sha": "78b8755a15ee2c8b40a87302a2ff14df5fb70995",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/tests/media-download.test.cjs",
+      "git_blob_sha": "00cd7065a2e6d0b414332619581a93c61254cd31",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/tests/test_chat_select_profiles.py",
+      "git_blob_sha": "6fac5236e13ce3e20190f68141cdc33146e4a379",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/tests/test_chat_select_verification.py",
+      "git_blob_sha": "5b86237bace7d5d8e43e220ca74859901441a828",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/tests/test_container_display_startup.py",
+      "git_blob_sha": "a73c8d031bc7d45dd16cbbae98400908c4530dce",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/tests/test_extract_keys.py",
+      "git_blob_sha": "02a0a5cb0c3210c35f09a6848dcbcfbbb5078de6",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/tests/test_media_download.py",
+      "git_blob_sha": "630f41c3c6a3abbc9326712371a81912719a2e34",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/tools/test_voice_send_worker.py",
+      "git_blob_sha": "ce7719232633dba814a0b4b2466ffd4446b22f15",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/turbo.json",
+      "git_blob_sha": "488df6b8c670e5dae6c1145d80f6975c028ea172",
+      "mode": "100644"
+    },
+    {
+      "path": "openbot.py",
+      "git_blob_sha": "592ef274111edd2e2a0db4c730badbce53782282",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/README.md",
+      "git_blob_sha": "f37c3bf9268df1858a01b7a60d8da981f1ee4051",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_analysis_reply.py",
+      "git_blob_sha": "24fdc0a43ffc6db7fb75bb28d142aa00bc8b4fee",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_answer_revision.py",
+      "git_blob_sha": "bdf78fa4fd9bc6d00d2fa8528cd2cc7b744ba403",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_architecture.py",
+      "git_blob_sha": "d09469dac7c5f66d9efe91ad3c3ec6e396c86221",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_auto_image.py",
+      "git_blob_sha": "ca5683f91d27a92cb415830ae0b7f2c3353bb4f0",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_capabilities.py",
+      "git_blob_sha": "4f254bcc94c90495713a3fbaeebd9d32249d614d",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_connection_health.py",
+      "git_blob_sha": "0328eae5905ae231f1d210198374b511bca65ac9",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_consolidation.py",
+      "git_blob_sha": "a89543dfa8e25aac6a1e72f5a000cf917420ddbd",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_core.py",
+      "git_blob_sha": "f3408235e8df4611751e736d07643152e2ed6951",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_db_reader.py",
+      "git_blob_sha": "105f12452b61e7ae83baa48c227ed0c7df98af89",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_delivery_recovery.py",
+      "git_blob_sha": "93316e3339063a2e110021a61aa1d76927b09b5f",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_dialogue_history.py",
+      "git_blob_sha": "ae33a3746e467a2ca9200d8ff30c13e87c0c4586",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_eval_assertions.py",
+      "git_blob_sha": "6eb574a84e7c17b5322f91b4b05ae0dfe735204b",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_fairness_health.py",
+      "git_blob_sha": "15fc767cbb84e93e7f066342f93dfe5543dc6c60",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_flow_contract.py",
+      "git_blob_sha": "d898c6e95f1f137ae4c9611fdbad923c0d3b6787",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_futu_evidence.py",
+      "git_blob_sha": "166fe78c567ed8c3ee6963d514c82fca95e7b6fe",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_generation_pool.py",
+      "git_blob_sha": "f5a69b7214c866502c5946550b357d8122cd35ce",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_group_burst.py",
+      "git_blob_sha": "06e6212a3991790e3b2479463d4f249bac2a5f0f",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_group_summary.py",
+      "git_blob_sha": "62eccbd7d6d6bd7fd4982d4213e352f96c524b58",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_image_quality.py",
+      "git_blob_sha": "c8aa1b5b0576b5cb0a4e3b6b8600edcaf304138c",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_intake_edges.py",
+      "git_blob_sha": "c3ca15a05429bd7eec34c870a02cb1418290adc1",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_investment_math.py",
+      "git_blob_sha": "6d5c5748654b5195908d543e65a7341a211d8e20",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_latency_contract.py",
+      "git_blob_sha": "66d842c2faa83dea640c4dc6b01fe92ee22adf6c",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_member_views.py",
+      "git_blob_sha": "4bbb6d8dd6220007379667595525b0214a67843b",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_memory_controls_copy.py",
+      "git_blob_sha": "fa4a11bee664283601730977cbd7485734eb335c",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_native_health.py",
+      "git_blob_sha": "41227859f9f4fa31b266d61d2c809f8814f07be3",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_native_sender.py",
+      "git_blob_sha": "5d70f056f5af7a97662d1fd41588a1f109beba04",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_outbound_images.py",
+      "git_blob_sha": "b7fbf57f33c76a188ccd922d8a1b942b413c95b1",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_policy_profiles.py",
+      "git_blob_sha": "19e9794cde5256499c479cc996fa97afe47e1cdf",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_process_generation.py",
+      "git_blob_sha": "7afc57475eeb5eac61fa6cb750d1b32822f072da",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_product_experience.py",
+      "git_blob_sha": "fdf3e4d29478667a61b3a2f485abd7fce3378fc3",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_protocol_faults.py",
+      "git_blob_sha": "6420dc8ff5283ed7634cf8e7f2347dcd6f10e96a",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_public_feed.py",
+      "git_blob_sha": "68826dea1582ce7644e2ddcaca3525a21547935f",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_public_pages.py",
+      "git_blob_sha": "6ad882d833501fe3943dbe6060418d2404cc1f1b",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_public_research.py",
+      "git_blob_sha": "92ceb737750f4c4196f0e97cdcfb5a894ef0010a",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_recent_fixes.py",
+      "git_blob_sha": "80335f3b7093859f4b364e681c29dae96c8c6911",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_resilience.py",
+      "git_blob_sha": "391b3d3bad25a70e2cbd119e454bb56b7183af0d",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_scenarios.py",
+      "git_blob_sha": "245e918efe6282ba875d19ad6e0b0ce8e20e10f2",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_source_lifecycle.py",
+      "git_blob_sha": "829df602d96ede501eaf0effad27967dea678927",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_warm_transport.py",
+      "git_blob_sha": "4fdf78b854e91784e10155b104c9f6fb75395012",
+      "mode": "100644"
+    },
+    {
+      "path": "tools/check_release.py",
+      "git_blob_sha": "69eb4056a4b9b5cefc4179760d39a13a77275437",
+      "mode": "100644"
+    },
+    {
+      "path": "tools/run_evaluation.py",
+      "git_blob_sha": "d9617034f7cdcfed1f8ad09fee5b809d71ed87e1",
+      "mode": "100644"
+    },
+    {
+      "path": "tools/run_tests.py",
+      "git_blob_sha": "187f43ee21a7b9fdcfe3b035dcbe2631ed2121b7",
+      "mode": "100644"
+    }
+  ]
+}

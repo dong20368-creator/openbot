@@ -1,0 +1,467 @@
+{
+  "name": "@agent-wechat/agent-wechat",
+  "version": "1.5.1",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist",
+    "openclaw.plugin.json",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "esbuild index.ts --bundle --format=esm --platform=node --outfile=dist/index.js --external:openclaw --external:ws",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types src/*.test.ts"
+  },
+  "devDependencies": {
+    "@agent-wechat/shared": "workspace:*",
+    "@types/node": "^22",
+    "esbuild": "^0.25.0",
+    "openclaw": "2026.10.9",
+    "typescript": "^5.4.5"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "channel": {
+      "id": "agent-wechat",
+      "label": "WeChat",
+      "selectionLabel": "WeChat (微信)",
+      "order": 80
+    },
+    "install": {
+      "npmSpec": "@agent-wechat/agent-wechat"
+    },
+    "channelConfigs": {
+      "agent-wechat": {
+        "label": "WeChat",
+        "description": "WeChat messaging through the standalone native daemon.",
+        "schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "dmPolicy": {
+              "type": "string",
+              "enum": [
+                "open",
+                "allowlist",
+                "disabled"
+              ]
+            },
+            "allowFrom": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "groupPolicy": {
+              "type": "string",
+              "enum": [
+                "open",
+                "allowlist",
+                "disabled"
+              ]
+            },
+            "groupAllowFrom": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "groups": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "enabled": {
+                    "type": "boolean"
+                  },
+                  "requireMention": {
+                    "type": "boolean"
+                  },
+                  "groupPolicy": {
+                    "type": "string",
+                    "enum": [
+                      "open",
+                      "allowlist",
+                      "disabled"
+                    ]
+                  },
+                  "allowFrom": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "mediaMaxMb": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1024
+            },
+            "backend": {
+              "type": "string",
+              "enum": [
+                "native"
+              ]
+            },
+            "native": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "mode",
+                "accountId",
+                "token",
+                "consumerStateDir"
+              ],
+              "properties": {
+                "mode": {
+                  "type": "string",
+                  "enum": [
+                    "managed",
+                    "external"
+                  ]
+                },
+                "accountId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "endpoint": {
+                  "type": "string"
+                },
+                "executable": {
+                  "type": "string"
+                },
+                "serverConfig": {
+                  "type": "string"
+                },
+                "dataDir": {
+                  "type": "string"
+                },
+                "listen": {
+                  "type": "string"
+                },
+                "token": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "source",
+                        "provider",
+                        "id"
+                      ],
+                      "properties": {
+                        "source": {
+                          "type": "string",
+                          "enum": [
+                            "env",
+                            "file",
+                            "exec",
+                            "store"
+                          ]
+                        },
+                        "provider": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+                        },
+                        "id": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  ]
+                },
+                "consumerStateDir": {
+                  "type": "string"
+                },
+                "readPolicy": {
+                  "type": "string",
+                  "enum": [
+                    "never",
+                    "on_inbound",
+                    "on_model_dispatch"
+                  ]
+                },
+                "gatewayFacade": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "enabled"
+                  ],
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean"
+                    },
+                    "prefix": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "calls": {
+              "type": "object",
+              "additionalProperties": false,
+              "description": "Independent voice and video permissions. Both default off; the current backend supports direct voice only.",
+              "properties": {
+                "voice": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": false,
+                      "description": "Enable direct voice calling. Disabled voice calls are ignored without answering or declining."
+                    },
+                    "inboundPolicy": {
+                      "type": "string",
+                      "enum": [
+                        "disabled",
+                        "allowlist"
+                      ]
+                    },
+                    "inboundAllowFrom": {
+                      "type": "array",
+                      "maxItems": 128,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 200
+                      }
+                    },
+                    "outboundPolicy": {
+                      "type": "string",
+                      "enum": [
+                        "disabled",
+                        "allowlist"
+                      ]
+                    },
+                    "outboundAllowTo": {
+                      "type": "array",
+                      "maxItems": 128,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 200
+                      }
+                    },
+                    "outboundToolAllowFrom": {
+                      "type": "array",
+                      "maxItems": 128,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 200
+                      }
+                    },
+                    "agentId": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 200
+                    },
+                    "realtime": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "provider": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 200,
+                          "description": "Use openai. Other providers fail preflight without fallback."
+                        },
+                        "model": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 200,
+                          "description": "Speech model, such as gpt-realtime-2.1 or the continuous gpt-live-1-codex; omitted uses the selected provider's default."
+                        },
+                        "voice": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 200,
+                          "description": "Spoken voice; omitted uses the selected provider's default."
+                        },
+                        "instructions": {
+                          "type": "string",
+                          "maxLength": 4000,
+                          "description": "Additional conversation guidance; does not grant tool or account-owner authority."
+                        },
+                        "agentContext": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "enabled": {
+                              "type": "boolean",
+                              "default": false,
+                              "description": "Send bounded excerpts of the selected agent's IDENTITY.md and SOUL.md to the Realtime provider. Configured agent identity is used independently."
+                            }
+                          }
+                        },
+                        "recentContext": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "enabled": {
+                              "type": "boolean",
+                              "default": false,
+                              "description": "When a call starts, send the Realtime provider the summaries of the last few calls with this contact and the latest messages of your WeChat chat with them, so the voice model knows what you last talked about."
+                            },
+                            "maxMessages": {
+                              "type": "integer",
+                              "minimum": 1,
+                              "maximum": 50,
+                              "default": 10,
+                              "description": "How many of the latest chat messages to include."
+                            }
+                          }
+                        },
+                        "consultPolicy": {
+                          "type": "string",
+                          "enum": [
+                            "auto",
+                            "substantive",
+                            "always"
+                          ],
+                          "default": "auto",
+                          "description": "Guide when the voice model consults. Always can use a final caller utterance as the consultation question when the voice model does not consult. GPT-Live models do not support always."
+                        },
+                        "consultThinkingLevel": {
+                          "type": "string",
+                          "enum": [
+                            "off",
+                            "minimal",
+                            "low",
+                            "medium",
+                            "high",
+                            "xhigh",
+                            "adaptive",
+                            "max",
+                            "ultra"
+                          ],
+                          "description": "Thinking level for the regular OpenClaw consultation run."
+                        },
+                        "consultFastMode": {
+                          "type": "boolean",
+                          "description": "Set fast mode for the regular OpenClaw consultation run when its model supports it."
+                        },
+                        "providers": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "openai": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "apiKey": {
+                                  "description": "Optional OpenClaw SecretRef or API-key string. Omitted uses the selected agent's OpenAI auth profile or Gateway environment."
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "toolPolicy": {
+                      "type": "string",
+                      "enum": [
+                        "none",
+                        "safe-read-only",
+                        "owner"
+                      ],
+                      "description": "Owner uses the normal agent tool policy only for an exact agent-wechat entry in commands.ownerAllowFrom matching the connected voice peer. Other admitted peers get read-only consultation. Defaults to safe-read-only with session persistence, otherwise none."
+                    },
+                    "allowConsultSessionPersistence": {
+                      "type": "boolean",
+                      "default": false,
+                      "description": "Required for consultation. OpenClaw creates separate agent sessions for calls which can persist. This adapter stores no recordings; with consultation.summary it keeps the last few call summaries for each contact."
+                    },
+                    "consultation": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "timeoutMs": {
+                          "type": "integer",
+                          "minimum": 1000,
+                          "maximum": 120000,
+                          "default": 30000
+                        },
+                        "inboundSessionKey": {
+                          "type": "string",
+                          "pattern": "^agent:[a-z0-9][a-z0-9_-]{0,63}:[^:\\s][^\\s]*$",
+                          "maxLength": 1024,
+                          "description": "Optional existing session of the selected agent to fork into a call's session when that session is first created by an admitted incoming call."
+                        },
+                        "summary": {
+                          "type": "boolean",
+                          "default": true,
+                          "description": "After an answered call, give the call's transcript to the agent in the call's session and keep its short summary. The summary is also left as a note in your WeChat chat with the caller, and calls placed with the wechat_call tool report it to the session that placed them."
+                        },
+                        "recentMessages": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 50,
+                          "default": 10,
+                          "description": "How many of the latest messages of your WeChat chat with the caller the call's first consultation gets as context; 0 turns this off."
+                        }
+                      }
+                    },
+                    "sessionScope": {
+                      "type": "string",
+                      "enum": [
+                        "per-contact",
+                        "per-call"
+                      ],
+                      "default": "per-contact",
+                      "description": "per-contact keeps one session for each contact, so the agent remembers earlier calls with them; per-call starts every call in a new session."
+                    },
+                    "maxDurationSeconds": {
+                      "type": "integer",
+                      "minimum": 30,
+                      "maximum": 3600,
+                      "default": 3600
+                    }
+                  }
+                },
+                "video": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "default": false,
+                      "description": "Allow video independently of voice. Current video capability is unavailable; permission alone never answers a video call or routes it as voice."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisnick/agent-wechat.git",
+    "directory": "packages/openclaw-extension"
+  },
+  "dependencies": {
+    "ws": "8.22.0"
+  }
+}
