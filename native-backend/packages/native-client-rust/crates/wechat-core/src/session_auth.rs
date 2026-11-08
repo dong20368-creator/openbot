@@ -81,6 +81,13 @@ impl Core {
         };
         match request(fence.clone()).await {
             Err(error) if authentication_required(&error) => {
+                if auth_rejected(&error)
+                    && matches!(source, "push" | "polling" | "sync" | "contact_sync")
+                    && self.renew_rejected_session(account, &fence).await?
+                {
+                    // Restart only the receive loop. Never replay the request.
+                    bail!("session_superseded");
+                }
                 let logged_out = self
                     .logout_rejected_session(account, &fence, &error, source)
                     .await?;
@@ -92,6 +99,67 @@ impl Core {
             }
             result => result,
         }
+    }
+
+    async fn renew_rejected_session(
+        self: &Arc<Self>,
+        account: &str,
+        fence: &SessionFence,
+    ) -> Result<bool> {
+        let _guard = self.lock_account(account).await?;
+        if self.store.runtime(account, "desired")?.as_deref() != Some(b"connected")
+            || self.session_fence(account).ok().as_ref() != Some(fence)
+            || self.store.runtime(account, "logged-out")?.is_some()
+        {
+            return Ok(false);
+        }
+        let now = wechat_store::unix_seconds();
+        let last = self
+            .store
+            .runtime(account, "receive-renewal-at")?
+            .and_then(|v| String::from_utf8(v).ok())
+            .and_then(|v| v.parse::<i64>().ok());
+        if last.is_some_and(|last| now.saturating_sub(last) < 60) {
+            return Ok(false);
+        }
+        let previous = self.account_state(account)?;
+        if previous.auto_auth_key.is_empty() {
+            return Ok(false);
+        }
+        self.store
+            .put_runtime(account, "receive-renewal-at", now.to_string().as_bytes())?;
+        let expected = self
+            .store
+            .runtime(account, "account-state")?
+            .context("auth_required")?;
+        let upstream = self.upstream.clone();
+        let old = previous.clone();
+        let renewed = blocking(move || upstream.renew_session(&old, "agent-wechat")).await;
+        let next = match renewed {
+            Ok(next)
+                if next.own_username == previous.own_username
+                    && next.uin == previous.uin
+                    && authorization(&next)? != fence.authorization =>
+            {
+                next
+            }
+            _ => {
+                self.store.append_event(
+                    account,
+                    "account.session",
+                    &json!({"state":"renewal_failed","source":"receive"}),
+                )?;
+                return Ok(false);
+            }
+        };
+        self.upstream.validate_state(&next)?;
+        self.save_network_state(account, &next, &expected, fence, Some(b"connected"))?;
+        self.store.append_event(
+            account,
+            "account.session",
+            &json!({"state":"renewed","source":"receive"}),
+        )?;
+        Ok(true)
     }
 
     async fn logout_rejected_session(
@@ -129,16 +197,47 @@ mod tests {
     use super::*;
     use std::sync::atomic::AtomicUsize;
 
+    struct RenewalUpstream {
+        succeed: bool,
+        calls: Arc<AtomicUsize>,
+    }
+    impl crate::upstream::Upstream for RenewalUpstream {
+        fn kind(&self) -> crate::upstream::UpstreamKind {
+            crate::upstream::UpstreamKind::Native
+        }
+        fn renew_session(&self, state: &AccountState, _: &str) -> Result<AccountState> {
+            self.calls.fetch_add(1, Ordering::SeqCst);
+            if !self.succeed {
+                bail!("Automatic authentication returned -13");
+            }
+            let mut next = state.clone();
+            next.request_key[0] ^= 1;
+            Ok(next)
+        }
+    }
     fn core() -> (tempfile::TempDir, Arc<Core>) {
+        core_with(false).0
+    }
+    fn core_with(succeed: bool) -> ((tempfile::TempDir, Arc<Core>), Arc<AtomicUsize>) {
         let directory = tempfile::tempdir().unwrap();
         let store = Arc::new(Store::open(&directory.path().join("data")).unwrap());
         for account in ["one", "other"] {
             store.create_account(account).unwrap();
         }
-        let core = Core::new(store, None).unwrap();
+        let calls = Arc::new(AtomicUsize::new(0));
+        let core = Core::with_upstream(
+            store,
+            None,
+            Arc::new(RenewalUpstream {
+                succeed,
+                calls: calls.clone(),
+            }),
+        )
+        .unwrap();
         for account in ["one", "other"] {
-            core.save_state(account, &super::super::tests::state())
-                .unwrap();
+            let mut state = super::super::tests::state();
+            state.auto_auth_key = vec![1; 32];
+            core.save_state(account, &state).unwrap();
             core.store
                 .put_runtime(account, "desired", b"connected")
                 .unwrap();
@@ -146,7 +245,69 @@ mod tests {
                 .mark_validated_if_active(account, &core.ownership_generation)
                 .unwrap();
         }
-        (directory, core)
+        ((directory, core), calls)
+    }
+
+    #[tokio::test]
+    async fn receive_renewal_restarts_without_replaying_and_is_bounded() {
+        let ((_directory, core), calls) = core_with(true);
+        let mut state = super::super::tests::state();
+        state.auto_auth_key = vec![1; 32];
+        core.save_state("one", &state).unwrap();
+        let requests = AtomicUsize::new(0);
+        let failure = core
+            .session_request("one", "push", |_| async {
+                requests.fetch_add(1, Ordering::SeqCst);
+                Err::<(), _>(anyhow::anyhow!("Heartbeat returned -13"))
+            })
+            .await
+            .unwrap_err();
+        assert_eq!(failure.to_string(), "session_superseded");
+        assert_eq!(requests.load(Ordering::SeqCst), 1);
+        assert_eq!(calls.load(Ordering::SeqCst), 1);
+        assert_eq!(core.account_status("one").unwrap()["authenticated"], true);
+        assert!(core.store.runtime("one", "logged-out").unwrap().is_none());
+        let _ = core
+            .session_request("one", "push", |_| async {
+                Err::<(), _>(anyhow::anyhow!("Heartbeat returned -13"))
+            })
+            .await;
+        assert_eq!(calls.load(Ordering::SeqCst), 1);
+        assert_eq!(core.account_status("one").unwrap()["authenticated"], false);
+    }
+
+    #[tokio::test]
+    async fn explicit_logout_and_send_errors_do_not_renew() {
+        let ((_directory, core), calls) = core_with(true);
+        let fence = core.session_fence("one").unwrap();
+        core.logout_local("one").unwrap();
+        assert!(!core.renew_rejected_session("one", &fence).await.unwrap());
+        assert_eq!(calls.load(Ordering::SeqCst), 0);
+        let _ = core
+            .session_request("other", "send", |_| async {
+                Err::<(), _>(anyhow::anyhow!("Native envelope returned -13"))
+            })
+            .await;
+        assert_eq!(calls.load(Ordering::SeqCst), 0);
+        assert_eq!(
+            core.account_status("other").unwrap()["authenticated"],
+            false
+        );
+    }
+
+    #[tokio::test]
+    async fn receive_renewal_failure_retains_login_requirement() {
+        let ((_directory, core), calls) = core_with(false);
+        let mut state = super::super::tests::state();
+        state.auto_auth_key = vec![1; 32];
+        core.save_state("one", &state).unwrap();
+        let _ = core
+            .session_request("one", "polling", |_| async {
+                Err::<(), _>(anyhow::anyhow!("Heartbeat returned -13"))
+            })
+            .await;
+        assert_eq!(calls.load(Ordering::SeqCst), 1);
+        assert_eq!(core.account_status("one").unwrap()["authenticated"], false);
     }
 
     #[tokio::test]

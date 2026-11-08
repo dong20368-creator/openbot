@@ -294,7 +294,7 @@
     },
     {
       "path": "docs/OPERATIONS.md",
-      "git_blob_sha": "30579fd0f7fb5031eb90545e68157595a4e7601a",
+      "git_blob_sha": "7ac60879950d3463f773092e34f6c3cf0ffc39a7",
       "mode": "100644"
     },
     {
@@ -314,7 +314,7 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "git_blob_sha": "55108aebf6118ce7c42e5f8b64238e329eb82444",
+      "git_blob_sha": "e82be89aa034eda853dfaa992128f7f8750891af",
       "mode": "100644"
     },
     {
@@ -440,6 +440,11 @@
     {
       "path": "native-backend/.changeset/raise-video-send-limit.md",
       "git_blob_sha": "10cdd9b8aaeae17660c271962436784a749c597b",
+      "mode": "100644"
+    },
+    {
+      "path": "native-backend/.changeset/receive-session-renewal.md",
+      "git_blob_sha": "efdbecb066bc7a940276e4266fb3fdd38974e3d5",
       "mode": "100644"
     },
     {
@@ -629,7 +634,7 @@
     },
     {
       "path": "native-backend/docs/src/content/docs/how-it-works/wechat.mdx",
-      "git_blob_sha": "a4232c660f91d6feb41fc527ac2479a6a09b5349",
+      "git_blob_sha": "1663b2a0856a2cc8fca5c749bc946c5c9b1ae83d",
       "mode": "100644"
     },
     {
@@ -2234,7 +2239,7 @@
     },
     {
       "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/session_auth.rs",
-      "git_blob_sha": "1df404adae8a62555f472cee190d605b1deb891d",
+      "git_blob_sha": "aecdf3b93ec5a79031ab65db1d43f4a38dc25fa8",
       "mode": "100644"
     },
     {
@@ -5177,5 +5182,15 @@
       "git_blob_sha": "187f43ee21a7b9fdcfe3b035dcbe2631ed2121b7",
       "mode": "100644"
     }
-  ]
+  ],
+  "receive_session_renewal_validation": {
+    "auth_tests_passed": 8,
+    "core_passed": 325,
+    "core_failed": 1,
+    "core_ignored": 1,
+    "baseline_same_snapshot_failure": true,
+    "fmt_and_clippy": "passed",
+    "isolated_image_smoke": "passed",
+    "live_renewal_after_rejection": "not_observed"
+  }
 }
