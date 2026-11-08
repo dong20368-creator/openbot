@@ -165,7 +165,7 @@ fn persisted_message_projection_matches_the_consumer_contract() {
     }
     let expected = std::fs::read_to_string(&path).unwrap();
     assert!(
-        expected == actual,
+        expected.replace("\r\n", "\n") == actual,
         "Message JSON differs from {GOLDEN}. Consumers persist this JSON, so a change can stop \
          them dispatching messages stored by an earlier release. If the change is intended, \
          regenerate with UPDATE_NATIVE_COMPAT_FIXTURES=1 and keep the OpenClaw consumer \

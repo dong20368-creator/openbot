@@ -170,7 +170,8 @@ class Codex:
         remaining=self.deadline-time.monotonic()
         if remaining<=0:
             raise TimeoutError('codex_timeout')
-        event=self.events.get(timeout=remaining)
+        try:event=self.events.get(timeout=remaining)
+        except queue.Empty:raise TimeoutError('codex_timeout') from None
         if event.get('method')=='local/processEnded':
             raise RuntimeError('codex_process_ended')
         if 'id' in event and 'method' in event:

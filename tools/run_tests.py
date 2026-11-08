@@ -17,6 +17,7 @@ SUITE = (
     'test_futu_evidence', 'test_eval_assertions',
     'test_native_sender', 'test_resilience',
     'test_memory_controls_copy', 'test_latency_contract',
+    'test_reliability_audit', 'test_supervisor_recovery',
 )
 
 

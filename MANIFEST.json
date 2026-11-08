@@ -1,6 +1,6 @@
 {
   "format": "Git blob SHA-1 over normalized staged bytes",
-  "selected_isolated_tests_passed": 176,
+  "selected_isolated_tests_passed": 185,
   "files": [
     {
       "path": ".gitattributes",
@@ -44,7 +44,7 @@
     },
     {
       "path": "assistant/codex_client.py",
-      "git_blob_sha": "ae0dde5e0d18439cc1f92ac88ce1f77c0c44e9e2",
+      "git_blob_sha": "955a1cef636ea265417e8c13cf79265dc77a9b49",
       "mode": "100644"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "path": "assistant/core.py",
-      "git_blob_sha": "edb3f7ff24dfc55bb1f0efd9c78b730fa6cde47b",
+      "git_blob_sha": "c7ac742265e1b1408dbae52fb1cefd6d55a88941",
       "mode": "100644"
     },
     {
@@ -254,7 +254,7 @@
     },
     {
       "path": "assistant/start-bot.ps1",
-      "git_blob_sha": "969a9b101486d366e0ae6537d1f136a3a00f2e7e",
+      "git_blob_sha": "dbbff7cdb714dd0a497c87bfcffba8b33d758ce4",
       "mode": "100644"
     },
     {
@@ -274,7 +274,7 @@
     },
     {
       "path": "assistant/supervise.py",
-      "git_blob_sha": "7495376d181fe4f01e7195e3c1c30a9dbb8fe84a",
+      "git_blob_sha": "53a42503ffdaeb55278aca2ff18f22b8e16707e6",
       "mode": "100644"
     },
     {
@@ -294,7 +294,7 @@
     },
     {
       "path": "docs/OPERATIONS.md",
-      "git_blob_sha": "7ac60879950d3463f773092e34f6c3cf0ffc39a7",
+      "git_blob_sha": "3972be5315d62a85deb2709a56717f55df7f7436",
       "mode": "100644"
     },
     {
@@ -314,7 +314,7 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "git_blob_sha": "e82be89aa034eda853dfaa992128f7f8750891af",
+      "git_blob_sha": "27bf00a1899c8f24a722c1639c7333584ef23758",
       "mode": "100644"
     },
     {
@@ -2139,7 +2139,7 @@
     },
     {
       "path": "native-backend/packages/native-client-rust/crates/wechat-core/src/native_compat_tests.rs",
-      "git_blob_sha": "361db38d3a7e55a6855c8e80885a11d4e86b9bcd",
+      "git_blob_sha": "b3297ad8496b8e6867958bc70497c6cbe342006e",
       "mode": "100644"
     },
     {
@@ -5148,6 +5148,11 @@
       "mode": "100644"
     },
     {
+      "path": "tests/test_reliability_audit.py",
+      "git_blob_sha": "4817b4fae818b3f23798e857056f550085742d1a",
+      "mode": "100644"
+    },
+    {
       "path": "tests/test_resilience.py",
       "git_blob_sha": "391b3d3bad25a70e2cbd119e454bb56b7183af0d",
       "mode": "100644"
@@ -5160,6 +5165,11 @@
     {
       "path": "tests/test_source_lifecycle.py",
       "git_blob_sha": "829df602d96ede501eaf0effad27967dea678927",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_supervisor_recovery.py",
+      "git_blob_sha": "67c127ac4d4e90d1ff8cfee6ea1b2ed3cdaed9ac",
       "mode": "100644"
     },
     {
@@ -5179,7 +5189,7 @@
     },
     {
       "path": "tools/run_tests.py",
-      "git_blob_sha": "187f43ee21a7b9fdcfe3b035dcbe2631ed2121b7",
+      "git_blob_sha": "b84ab7f9f58081c7460d0fc1ac4ec78f62c21bb5",
       "mode": "100644"
     }
   ],
@@ -5192,5 +5202,13 @@
     "fmt_and_clippy": "passed",
     "isolated_image_smoke": "passed",
     "live_renewal_after_rejection": "not_observed"
+  },
+  "reliability_audit_validation": {
+    "public_default_tests_passed": 185,
+    "windows_process_tests_included": 4,
+    "native_snapshot_test": "passed after CRLF normalization; fixture data unchanged",
+    "native_fmt_and_clippy": "passed",
+    "native_full_suite_rerun": false,
+    "real_model_or_messages": false
   }
 }

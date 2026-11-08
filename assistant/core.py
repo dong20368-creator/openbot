@@ -634,18 +634,29 @@ class Worker:
                     if self.sender.can_resume(job['account'],job['room']):
                         self.store.transition(job['id'],'attention','expired' if self.store.expired(job) else 'ready',
                             error_code='operator_draft_cleared',next_attempt=0)
-        if not hasattr(self.sender,'find_receipt'): return
+        if not (hasattr(self.sender,'find_job_receipt') or hasattr(self.sender,'find_receipt')): return
         scope,args=self.store.scope()
+        # Rotate bounded batches so persistent recent unknowns cannot starve old
+        # receipts. A process restart begins at the oldest unresolved job.
+        cursor=getattr(self,'receipt_cursor',0)
         rows=self.store.db.execute(f'''SELECT * FROM jobs WHERE state='uncertain' AND {scope}
-            AND answer_hash IS NOT NULL ORDER BY id DESC LIMIT 5''',args).fetchall()
+            AND answer_hash IS NOT NULL ORDER BY (id<=?),id LIMIT 5''',(*args,cursor)).fetchall()
         for row in rows:
             job=dict(row)
-            if hasattr(self.sender,'find_job_receipt'):
-                receipt=self.sender.find_job_receipt(job)
-            else:
-                receipt=self.sender.find_receipt(job['account'],job['room'],job['answer_hash'],
-                    (job['send_started'] or job['created'])-2)
+            self.receipt_cursor=job['id']
+            try:
+                if hasattr(self.sender,'find_job_receipt'):
+                    receipt=self.sender.find_job_receipt(job)
+                else:
+                    receipt=self.sender.find_receipt(job['account'],job['room'],job['answer_hash'],
+                        (job['send_started'] or job['created'])-2)
+            except Exception as exc:
+                self.store.event(job['id'],'receipt_lookup_error',error_type=type(exc).__name__)
+                continue
             if not receipt: continue
+            if not isinstance(receipt,dict):
+                self.store.event(job['id'],'receipt_lookup_error',error_type='InvalidReceipt')
+                continue
             native_required=self.store.db.execute("SELECT 1 FROM job_events WHERE job_id=? AND event='native_quote_required' LIMIT 1",(job['id'],)).fetchone()
             if (receipt.get('account')!=job['account'] or receipt.get('group')!=job['room']
                 or receipt.get('reference_id') not in (None,job['message_id'])
