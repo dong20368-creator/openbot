@@ -18,6 +18,8 @@ SUITE = (
     'test_native_sender', 'test_resilience',
     'test_memory_controls_copy', 'test_latency_contract',
     'test_reliability_audit', 'test_supervisor_recovery',
+    'test_conversation_floor', 'test_capability_context',
+    'test_conversation_citations', 'test_memory_retrieval', 'test_release_checks',
 )
 
 

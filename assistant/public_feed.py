@@ -63,7 +63,8 @@ def latest(fetcher=fetch):
 
 def receipt(result):
     # This receipt is constructed by local tool execution, never by model text.
-    return {'type':'publicFeedRead','success':True,'url':LATEST,'count':len(result['posts'])}
+    return {'type':'publicFeedRead','success':True,'url':LATEST,'count':len(result['posts']),
+            'original_urls':[p['original_url'] for p in result['posts'] if isinstance(p,dict) and p.get('original_url')]}
 
 def source_url(event):
     return LATEST if (event.get('type')=='publicFeedRead' and event.get('success') is True

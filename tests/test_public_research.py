@@ -118,7 +118,9 @@ class ResearchTests(unittest.TestCase):
             self.call(c,thread='other');self.assertEqual(read.call_count,0)
             self.call(c);self.call(c);self.assertEqual(read.call_count,1)
             self.call(c,{'keyword':'Apple','news_type':1});self.assertEqual(read.call_count,2)
-            self.call(c,{'keyword':'Nvidia','news_type':1});self.assertEqual(read.call_count,2)
+            self.call(c,{'keyword':'Nvidia','news_type':1});self.assertEqual(read.call_count,3)
+            self.call(c,{'keyword':'Microsoft','news_type':1});self.assertEqual(read.call_count,4)
+            self.call(c,{'keyword':'AMD','news_type':1});self.assertEqual(read.call_count,4)
             self.assertFalse(c.sent[-1]['result']['success'])
 
     def test_failure_and_short_budget_do_not_produce_receipts_or_leak_errors(self):

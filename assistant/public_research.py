@@ -5,6 +5,7 @@ import json
 import re
 import time
 import urllib.request
+from answer_limits import MAX_RESEARCH_REQUESTS
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlencode, urlsplit, parse_qs
 
@@ -227,8 +228,15 @@ def read_x_posts(post_urls, fetcher=fetch):
 
 
 def receipt(result):
+    originals=[]
+    if result.get('kind') in ('x_post','x_posts'):
+        for item in result['items']:
+            for post in (item,item.get('quoted_post',{})):
+                url=post.get('original_url')
+                if isinstance(url,str) and POST_URL.fullmatch(url):originals.append(url)
     return {'type': 'publicResearchRead', 'success': True, 'url': result['source_url'],
-            'count': len(result['items']), 'content_sha256': result['content_sha256']}
+            'count': len(result['items']), 'content_sha256': result['content_sha256'],
+            'original_urls':list(dict.fromkeys(originals))}
 
 
 def source_url(event):
@@ -241,7 +249,7 @@ def source_url(event):
 
 
 # Discovery workflow belongs to the tool that uses it, not every task policy.
-X_DISCOVERY_GUIDANCE = '事件评论无需用户先给账号。首批web搜索合并权威事件结果、事件+reactions/on X/回应报道、site:x.com+事件日期；不用错误路径site:x.com/status。打开报道提取真实x.com/账号/status/数字链接，调用public_research.read_x_posts每次最多3条、最多两个新读取回合共6条；不猜ID，不因登录墙就放弃直读。\n首批不足再针对缺口补一批，不反复换日期格式搜同义词；只找到账号且其最新页可能覆盖目标时间时才读latest_x_posts，不能拿今天的高频账号列表找数天前旧帖或凑无关观点。原帖必须落在事件窗口，事前预测不是事后反应。'
+X_DISCOVERY_GUIDANCE = f'事件评论无需用户先给账号。首批web搜索合并权威事件结果、事件+reactions/on X/回应报道、site:x.com+事件日期；不用错误路径site:x.com/status。打开报道提取真实x.com/账号/status/数字链接，调用public_research.read_x_posts每次最多3条；与新闻和时间线共用最多{MAX_RESEARCH_REQUESTS}次新请求，已用额度不能重复分配。不猜ID，不因登录墙就放弃直读。\n首批不足再针对缺口补一批，不反复换日期格式搜同义词；只找到账号且其最新页可能覆盖目标时间时才读latest_x_posts，不能拿今天的高频账号列表找数天前旧帖或凑无关观点。原帖必须落在事件窗口，事前预测不是事后反应。'
 
 TOOL = {'type': 'namespace', 'name': 'public_research',
         'description': 'Fast public structured sources. No account access or sends. Public companies/accounts only; never member identities or private context.',

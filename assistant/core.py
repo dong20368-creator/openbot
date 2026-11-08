@@ -13,7 +13,7 @@ import json
 import math
 import random
 from context_budget import search_terms,bounded_history
-from group_summary import is_summary
+from group_summary import is_summary,scrub
 from outbound_images import attachments,receipt_matches
 
 def model_error_code(exc):
@@ -269,6 +269,36 @@ class Store:
         except BaseException:
             self.db.execute('ROLLBACK'); raise
 
+    def search_history(self,job,query,enabled=False):
+        """Relevant own confirmed Q&A, without re-inserting recent chatter."""
+        if not enabled or not self.memory_setting(job['room'],job['sender'])[0]:return []
+        if job['account']!=self.account or job['room'] not in self.groups:raise ValueError('Context scope mismatch')
+        if not isinstance(query,str) or not query.strip() or len(query)>200:raise ValueError('Invalid memory query')
+        scope=(self.account,job['room'],job['sender'],job['id'])
+        terms=search_terms(query)[:32];rows=[]
+        if terms:
+            match=' OR '.join('"'+term+'"' for term in terms)
+            rows=list(self.db.execute('''SELECT j.* FROM job_search JOIN jobs j ON j.id=job_search.rowid
+                WHERE job_search MATCH ? AND account=? AND room=? AND sender=? AND state='confirmed'
+                AND j.id<? AND question!='' ORDER BY bm25(job_search),j.id DESC LIMIT 12''',(match,*scope)).fetchall())
+        if self.semantic:
+            try:rows.extend(self.semantic({**job,'question':query}))
+            except Exception as exc:self.event(job['id'],'semantic_fallback',error_type=type(exc).__name__)
+        result=[];seen=set()
+        for row in rows:
+            # Re-read indexed candidates under the exact scope. Search results
+            # are pointers, never authority to cross a member or revive forgetting.
+            current=self.db.execute('''SELECT * FROM jobs WHERE id=? AND account=? AND room=? AND sender=?
+                AND id<? AND state='confirmed' AND question!='' ''',(row['id'],*scope)).fetchone()
+            if current is None or current['id'] in seen:continue
+            seen.add(current['id'])
+            result.append({'kind':'current_person_history','continuity_role':'retrieved_turn',
+                'speaker':hashlib.sha256((self.account+'\0'+job['room']+'\0'+job['sender']).encode()).hexdigest()[:24],
+                'relevance_rank':len(result),'message_id':current['message_id'],'created':current['created'],
+                'question':current['question'],'answer':self.context_answer(current)})
+            if len(result)>=12:break
+        return result
+
     def history(self, job, enabled=False):
         if not enabled:
             return []
@@ -307,6 +337,24 @@ class Store:
             # turns here before the continuity-aware selector can see them.
             result.append(entry(row,'current_person_history'))
         result.reverse()
+        # Short-lived public conversational floor, not another member's memory.
+        # Only already delivered bot text is shared; never questions, facts,
+        # attachments, identities, or a later supplement from personal history.
+        if not job.get('reference_id'):
+            public=self.db.execute('''SELECT j.answer,j.sender,MIN(e.created) AS delivered
+                FROM jobs j JOIN job_events e ON e.job_id=j.id AND e.event='confirmed'
+                WHERE j.account=? AND j.room=? AND j.state='confirmed'
+                AND j.answer IS NOT NULL AND j.answer!='' AND j.question!=''
+                GROUP BY j.id HAVING delivered>=? AND delivered<?
+                ORDER BY delivered DESC,j.id DESC LIMIT 3''',
+                (self.account,job['room'],job['created']-300,job['created'])).fetchall()
+            for turn in reversed(public):
+                if turn['sender']==job['sender'] or not self.memory_setting(job['room'],turn['sender'])[0]:continue
+                text=scrub(turn['answer'])
+                if text:
+                    result.append({'kind':'recent_public_bot_reply','speaker_type':'assistant',
+                        'created':turn['delivered'],'answer':text,
+                        'notice':'刚才在本群已公开发送给其他成员的助手答复，仅供承接当前话题；不是当前提问者的经历、要求或个人事实。'})
         # Privacy: mentioning someone is not permission to retrieve their stored
         # personal history. Only the current person's records are recalled.
         # An explicit reference can cross a sender, but never an account/room.
@@ -501,7 +549,7 @@ class Worker:
                 reply=self.store.memory_control(job)
                 if reply is None:
                     if hasattr(self.model,'retriever'):
-                        self.model.retriever=lambda query:self.store.history({**job,'question':query},self.context_enabled)
+                        self.model.retriever=lambda query:self.store.search_history(job,query,self.context_enabled)
                     if hasattr(self.model,'current_job'): self.model.current_job=job
                     reply=self.model.answer(job['question'],self.store.history(job,self.context_enabled))
                     audit=dict(getattr(self.model,'last_audit',{}))

@@ -9,7 +9,7 @@ class LatencyContract(unittest.TestCase):
     def test_clock_changes_without_changing_instruction_prefix(self):
         captured=[];prompts=[]
         for clock in ('2026-11-07 14:00 UTC','2026-11-07 14:01 UTC'):
-            m=test_analysis_reply.EvidenceRepairTests().model(first_category='conversation')
+            m=test_analysis_reply.EvidenceRepairTests().model(first_category='conversation',visited_first=True)
             rpc=m.rpc
             def capture(method,params):
                 if method=='thread/start':captured.append(params['developerInstructions'])

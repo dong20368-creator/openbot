@@ -6,7 +6,7 @@ Legacy imports from codex_client remain supported.
 import json
 import re
 from copy import deepcopy
-from evidence import has_verified_evidence
+from evidence import has_verified_evidence,citation_report
 from answer_limits import MAX_REPLY_CHARS, MAX_SOURCES, MAX_MEMORIES
 
 ANSWER_SCHEMA={'type':'object','additionalProperties':False,
@@ -97,6 +97,8 @@ def checked_reply(raw,events,checked_at,material_expected=False,model=None,inclu
     if not answer: raise ValueError('Empty answer')
     category=data.get('category')
     if category=='conversation':
+        if not citation_report(data,events)['passed']:
+            return '这次未能核对所引用的来源链接，暂时不能将这份带引用的答复作为已核实结果。请稍后重试。'
         return fit_reply(answer)
     if category=='unavailable':
         # Do not expose an unverified model answer that may contain stale claims.
@@ -111,7 +113,7 @@ def checked_reply(raw,events,checked_at,material_expected=False,model=None,inclu
             return '目前的信息不足以确定你指的是哪个对象。请补充具体名称，或引用你要继续讨论的那条消息，我再接着回答。'
         return '这次未能核实最新信息，暂时无法给出可靠的实时答复。请稍后重试或补充具体对象、地区和时间。'
     sources=data.get('sources',[])
-    if not has_verified_evidence(data,events):
+    if not has_verified_evidence(data,events) or not citation_report(data,events)['passed']:
         return '这次没有取得可核对的联网来源，不能把已有知识当成实时信息回答。请稍后重试。'
     if not include_sources:return fit_reply(answer)
     footer='\n来源：\n'
@@ -121,5 +123,3 @@ def checked_reply(raw,events,checked_at,material_expected=False,model=None,inclu
             footer+='（其余来源因消息长度省略）';break
         footer+=line
     return fit_reply(answer,footer.rstrip())
-
-

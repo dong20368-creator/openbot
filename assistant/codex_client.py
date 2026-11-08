@@ -13,8 +13,8 @@ import subprocess
 import threading
 import time
 from datetime import datetime, timezone, timedelta
-from evidence import canonical_url,evidence_urls,has_verified_evidence,evidence_feedback,evidence_report
-from context_budget import bounded_history
+from evidence import canonical_url,evidence_urls,has_verified_evidence,evidence_feedback,evidence_report,citation_report
+from context_budget import bounded_history,estimated_tokens
 from group_summary import is_summary,load_material,compact_summary
 from investment_math import calculate,MAX_EXPRESSIONS,TOOL as MATH_TOOL
 from futu_evidence import source_url as futu_source_url
@@ -241,7 +241,8 @@ class Codex:
                         result,previews=(latest_x_photos if arg=='handle' else prepare_x_photos)(args[arg]);success=True
                         self.image_request=args;self.image_result=result;self.image_previews=previews
                         self.prepared_images=result['photos']
-                        self.public_feed_events.append({'type':'publicImageRead','success':True,'url':result['source_url'],'count':len(result['photos'])})
+                        self.public_feed_events.append({'type':'publicImageRead','success':True,'url':result['source_url'],
+                            'count':len(result['photos']),'original_urls':[result['post_url']]})
                     except Exception:pass
                 self.send({'id':event['id'],'result':{'success':success,'contentItems':[
                     {'type':'inputText','text':json.dumps(result,ensure_ascii=False)}]+[
@@ -279,7 +280,9 @@ class Codex:
                     and set(args)=={'query'} and isinstance(args['query'],str) and 1<=len(args['query'])<=200):
                     self.memory_calls+=1
                     try:
-                        result={'records':bounded_history(args['query'],self.retriever(args['query']),budget=2500)}
+                        records=bounded_history(args['query'],self.retriever(args['query']),budget=6000)
+                        result={'records':records,'returned':len(records),
+                            'coverage':'仅当前成员本群已确认问答的相关匹配；不是全部历史。excerpt表示摘录。'}
                         success=True
                     except Exception: pass
                 self.send({'id':event['id'],'result':{'success':success,'contentItems':[
@@ -375,14 +378,18 @@ class Codex:
             connection_seconds=round(time.monotonic()-connection_started,3)
             thread_id=start['thread']['id']
             self.active_thread=thread_id
+            selected_history=bounded_history(question,history)
+            context_metrics={'context_items':len(selected_history),
+                'context_excerpt_count':sum(bool(x.get('excerpt')) for x in selected_history),
+                'context_estimated_tokens':round(estimated_tokens(selected_history))}
             prompt=json.dumps({'系统UTC时间':time.strftime('%Y-%m-%d %H:%M UTC',time.gmtime()),
-                '历史问答':bounded_history(question,history),'本次问题':question},ensure_ascii=False)
+                '历史问答':selected_history,'本次问题':question},ensure_ascii=False)
             inputs=[{'type':'text','text':prompt}]
             if group_material:
                 inputs.append({'type':'text','text':json.dumps(group_material,ensure_ascii=False)})
             if media:
                 inputs.extend(media.get('inputs',[]))
-                if media.get('notes'): inputs.append({'type':'text','text':json.dumps({'本次明确引用的媒体资料':media['notes']},ensure_ascii=False)})
+                if media.get('notes'): inputs.append({'type':'text','text':json.dumps({'本次媒体资料及关联来源':media['notes']},ensure_ascii=False)})
             elif getattr(self,'test_inputs',None): inputs.extend(self.test_inputs)
             self.deadline=time.monotonic()+self.timeout
             phase_started=time.monotonic();phase='initial';phase_seconds={}
@@ -432,12 +439,13 @@ class Codex:
                     materials=material_status(media)
                     rendered=checked_reply(reply,searches,checked_at,model=self.model,effort=REASONING_EFFORT,**materials)
                     data=json.loads(reply)
-                    needs_evidence_repair=revision_invalid_turn or (data.get('category')=='verified' and not has_verified_evidence(data,searches))
+                    citations=citation_report(data,searches)
+                    needs_evidence_repair=revision_invalid_turn or (citations['required'] and not citations['passed'])
                     needs_answer_review=data.get('category')=='unavailable'
                     if (not summary and (needs_evidence_repair or needs_answer_review) and not evidence_repair_attempted
                         and time.monotonic()+20<self.deadline):
                         evidence_repair_attempted=True
-                        repair_reasons=evidence_report(data,searches)['reasons'] if needs_evidence_repair else ['answer_unavailable']
+                        repair_reasons=citations['reasons'] if needs_evidence_repair else ['answer_unavailable']
                         repair_schema=ANSWER_SCHEMA
                         fetched=[]
                         repair_instruction=('上一答复的来源网址未全部匹配本次实际打开的页面。请核对实际打开的完整网址，必要时打开来源后重写答案；仅保留可证实事实，明确区分预测假设。' if needs_evidence_repair else
@@ -512,7 +520,8 @@ class Codex:
                         rendered=fit_reply(rendered,'\n\n'+coverage)
                         rendered=compact_summary('群聊半日总结（'+start+'—'+end+'，北京时间）\n'+rendered)
                         if len(rendered)>MAX_REPLY_CHARS:raise ValueError('summary_too_long')
-                    self.last_audit={'web_events':sum(e.get('type')=='webSearch' for e in searches),
+                    self.last_audit={**context_metrics,'model':self.model,'reasoning_effort':REASONING_EFFORT,
+                        'web_events':sum(e.get('type')=='webSearch' for e in searches),
                         'connection_setup_seconds':connection_seconds,'connection_reused':self.connection_reused,
                         'phase_seconds':phase_seconds,'repair_reasons':repair_reasons,'revision_failed':revision_failed,
                         'source_prefetch_seconds':round(prefetch_seconds,3),
@@ -531,7 +540,7 @@ class Codex:
                         'category':json.loads(reply).get('category'),
                         'evidence_passed':has_verified_evidence(data,searches),'memory_searches':self.memory_calls,
                         'evidence_repair_attempted':evidence_repair_attempted,'evidence_grounding_attempted':evidence_grounding_attempted,'math_calls':self.math_calls,'math_tool_rounds':self.math_tool_rounds,
-                        'evidence_check':evidence_report(data,searches)}
+                        'evidence_check':evidence_report(data,searches),'citation_check':citations}
                     if not summary and (self.last_audit['category']=='conversation' or self.last_audit['evidence_passed']):
                         self.last_memories=[] if self.member_view_calls or self.dialogue_reads else json.loads(reply).get('memories',[])[:MAX_MEMORIES]
                     if not summary and self.last_audit['evidence_passed']:

@@ -95,9 +95,8 @@ def resolve_reference(reader,config,ident,seen=None):
 def previous_image(reader,config,row,content):
     """Resolve a visual deictic request within this room, never future messages."""
     visual=bool(re.search(r'图片|照片|截图|图中|图里|图上|(?:这|那|上|前|刚|最近|最后).{0,8}图|(?:看|分析|解读|识别).{0,4}图|(?:上|前|最后|最新|刚发的)一?张|(?:这|那|两|三|2|3).{0,2}张|(?:this|that|above|previous|last)\s+(?:image|picture|photo)',content,re.I))
-    short=re.sub(r'[@＠]Openbot(?![A-Za-z0-9_])','',content,flags=re.I).strip(' \t\r\n\u2005，。！？?！')
-    deictic=bool(re.fullmatch(r'(?:这|这个|那|那个)?(?:是什么|什么意思|是什么意思|怎么看|对吗|真的吗)|(?:你怎么看|帮我看看|分析一下|解读一下)',short))
-    if not visual and not deictic:return None
+    # Adjacency supplies conversational material; wording is interpreted by
+    # the model, not an ever-growing whitelist of visual question phrases.
     policy=BASE/'runtime/auto-image.json'
     if not policy.exists() or row['create_time']<json.loads(policy.read_text()).get('enabled_since',float('inf')):
         return None
@@ -139,19 +138,27 @@ def previous_image(reader,config,row,content):
     plural=bool(re.search(r'这些|那几|几张|多张|第[一二三四五六七八九十\d]|对比|比较',content))
     ordinal=bool(re.search(r'第[一二三四五六七八九十\d]+张',content))
     ambiguous=ordinal or (not own and len(images)>1 and not latest) or (plural and count==1) or (count>1 and (not own or len(images)<count)) or (previous and (not own or len(images)<2))
-    if ambiguous:
+    if visual and ambiguous:
         return dict(account=config['account'],group=config['group'],sender=row['sender_name'],
             message_id='auto-image:'+str(row['server_id']),created=row['create_time'],
             text='[自动前图关联：目标不明确。请让提问者引用具体图片，或明确说最后一张；本次没有附图，不猜图片内容。]',
             association='ambiguous_previous_image')
-    selected=[images[1]] if previous else list(reversed(images[:count]))
+    if not visual:
+        # The immediately preceding own image is only a candidate. Unrelated
+        # questions must not inherit image-specific instructions or ordinals.
+        selected=[latest_own]
+        previous=False;count=1
+    else:
+        selected=[images[1]] if previous else list(reversed(images[:count]))
     result=[]
     for index,item in enumerate(selected,1):
         label='上一张' if previous else f'最近{count}张中按发送先后的第{index}张' if count>1 else '最新一张'
         result.append(dict(account=config['account'],group=config['group'],sender=item['sender'],
             message_id='s:'+str(item['server_id']),created=item['create_time'],media_kind='image',
             text='[根据本次看图提问自动关联同群'+('30分钟内提问者本人' if own else '5分钟内其他成员')+label+'；需读取附件后分析，不把图片中的身份或经历归给提问者。]',
-            association='previous_image',association_scope='own' if own else 'room'))
+            association='previous_image' if visual else 'adjacent_own_image',association_scope='own' if own else 'room'))
+        if not visual:
+            result[-1]['text']='[提问者5分钟内上一条消息是此图片，作为当前对话候选材料提供；结合本次问题判断是否相关，换话题时忽略。不是用户明确引用，不推断人物身份。]'
     if len(result)>1:result[0]['chain']=result[1:]
     return result[0]
 

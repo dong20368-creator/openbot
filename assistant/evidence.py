@@ -1,5 +1,6 @@
 """Observed web pages and successful read-only Futu receipts; no model or UI calls."""
 import json
+import re
 from answer_limits import MAX_SOURCES
 from urllib.parse import urlsplit
 import ipaddress
@@ -43,6 +44,41 @@ def has_verified_evidence(data,events):
     return evidence_report(data,events)['passed']
 
 
+def answer_links(data):
+    # Citation links in prose, excluding literal code examples.
+    text=re.sub(r'```.*?```|`[^`\n]*`','',data.get('answer',''),flags=re.S)
+    return list(dict.fromkeys(re.findall(r'\[[^\]\n]*\]\((https?://[^\s)]+)\)',text)))
+
+
+def citation_urls(events):
+    found=evidence_urls(events)
+    for event in events:
+        if not (image_source_url(event) or research_source_url(event) or public_feed_source_url(event)):continue
+        # These identifiers are recorded by successful local tool execution,
+        # never extracted from an answer or accepted from a failed request.
+        for url in event.get('original_urls',[]):
+            if isinstance(url,str) and re.fullmatch(r'https://(?:x\.com|twitter\.com)/[A-Za-z0-9_]{1,15}/status/[1-9][0-9]{5,24}',url):
+                found.add(canonical_url(url))
+    return found
+
+
+def citation_report(data,events):
+    """Stable explanations with citations still require actual page reads."""
+    links=answer_links(data)
+    required=data.get('category')=='verified' or (data.get('category')=='conversation' and bool(data.get('sources') or links))
+    if not required:return {'required':False,'passed':True,'reasons':[],'unmatched_body_count':0}
+    report=evidence_report({**data,'category':'verified'},events)
+    reasons=list(report['reasons'])
+    # A stable explanation may cite directly in prose without a sources array.
+    # There are then no dynamic data dates to validate, but every link must open.
+    if data.get('category')=='conversation' and not data.get('sources') and 1<=len(links)<=MAX_SOURCES:
+        reasons=[r for r in reasons if r!='source_count']
+    observed=citation_urls(events)
+    unmatched=sum(canonical_url(url) not in observed for url in links)
+    if unmatched:reasons.append('unopened_body_link')
+    return {'required':True,'passed':not reasons,'reasons':reasons,'unmatched_body_count':unmatched}
+
+
 def evidence_report(data,events):
     """Counts/reasons can be persisted without storing source URLs or answers."""
     sources=data.get('sources',[]);observed=evidence_urls(events)
@@ -75,8 +111,8 @@ def evidence_feedback(data,events):
     opened+=list(dict.fromkeys(url for e in events if (url:=research_source_url(e))))
     unmatched=[s.get('url') for s in data.get('sources',[]) if isinstance(s,dict)
         and canonical_url(s.get('url')) not in observed]
-    return json.dumps({'核验结果':evidence_report(data,events),'本次可核对的实际访问网址':opened,'尚未匹配的网址':unmatched,
+    return json.dumps({'核验结果':evidence_report(data,events),'引用核验':citation_report(data,events),
+        '正文未匹配的引用链接':[url for url in answer_links(data) if canonical_url(url) not in citation_urls(events)],
+        '本次可核对的实际访问网址':opened,'尚未匹配的网址':unmatched,
         '富途来源说明':'futu://标识代表本次成功且非空的只读MCP回执，不是网页，不能用web打开；事实必须由对应工具数据支持。',
         '说明':f'sources最多{MAX_SOURCES}项，逐项用实际打开且确实支持正文的完整网址；若需要另一个网址就先打开它。不得只改来源字段来保留无依据事实。'},ensure_ascii=False)
-
-

@@ -2,6 +2,7 @@
 import json,sqlite3,time
 from pathlib import Path
 from group_summary import scrub
+from context_budget import excerpt_text
 ROOT=Path(__file__).resolve().parent
 
 def load(job,args):
@@ -28,7 +29,8 @@ def load(job,args):
         for row in rows:
             answer=db.execute('SELECT answer FROM supplements WHERE job_id=? ORDER BY created DESC,receipt_id DESC LIMIT 1',(row['id'],)).fetchone()
             q=scrub(row['question']);a=scrub(answer[0] if answer else row['answer'] or '')
-            item={'created':row['created'],'question':q[:2000],'bot_answer':a[:3000],
+            item={'created':row['created'],'question':excerpt_text(q,job.get('question',''),2000),
+                  'bot_answer':excerpt_text(a,job.get('question',''),3000),
                   'excerpt':len(q)>2000 or len(a)>3000}
             cost=len(json.dumps(item,ensure_ascii=False))
             if records and used+cost>24000:break

@@ -2,7 +2,7 @@
 import json
 import unittest
 from unittest.mock import patch
-from answer_limits import MAX_SOURCES, MAX_MEMORIES, MAX_REPLY_CHARS
+from answer_limits import MAX_SOURCES, MAX_MEMORIES, MAX_REPLY_CHARS, MAX_RESEARCH_REQUESTS
 from reply_contract import ANSWER_SCHEMA, checked_reply, fit_reply, material_status
 from evidence import evidence_report
 import test_analysis_reply
@@ -80,8 +80,15 @@ class FlowContract(unittest.TestCase):
             call('latest_x_posts',{'handle':'synthetic'})
             self.assertEqual(read.call_count,1)
             call('read_x_posts',{'post_urls':['https://x.com/synthetic/status/123456']})
-            call('futu_news',{'keyword':'Synthetic','news_type':1})
             self.assertEqual(read.call_count,2)
+            for i in range(MAX_RESEARCH_REQUESTS-2):
+                call('futu_news',{'keyword':'Synthetic'+str(i),'news_type':1})
+            self.assertEqual(read.call_count,MAX_RESEARCH_REQUESTS)
+            call('latest_x_posts',{'handle':'synthetic'})
+            self.assertTrue(model.sent[-1]['result']['success'])
+            self.assertEqual(read.call_count,MAX_RESEARCH_REQUESTS)
+            call('futu_news',{'keyword':'OverBudget','news_type':1})
+            self.assertEqual(read.call_count,MAX_RESEARCH_REQUESTS)
             self.assertFalse(model.sent[-1]['result']['success'])
 
 

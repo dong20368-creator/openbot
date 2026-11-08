@@ -46,3 +46,18 @@ Windows助手用`assistant/start-bot.ps1`启动，`control-panel.cmd`打开面�
 ## 真实模型评估
 
 `evaluations/`是手工使用的开发材料，`python tools/run_evaluation.py --list`查看入口。执行时必须明确提供`--allow-model-call`。这些脚本可调用你的模型、公开搜索及可选只读工具，并将结果写入被忽略的runtime；默认测试不调用它们。不把它们的输出自动发到群里。
+
+## 上下文与引用排查
+
+先区分材料未传入、相关历史没有召回、模型理解错误及来源校验失败。去敏审计提供`reasoning_effort`、`context_items`、`context_excerpt_count`、`context_estimated_tokens`、`memory_searches`和`citation_check`；不要用这些计数代替阅读合成案例的实际答复。稳定知识的`evidence_passed`可以为false，应另看`citation_check`是否需要检查且已通过。
+
+## 后续发布检查
+
+新增源码和文档先按白名单暂存，再按暂存Git blob更新MANIFEST。运行：
+
+```powershell
+python openbot.py test
+python tools/check_release.py --check-anonymous-history --check-manifest
+```
+
+后续发布使用匿名历史检查；`--require-anonymous-root`仅适用于首次单根提交发布。检查不会推送，不会改写历史；提交后的作者和提交者仍需再次核对。

@@ -9,7 +9,7 @@ Windows运行Python助手，持有模型登录、队列和助手上下文。WSL�
 1. **启动与依赖检查**：`assistant/run_bot.py`取得单实例锁，`backend_preflight.py`核对WSL模块位置，`prepare_reply.export_inbox()`取得已核实的账号/群配置。
 2. **接收与过滤**：`collector.py`持续收集，WSL的`inbox.py`只导出授权群、指定启用时间之后的提问。`db_reader.py`读取受限资料快照；昵称不是身份主键。
 3. **入队与去重**：`core.Store`按稳定消息标识去重并持久化。同一成员的先后顺序与不同成员之间的公平调度分别约束，重启不靠内存猜状态。
-4. **准备上下文**：本人近期对话由`dialogue_history.py`提供；`semantic_memory.py`在本人作用域中检索。`member_views.py`处理明确要求的群公开观点，不能访问别人的私有记忆。`media_context.py`读取已授权且绑定到本题的材料。
+4. **准备上下文**：`Store.history`组织本人近期对话与有限公开机器人答复；`Store.search_history`按相关性检索本人已确认旧问答，`dialogue_history.py`负责本人归档分页，`semantic_memory.py`提供本人作用域内的候选。`member_views.py`处理明确要求的群公开观点，不能访问别人的私有记忆。`media_context.py`读取已授权且绑定到本题的材料。
 5. **生成**：`generation_pool.py`维护三路独立worker；`codex_client.py`负责模型通信、临时会话、白名单工具调用与复核。连接可复用，每题上下文仍独立。
 6. **校验**：`evidence.py`检查来源读取凭据；`reply_contract.py`验证类别、材料状态、输出结构及长度。`answer_revision.py`支持有限的草稿局部修订，失败时保留原完整复核机制。
 7. **发送**：主worker单路执行`native_sender.py`，通过WSL `native_gateway.py`和`protocol_transport.py`提交。提交前先持久化意图，提交后的未知结果仅查询原意图。
