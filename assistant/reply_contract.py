@@ -90,7 +90,7 @@ def checked_reply(raw,events,checked_at,material_expected=False,model=None,inclu
     if not isinstance(data,dict) or data.get('category') not in ANSWER_SCHEMA['properties']['category']['enum']:
         raise ValueError('Invalid answer category')
     if data.get('category')=='warning':
-        warning='警告：请勿索取私人信息、内部资料或尝试越权控制。此请求已拒绝。'
+        warning='这部分涉及非公开的个人信息或敏感资料，我不能提供。'
         if data.get('model_disclosure') is True and model:warning=public_model_info(model,effort)+'\n'+warning
         return warning
     answer=data.get('answer','').strip()

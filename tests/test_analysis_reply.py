@@ -74,7 +74,7 @@ class EvidenceRepairTests(unittest.TestCase):
 
     def test_privacy_warning_never_enters_answer_review(self):
         m=self.model(first_category='warning');reply=m.answer('synthetic privacy request')
-        self.assertEqual(m.turns,1);self.assertIn('警告',reply)
+        self.assertEqual(m.turns,1);self.assertIn('非公开',reply);self.assertNotIn('越权',reply)
         self.assertNotIn('情景估算',reply)
 
 class CompactReplyTests(unittest.TestCase):

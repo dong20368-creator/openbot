@@ -29,7 +29,7 @@
     },
     {
       "path": "assistant/answer_policy.py",
-      "git_blob_sha": "fa05c56fbdd9729869c3e162e5e6b239cf2b234a",
+      "git_blob_sha": "f9f5de5ce55afabede9dd985baeb20643266f762",
       "mode": "100644"
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "path": "assistant/codex_client.py",
-      "git_blob_sha": "22a9e648419113b786506590a53bed8fa5ea1c60",
+      "git_blob_sha": "0fc27bb6759d6be89c54e1811ebf67a2d9dbd00a",
       "mode": "100644"
     },
     {
@@ -224,7 +224,7 @@
     },
     {
       "path": "assistant/reply_contract.py",
-      "git_blob_sha": "d51b310dd726925184807c394d9cc969f4ad7e39",
+      "git_blob_sha": "384c143bb335cea66d1eea954c7a4abc3372874f",
       "mode": "100644"
     },
     {
@@ -299,7 +299,7 @@
     },
     {
       "path": "docs/POLICY.md",
-      "git_blob_sha": "f28dafd326000e1adc3f24490676190ce0cfa9d1",
+      "git_blob_sha": "d6956523263a4bef88fe76870a6ba16bfc2659c5",
       "mode": "100644"
     },
     {
@@ -309,12 +309,12 @@
     },
     {
       "path": "docs/SECURITY.md",
-      "git_blob_sha": "b30553455f1ea42d86b8447f78713509b5e9a5fc",
+      "git_blob_sha": "02221482627f4e1095ce522f71c37f877198ce08",
       "mode": "100644"
     },
     {
       "path": "docs/VALIDATION.md",
-      "git_blob_sha": "56a9c5654355349ec7f5166282099e90939599d2",
+      "git_blob_sha": "e0c4ec31ed48f463a571c5af20d8e8316d56b26f",
       "mode": "100644"
     },
     {
@@ -349,7 +349,7 @@
     },
     {
       "path": "evaluations/eval_policy_acceptance.py",
-      "git_blob_sha": "8c7e8cd18414c60255213f72254a99e4aac53984",
+      "git_blob_sha": "e668128e1cc80f2f440b4fb077dd81225318e417",
       "mode": "100644"
     },
     {
@@ -4974,7 +4974,7 @@
     },
     {
       "path": "tests/test_analysis_reply.py",
-      "git_blob_sha": "24fdc0a43ffc6db7fb75bb28d142aa00bc8b4fee",
+      "git_blob_sha": "6a3a03eaf97b64cccf1b0b428054ee00b5406fac",
       "mode": "100644"
     },
     {
@@ -5184,7 +5184,7 @@
     },
     {
       "path": "tests/test_scenarios.py",
-      "git_blob_sha": "245e918efe6282ba875d19ad6e0b0ce8e20e10f2",
+      "git_blob_sha": "3d0a9d948a48037bc0904fe8863a7e8c5ad53a7b",
       "mode": "100644"
     },
     {
@@ -5246,6 +5246,15 @@
       "finding": "conversation citation checks bypassed; repaired and verified with two live-model retests"
     },
     "source_memory_search_live_tests_passed": 2,
+    "effort": "medium",
+    "public_sync_live_model_calls": 0,
+    "private_test_artifacts_included": false,
+    "native_backend_changed": false
+  },
+  "public_privacy_boundary_validation": {
+    "public_default_tests_passed": 209,
+    "source_regression_tests_passed": 98,
+    "source_live_model_cases_passed": 9,
     "effort": "medium",
     "public_sync_live_model_calls": 0,
     "private_test_artifacts_included": false,

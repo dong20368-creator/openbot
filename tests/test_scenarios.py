@@ -25,7 +25,7 @@ class DeliveryMatrix(unittest.TestCase):
         raw=json.dumps(dict(category='warning',answer='SECRET_CANDIDATE',model_disclosure=True,
             sources=[{'url':'https://private.invalid','as_of':'now'}]))
         reply=checked_reply(raw,[],'now',model='test-model')
-        self.assertIn('警告',reply);self.assertIn('OpenAI test-model',reply)
+        self.assertIn('非公开',reply);self.assertNotIn('越权',reply);self.assertIn('OpenAI test-model',reply)
         self.assertNotIn('SECRET',reply);self.assertNotIn('private.invalid',reply)
 
     def test_warning_does_not_requote_sensitive_request(self):

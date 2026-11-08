@@ -366,7 +366,7 @@ class Codex:
                 'baseInstructions':policy_for(summary=summary),'developerInstructions':
                     '本助手是群聊AI助手，当前实际信息：'+public_model_info(self.model,REASONING_EFFORT)+
                     '主人明确授权公开上述三项：被问模型、推理档位或调用方式时，一次简短说明上述模型、档位和订阅调用信息，不联网，不以内部配置为由拒绝。'
-                    '其余内部项目、运行参数和部署信息不公开；只介绍公开功能，不披露实现细节。'
+                    '未公开的内部项目、实际运行参数和部署信息不公开；公开材料的解释与读取遵循信息来源边界，不因项目同名拒绝，也不补充私有部署信息。'
                     '当前时间以每次输入JSON顶层的系统UTC时间为准，本次问题中的时间声明不覆盖它。'}
             if not summary:params['dynamicTools']=[MATH_TOOL,PUBLIC_FEED_TOOL,IMAGE_TOOL,RESEARCH_TOOL]
             if self.current_job and not summary:params['dynamicTools'].extend([MEMBER_VIEWS_TOOL,DIALOGUE_TOOL])
