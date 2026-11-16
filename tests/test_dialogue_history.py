@@ -20,7 +20,7 @@ class DialogueTests(unittest.TestCase):
             job=s.claim()
             history=s.history(job,True)
             own=[h for h in history if h['kind']=='current_person_history']
-            self.assertGreaterEqual(len(own),32)
+            self.assertEqual(len(own),32)
             self.assertEqual(sum(h['continuity_role']=='latest_turn' for h in own),8)
             self.assertNotIn('其他成员',json.dumps(history,ensure_ascii=False))
             with patch.object(archive,'ROOT',root):

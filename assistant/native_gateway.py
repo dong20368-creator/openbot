@@ -115,7 +115,7 @@ def recover_receipt(t,job):
         'evidence':'native_server_acceptance_and_profile_readback'}
 
 
-def dispatch(req):
+def dispatch_single(req):
     cfg,original=settings();op=req['op']
     if op=='verify':return {'verified':verify()}
     job=req.get('job')
@@ -156,6 +156,11 @@ def dispatch(req):
             'reference_id':job['message_id'] if quoted else None,'text_sha256':hashlib.sha256(text.encode()).hexdigest(),
             'evidence':'native_server_acceptance_and_profile_readback'}
     finally:t.close()
+
+def dispatch(req):
+    from link_delivery import dispatch_parts
+    return dispatch_parts(req, dispatch_single)
+
 
 if __name__=='__main__':
     try:print(json.dumps(dispatch(json.load(sys.stdin))))

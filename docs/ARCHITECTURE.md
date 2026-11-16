@@ -1,5 +1,7 @@
 # 架构：沿着一条消息读代码
 
+[文档导航](README.md)
+
 ## 进程与数据位置
 
 Windows运行Python助手，持有模型登录、队列和助手上下文。WSL运行资料读取器、原生发送网关以及独立的微信原生后端。两个位置都有名为runtime的目录，但内容不同，不能相互覆盖。
@@ -10,9 +12,9 @@ Windows运行Python助手，持有模型登录、队列和助手上下文。WSL�
 2. **接收与过滤**：`collector.py`持续收集，WSL的`inbox.py`只导出授权群、指定启用时间之后的提问。`db_reader.py`读取受限资料快照；昵称不是身份主键。
 3. **入队与去重**：`core.Store`按稳定消息标识去重并持久化。同一成员的先后顺序与不同成员之间的公平调度分别约束，重启不靠内存猜状态。
 4. **准备上下文**：`Store.history`组织本人近期对话与有限公开机器人答复；`Store.search_history`按相关性检索本人已确认旧问答，`dialogue_history.py`负责本人归档分页，`semantic_memory.py`提供本人作用域内的候选。`member_views.py`处理明确要求的群公开观点，不能访问别人的私有记忆。`media_context.py`读取已授权且绑定到本题的材料。
-5. **生成**：`generation_pool.py`维护三路独立worker；`codex_client.py`负责模型通信、临时会话、白名单工具调用与复核。连接可复用，每题上下文仍独立。
+5. **生成**：`generation_pool.py`维护三路独立worker；`model_provider.py`显式选择适配器，`codex_client.py`提供共享的工具分派与复核流程；`argon_client.py`适配订阅传输，`scoped_tool_bridge.py`提供受限工具桥。连接策略依渠道而异，每题上下文保持独立。
 6. **校验**：`evidence.py`检查来源读取凭据；`reply_contract.py`验证类别、材料状态、输出结构及长度。`answer_revision.py`支持有限的草稿局部修订，失败时保留原完整复核机制。
-7. **发送**：主worker单路执行`native_sender.py`，通过WSL `native_gateway.py`和`protocol_transport.py`提交。提交前先持久化意图，提交后的未知结果仅查询原意图。
+7. **发送**：主worker单路执行`native_sender.py`，通过WSL `native_gateway.py`和`protocol_transport.py`提交；`link_delivery.py`将正文与来源链接拆分并逐部分核对回执。提交前先持久化意图，提交后的未知结果仅查询原意图。
 8. **确认后处理**：取得受支持的确认后才提交记忆。状态通过`runtime_health.py`写入去敏健康信息，由`control_panel.py`展示。
 
 ## 主要状态
@@ -37,7 +39,7 @@ Windows运行Python助手，持有模型登录、队列和助手上下文。WSL�
 | 回答权限、表达、研究策略 | `answer_policy.py` |
 | 数值预算 | `answer_limits.py` |
 | 固定回复和输出结构 | `reply_contract.py` |
-| 模型通信与工具分发 | `codex_client.py` |
+| 模型选择、传输与工具分发 | `model_provider.py`、`codex_client.py`、`argon_client.py`、`scoped_tool_bridge.py` |
 | 用户上下文与任务顺序 | `core.py`、`context_budget.py` |
 | 图片关联 | `inbox.py`、`media_context.py` |
 | 公开资料适配 | `public_research.py`、`public_feed.py`、`public_pages.py` |

@@ -1,6 +1,8 @@
 # 规则与输出
 
-可执行规则唯一来源是`assistant/answer_policy.py`；不要只改这篇说明，以为运行行为已改变。
+[文档导航](README.md)
+
+规则由 `assistant/answer_policy.py` 组织，并加载 `assistant/docs/WORKING_POLICY.md` 的工作规范。权限和输出约束还由执行代码校验；只改本文不会改变运行行为。
 
 ## 从输入到回复的约束
 

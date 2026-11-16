@@ -7,6 +7,8 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 SUITE = (
+    'test_model_provider', 'test_argon_transport', 'test_scoped_tool_bridge',
+    'test_link_delivery', 'test_reply_presentation',
     'test_core', 'test_analysis_reply', 'test_answer_revision', 'test_flow_contract',
     'test_policy_profiles', 'test_product_experience', 'test_process_generation',
     'test_protocol_faults', 'test_member_views', 'test_auto_image',

@@ -1,5 +1,7 @@
 # 维护与故障处理
 
+[文档导航](README.md)
+
 ## 启停
 
 Windows助手用`assistant/start-bot.ps1`启动，`control-panel.cmd`打开面板。关闭面板不停止后台。暂停用面板或在assistant/runtime创建STOP，等待bot-status.json显示stopped；不要为了催回复强杀后手工重发。
@@ -27,7 +29,7 @@ Windows助手用`assistant/start-bot.ps1`启动，`control-panel.cmd`打开面�
 
 - 未知发送按任务ID轮转核验原意图，每批最多5条。单条查询失败或回执格式无效不影响其他记录，也不会触发重发。
 - 重复启动由 `supervisor.lock` 保证单实例。正在退出的旧进程最多有5秒锁交接时间；暂停标记会取消等待中的启动。
-- 模型无响应超时统一记录为 `codex_timeout`，不记录上游异常原文。
+- 模型超时按渠道记录，如 `codex_timeout` 或 `argon_timeout`，不记录上游异常原文。
 - `test_reliability_audit` 和 `test_supervisor_recovery` 已纳入默认隔离测试；后者使用临时Windows进程，非Windows平台跳过。
 
 ## 改动与上线
@@ -51,13 +53,6 @@ Windows助手用`assistant/start-bot.ps1`启动，`control-panel.cmd`打开面�
 
 先区分材料未传入、相关历史没有召回、模型理解错误及来源校验失败。去敏审计提供`reasoning_effort`、`context_items`、`context_excerpt_count`、`context_estimated_tokens`、`memory_searches`和`citation_check`；不要用这些计数代替阅读合成案例的实际答复。稳定知识的`evidence_passed`可以为false，应另看`citation_check`是否需要检查且已通过。
 
-## 后续发布检查
+## 发布源码
 
-新增源码和文档先按白名单暂存，再按暂存Git blob更新MANIFEST。运行：
-
-```powershell
-python openbot.py test
-python tools/check_release.py --check-anonymous-history --check-manifest
-```
-
-后续发布使用匿名历史检查；`--require-anonymous-root`仅适用于首次单根提交发布。检查不会推送，不会改写历史；提交后的作者和提交者仍需再次核对。
+测试、脱敏、匿名提交与清单检查见[贡献指南](../CONTRIBUTING.md)。发布源码不会自动升级现有服务。

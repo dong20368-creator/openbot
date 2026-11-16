@@ -79,10 +79,28 @@ def material_status(media):
 
 
 def public_model_info(model,effort=None):
+    if model=='gemini-4-argon-medium':
+        return '模型：Gemini 4 Argon（gemini-4-argon-medium）\n推理档位：medium（中档）\n调用方式：通过Google Antigravity订阅调用。'
     name='GPT-6 Astra（'+model+'）' if model=='gpt-6-astra' else model
     text='模型：OpenAI '+name+'。'
     if effort:text+='推理档位：'+effort+('（中档）' if effort=='medium' else '')+'。'
     return text+'通过 ChatGPT/Codex 订阅调用。'
+
+
+def clean_provider_citations(text):
+    """Remove provider citation wrappers, retaining prose and literal code examples."""
+    parts=re.split(r'(```[\s\S]*?```|`[^`\n]*`)',text)
+    for i in range(0,len(parts),2):
+        parts[i]=re.sub(r'<cite\s+index=["\'][0-9,\s-]+["\']\s*>(.*?)</cite>',
+            lambda match:match.group(1),parts[i],flags=re.S)
+    return ''.join(parts)
+
+
+def format_public_identity(answer,model,effort):
+    canonical=public_model_info(model,effort)
+    # These three fields are application-owned, not free-form generated claims.
+    block=r'(?m)^模型[：:][^\n]*\n推理档位[：:][^\n]*\n调用方式[：:][^\n]*'
+    return re.sub(block,lambda match:canonical,answer,count=1)
 
 
 def checked_reply(raw,events,checked_at,material_expected=False,model=None,include_sources=False,media_available=False,effort=None):
@@ -93,8 +111,10 @@ def checked_reply(raw,events,checked_at,material_expected=False,model=None,inclu
         warning='这部分涉及非公开的个人信息或敏感资料，我不能提供。'
         if data.get('model_disclosure') is True and model:warning=public_model_info(model,effort)+'\n'+warning
         return warning
-    answer=data.get('answer','').strip()
+    answer=clean_provider_citations(data.get('answer','').strip())
     if not answer: raise ValueError('Empty answer')
+    if model and data.get('model_disclosure') is True:
+        answer=format_public_identity(answer,model,effort)
     category=data.get('category')
     if category=='conversation':
         if not citation_report(data,events)['passed']:

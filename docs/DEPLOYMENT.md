@@ -1,5 +1,7 @@
 # 部署到自己的机器
 
+[文档导航](README.md)
+
 这份源码把Windows助手与WSL原生微信后端连接起来。真实登录、群授权、外发媒体和定时任务都由部署者明确决定。以下按检查点组织，不声称是新机器一键安装。
 
 ## 1. 先完成离线验证
@@ -36,6 +38,8 @@ python3 -c "import inbox, media_reader, member_window, group_summary, native_gat
 ## 4. 准备Windows模型环境
 
 安装自己的Codex CLI，运行`assistant/login-codex.cmd`完成专用环境登录。不要把登录文件提交到Git。需要富途工具时在该专用环境中自行配置；不附带任何现成OAuth或账号数据。
+
+以上是默认 Codex 渠道。显式使用 Antigravity 订阅的客户端路径、登录与模型选择见[模型接入](PROVIDERS.md)。`openbot.py check` 目前主要检查默认 Codex 环境的准备状态，不是 Antigravity 账号资格测试。升级 WSL Python 模块时包含 `link_delivery.py`，它由 `native_gateway.py` 用于正文与来源链接分开发送；不要复制运行资料或发送回执。
 
 语义检索使用`semantic_memory.py`声明的BAAI/bge-small-zh-v1.5模型。该代码只读本地缓存，部署者需要先下载对应模型到assistant/runtime/models/embedding。模型未准备时，不要宣称记忆检索已经可用。
 

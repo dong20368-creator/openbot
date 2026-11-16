@@ -18,6 +18,7 @@ from outbound_images import attachments,receipt_matches
 
 def model_error_code(exc):
     known={'codex_process_ended','codex_timeout','codex_empty_answer','codex_turn_failed','chatgpt_login_required'}
+    known.update({'argon_timeout','argon_process_closed','argon_unavailable','argon_incomplete_answer','argon_tool_round_limit','argon_invalid_json','argon_acp_-32603'})
     known.update('codex_rpc_failed:'+method for method in ('initialize','account/read','thread/start','turn/start'))
     value=str(exc)
     return value if value in known else 'unclassified'
@@ -109,7 +110,7 @@ class Store:
             (job_id,event,time.time(),json.dumps(metadata)))
 
     def audit(self,job_id,data):
-        safe={k:data[k] for k in ('web_events','observed_urls','category','evidence_passed','elapsed_seconds','memory_searches','evidence_repair_attempted','evidence_check',
+        safe={k:data[k] for k in ('model','provider','reasoning_effort','api_protocol','usage','transport_rounds','format_repairs','web_cache_hits','transport_seconds','host_tool_seconds','cleanup_seconds','web_events','observed_urls','category','evidence_passed','elapsed_seconds','memory_searches','evidence_repair_attempted','evidence_check',
             'member_view_calls','member_view_records','summary_read_errors','dialogue_reads','incoming_image_count','incoming_media_dimensions','incoming_media_errors','futu_reads','public_research_calls','x_post_batch_calls','public_research_reads','public_feed_reads','image_reads','prepared_image_count','primary_page_reads','math_calls','math_tool_rounds','evidence_grounding_attempted','queue_wait_seconds','connection_setup_seconds','connection_reused','phase_seconds','repair_reasons','revision_failed','source_prefetch_seconds','tool_seconds') if k in data}
         self.db.execute('INSERT OR REPLACE INTO model_audits VALUES(?,?,?)',(job_id,time.time(),json.dumps(safe)))
 
@@ -344,10 +345,11 @@ class Store:
             public=self.db.execute('''SELECT j.answer,j.sender,MIN(e.created) AS delivered
                 FROM jobs j JOIN job_events e ON e.job_id=j.id AND e.event='confirmed'
                 WHERE j.account=? AND j.room=? AND j.state='confirmed'
+                AND j.id<?
                 AND j.answer IS NOT NULL AND j.answer!='' AND j.question!=''
-                GROUP BY j.id HAVING delivered>=? AND delivered<?
+                GROUP BY j.id HAVING delivered>=? AND delivered<=?
                 ORDER BY delivered DESC,j.id DESC LIMIT 3''',
-                (self.account,job['room'],job['created']-300,job['created'])).fetchall()
+                (self.account,job['room'],job['id'],job['created']-300,job['created'])).fetchall()
             for turn in reversed(public):
                 if turn['sender']==job['sender'] or not self.memory_setting(job['room'],turn['sender'])[0]:continue
                 text=scrub(turn['answer'])

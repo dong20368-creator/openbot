@@ -1,6 +1,6 @@
 {
   "format": "Git blob SHA-1 over normalized staged bytes",
-  "selected_isolated_tests_passed": 209,
+  "selected_isolated_tests_passed": 234,
   "files": [
     {
       "path": ".gitattributes",
@@ -13,13 +13,23 @@
       "mode": "100644"
     },
     {
+      "path": "CONTRIBUTING.md",
+      "git_blob_sha": "b814fb3fb6b7fde9d0c05d98c11828f069c9769e",
+      "mode": "100644"
+    },
+    {
       "path": "NOTICE.md",
       "git_blob_sha": "75959883a92c73536698335bdf4f54354739bc0e",
       "mode": "100644"
     },
     {
       "path": "README.md",
-      "git_blob_sha": "7955be2fb270f37d3a0f7fb36bc30ef86070b487",
+      "git_blob_sha": "164170ff5d8879e8295b7170489c0b5c4ae0a26c",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/README.md",
+      "git_blob_sha": "77623a9b031130d956e3d2ae45f75606707cc8f0",
       "mode": "100644"
     },
     {
@@ -29,12 +39,17 @@
     },
     {
       "path": "assistant/answer_policy.py",
-      "git_blob_sha": "f9f5de5ce55afabede9dd985baeb20643266f762",
+      "git_blob_sha": "c731a4c48d44de40a3f1ae4258285a4be04aa325",
       "mode": "100644"
     },
     {
       "path": "assistant/answer_revision.py",
       "git_blob_sha": "63f1c717f986315a4795e79342b360744aedcde8",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/argon_client.py",
+      "git_blob_sha": "a924f7e522cda86698d5d094f5c90cf26cb53546",
       "mode": "100644"
     },
     {
@@ -44,7 +59,7 @@
     },
     {
       "path": "assistant/codex_client.py",
-      "git_blob_sha": "0fc27bb6759d6be89c54e1811ebf67a2d9dbd00a",
+      "git_blob_sha": "88a6f2ff372a008cfecc3af3d8f3d649bf69a8bd",
       "mode": "100644"
     },
     {
@@ -69,7 +84,7 @@
     },
     {
       "path": "assistant/core.py",
-      "git_blob_sha": "4996220db3759b56373ee36c0f6b8be6088a3762",
+      "git_blob_sha": "4ad18d55b6903a7cb337767304282a5c6a2c9089",
       "mode": "100644"
     },
     {
@@ -90,6 +105,11 @@
     {
       "path": "assistant/dialogue_history.py",
       "git_blob_sha": "4d9ddbd9c54060a38faaceabbb2f81839a982e3c",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/docs/WORKING_POLICY.md",
+      "git_blob_sha": "ac7e31b13c4a2d08b4f54d7f509c27b3f1aab4f1",
       "mode": "100644"
     },
     {
@@ -138,6 +158,11 @@
       "mode": "100644"
     },
     {
+      "path": "assistant/link_delivery.py",
+      "git_blob_sha": "2bebd7b5ee90adef058ecc8659639cbd5674b6e5",
+      "mode": "100644"
+    },
+    {
       "path": "assistant/login-codex.cmd",
       "git_blob_sha": "5e287ecb491acbb1698a2b6025df50a7136dc542",
       "mode": "100644"
@@ -173,13 +198,18 @@
       "mode": "100644"
     },
     {
+      "path": "assistant/model_provider.py",
+      "git_blob_sha": "1c78c8071cdb4b3fb7a8a3b19d936f8391757c87",
+      "mode": "100644"
+    },
+    {
       "path": "assistant/native_connection_health.py",
       "git_blob_sha": "52729c1b4ff82227cabb183aab851d1822705c58",
       "mode": "100644"
     },
     {
       "path": "assistant/native_gateway.py",
-      "git_blob_sha": "5c4b9da3307a69089be6a07a57a2bccc0650c677",
+      "git_blob_sha": "95c3d9ddc452cf48abe8eb520b2f1b28d2c00b08",
       "mode": "100644"
     },
     {
@@ -224,7 +254,7 @@
     },
     {
       "path": "assistant/reply_contract.py",
-      "git_blob_sha": "384c143bb335cea66d1eea954c7a4abc3372874f",
+      "git_blob_sha": "f3b804dab5cd24a34116c39eb08d93b3476a366e",
       "mode": "100644"
     },
     {
@@ -234,12 +264,17 @@
     },
     {
       "path": "assistant/run_bot.py",
-      "git_blob_sha": "8471e4563dc886898bc81726c6ab483ce8d65a50",
+      "git_blob_sha": "533ae91aee6ae4fe3aadc851634fcf48e02d97d8",
       "mode": "100644"
     },
     {
       "path": "assistant/runtime_health.py",
       "git_blob_sha": "19e95023c62c53e3f65fb8174d35fdb6688ee354",
+      "mode": "100644"
+    },
+    {
+      "path": "assistant/scoped_tool_bridge.py",
+      "git_blob_sha": "33c082451acbb8c081f50ddce4ba7adcef458660",
       "mode": "100644"
     },
     {
@@ -279,42 +314,57 @@
     },
     {
       "path": "docs/ARCHITECTURE.md",
-      "git_blob_sha": "375cd37d08502fea80e46cc9f26803f5219217f6",
+      "git_blob_sha": "1904a8dd7b3f50ee73a64ff5fb466077983a7a2a",
       "mode": "100644"
     },
     {
       "path": "docs/CONFIGURATION.md",
-      "git_blob_sha": "9a329e3de534b5b114e30b993c4872801d15e979",
+      "git_blob_sha": "6aba8b1ad2ae99acad5f5e479928d95a5787369c",
       "mode": "100644"
     },
     {
       "path": "docs/DEPLOYMENT.md",
-      "git_blob_sha": "dc239306f5cddbe4e7858a172d35a769bd9da3fd",
+      "git_blob_sha": "8f8200eec8364769ff5857ba9fe2e26f602d1e66",
       "mode": "100644"
     },
     {
       "path": "docs/OPERATIONS.md",
-      "git_blob_sha": "e9cffcfca506f1c5e6af2ec2921f60184bca7b5a",
+      "git_blob_sha": "2878fc74e9d18ef34fbe077c276ef71d99e3b5f8",
       "mode": "100644"
     },
     {
       "path": "docs/POLICY.md",
-      "git_blob_sha": "d6956523263a4bef88fe76870a6ba16bfc2659c5",
+      "git_blob_sha": "2c4a973da8ac016ec3296e91eb7affae26f4e746",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/PROVIDERS.md",
+      "git_blob_sha": "7d38ddf63d5f1105101459e3bbb5d5b15d840e2b",
       "mode": "100644"
     },
     {
       "path": "docs/QUICKSTART.md",
-      "git_blob_sha": "ef326b07cc216f58da67a97ef32433fd85ddf978",
+      "git_blob_sha": "3002d0db8473bb4705ae7a9a9287564570fd9ddd",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/README.md",
+      "git_blob_sha": "c1122de9f3448e8c986dadc738bbad68ba645cc7",
       "mode": "100644"
     },
     {
       "path": "docs/SECURITY.md",
-      "git_blob_sha": "02221482627f4e1095ce522f71c37f877198ce08",
+      "git_blob_sha": "ab603914a5591cb06167e49a7b9195cb4962ecb9",
       "mode": "100644"
     },
     {
       "path": "docs/VALIDATION.md",
-      "git_blob_sha": "e0c4ec31ed48f463a571c5af20d8e8316d56b26f",
+      "git_blob_sha": "669544d627b231f17f0af314a8784151b98eb607",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/history/VALIDATION-2026-11.md",
+      "git_blob_sha": "b3f6057c60279888f1c300e913a34690ba357caa",
       "mode": "100644"
     },
     {
@@ -395,6 +445,11 @@
     {
       "path": "evaluations/staged_eval.py",
       "git_blob_sha": "3353023e62dc9b8bc061b207cb4346d51a8b1b30",
+      "mode": "100644"
+    },
+    {
+      "path": "examples/README.md",
+      "git_blob_sha": "179acfe1a9bc806b65f53b11e64fcf3ba7f91f84",
       "mode": "100644"
     },
     {
@@ -4988,6 +5043,11 @@
       "mode": "100644"
     },
     {
+      "path": "tests/test_argon_transport.py",
+      "git_blob_sha": "9e585c0037758fdc6cd62cfa0457aeae46d2faaf",
+      "mode": "100644"
+    },
+    {
       "path": "tests/test_auto_image.py",
       "git_blob_sha": "f41b5217dbea49079e2e92818c61d09440cd41f3",
       "mode": "100644"
@@ -5039,7 +5099,7 @@
     },
     {
       "path": "tests/test_dialogue_history.py",
-      "git_blob_sha": "ae33a3746e467a2ca9200d8ff30c13e87c0c4586",
+      "git_blob_sha": "ee77d13d363b424055c47995c265d056b7c04cd1",
       "mode": "100644"
     },
     {
@@ -5098,6 +5158,11 @@
       "mode": "100644"
     },
     {
+      "path": "tests/test_link_delivery.py",
+      "git_blob_sha": "3e87b6f002374f0688563799a55db7a374216149",
+      "mode": "100644"
+    },
+    {
       "path": "tests/test_member_views.py",
       "git_blob_sha": "4bbb6d8dd6220007379667595525b0214a67843b",
       "mode": "100644"
@@ -5110,6 +5175,11 @@
     {
       "path": "tests/test_memory_retrieval.py",
       "git_blob_sha": "a689d5d3176e5ab8ef2b81ae9d763fb6f9d4c25a",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_model_provider.py",
+      "git_blob_sha": "c9b5258e03d455c004f9e4a059e08740f6f6ce31",
       "mode": "100644"
     },
     {
@@ -5178,6 +5248,11 @@
       "mode": "100644"
     },
     {
+      "path": "tests/test_reply_presentation.py",
+      "git_blob_sha": "9229559c202f86bd096db5651e0561addfd929f1",
+      "mode": "100644"
+    },
+    {
       "path": "tests/test_resilience.py",
       "git_blob_sha": "391b3d3bad25a70e2cbd119e454bb56b7183af0d",
       "mode": "100644"
@@ -5185,6 +5260,11 @@
     {
       "path": "tests/test_scenarios.py",
       "git_blob_sha": "3d0a9d948a48037bc0904fe8863a7e8c5ad53a7b",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_scoped_tool_bridge.py",
+      "git_blob_sha": "fa5e15e9e16514af21f64b2dabd091416f4ef4ad",
       "mode": "100644"
     },
     {
@@ -5214,50 +5294,8 @@
     },
     {
       "path": "tools/run_tests.py",
-      "git_blob_sha": "1086f38ac54205aaa25b7e39db617d7ea88b728a",
+      "git_blob_sha": "07121317ef5df918e37c734d125081be6116764b",
       "mode": "100644"
     }
-  ],
-  "receive_session_renewal_validation": {
-    "auth_tests_passed": 8,
-    "core_passed": 325,
-    "core_failed": 1,
-    "core_ignored": 1,
-    "baseline_same_snapshot_failure": true,
-    "fmt_and_clippy": "passed",
-    "isolated_image_smoke": "passed",
-    "live_renewal_after_rejection": "not_observed"
-  },
-  "reliability_audit_validation": {
-    "public_default_tests_passed": 185,
-    "windows_process_tests_included": 4,
-    "native_snapshot_test": "passed after CRLF normalization; fixture data unchanged",
-    "native_fmt_and_clippy": "passed",
-    "native_full_suite_rerun": false,
-    "real_model_or_messages": false
-  },
-  "context_and_rules_validation": {
-    "public_default_tests_passed": 209,
-    "public_demo_real_messages": 0,
-    "source_isolated_group_simulation": {
-      "members": 16,
-      "questions": 23,
-      "initial_passes": 22,
-      "finding": "conversation citation checks bypassed; repaired and verified with two live-model retests"
-    },
-    "source_memory_search_live_tests_passed": 2,
-    "effort": "medium",
-    "public_sync_live_model_calls": 0,
-    "private_test_artifacts_included": false,
-    "native_backend_changed": false
-  },
-  "public_privacy_boundary_validation": {
-    "public_default_tests_passed": 209,
-    "source_regression_tests_passed": 98,
-    "source_live_model_cases_passed": 9,
-    "effort": "medium",
-    "public_sync_live_model_calls": 0,
-    "private_test_artifacts_included": false,
-    "native_backend_changed": false
-  }
+  ]
 }

@@ -8,7 +8,7 @@ import time
 import threading
 from collector import Collector
 from core import Message,Store,Worker
-from codex_client import Codex
+from model_provider import create_model,selection
 from native_sender import NativeSender
 from prepare_reply import export_inbox
 from media_context import MediaContext
@@ -59,7 +59,7 @@ def main(check=False):
                 result.semantic=SemanticRecall(result)
                 return result
             def generation_model():
-                result=Codex(timeout=150,reuse_process=True);result.media_provider=MediaContext()
+                result=create_model(timeout=150,reuse_process=True);result.media_provider=MediaContext()
                 return result
             def intake_healthy():
                 value,_=collector.snapshot()
@@ -82,7 +82,7 @@ def main(check=False):
                         if counts.get('attention') or counts.get('uncertain'): state='attention'
                         if generators.healthy_workers()!=GENERATION_WORKERS and not (ROOT/'runtime/STOP').exists():state='degraded'
                         if incoming.get('reason')=='native_auth_required':state='needs_login'
-                        status(state=state,intake=incoming,**detail,
+                        status(state=state,intake=incoming,model_provider=selection(),**detail,
                             generation_workers=generators.healthy_workers(),generation_limit=GENERATION_WORKERS,
                             generating_count=counts.get('generating',0))
                     monitor_loop(monitor_stop,publish,lambda:status(state='degraded',reason='status_read_or_write_failed'))
